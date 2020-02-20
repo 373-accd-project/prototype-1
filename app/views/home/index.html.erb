@@ -1,0 +1,33 @@
+<h1>Query BLS Data</h1>
+<p>Enter series id:</p>
+<%= form_tag("/home") do %>
+  <%= text_field_tag(:series_id) %>
+  <%= submit_tag("submit") %>
+<% end %>
+<% if !@reply.nil? %>
+  <%= @reply['status'] %><br/>
+  <% if @reply['message'].present? %>
+  <%= @reply['message'] %>
+  <% end %>
+  <% if !@reply['Results']['series'][0]['data'].blank? %>
+  <table class="table">
+  <thead>
+  <% for col in @reply['Results']['series'][0]['data'][0] %>
+    <% if col[0] != "latest" %>
+    <th><%= col[0] %></th>
+    <% end %>
+  <% end %>
+  </thead>
+  <% for item in @reply['Results']['series'][0]['data'] %>
+    <tr>
+    <% for col in item %>
+      <% if col[0] == "latest" %>
+        <% next %>
+      <% end %>
+      <td><%= col[1] %></td>
+    <% end %>
+    </tr>
+  <% end %>
+  </table>
+  <% end %>
+<% end %>
