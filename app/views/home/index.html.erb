@@ -6,14 +6,16 @@
 <% end %>
 <% if !@reply.nil? %>
   <%= @reply['status'] %><br/>
-  <% if @reply['message'].present? %>
-  <%= @reply['message'] %>
+  <% if @reply['message'].present? %><br/>
+    <% for message in @reply['message'] %>
+      <%= message %><br />
+    <% end %>
   <% end %>
   <% if !@reply['Results']['series'][0]['data'].blank? %>
   <table class="table">
   <thead>
   <% for col in @reply['Results']['series'][0]['data'][0] %>
-    <% if col[0] != "latest" %>
+    <% if col[0] != "latest"%>
     <th><%= col[0] %></th>
     <% end %>
   <% end %>
@@ -24,7 +26,14 @@
       <% if col[0] == "latest" %>
         <% next %>
       <% end %>
-      <td><%= col[1] %></td>
+      
+      <td>
+        <% if col[0] == "footnotes" %>
+          <%= col[1][0]["text"] %>
+        <% else %>
+          <%= col[1] %>
+        <% end %>
+      </td>
     <% end %>
     </tr>
   <% end %>
