@@ -4,6 +4,9 @@
   <%= text_field_tag(:series_id) %>
   <%= submit_tag("submit") %>
 <% end %>
+<%= form_tag("/download_csv") do %>
+  <%= submit_tag("Download") %>
+<% end %>
 <% if !@reply.nil? %>
   <%= @reply['status'] %><br/>
   <% if @reply['message'].present? %><br/>
