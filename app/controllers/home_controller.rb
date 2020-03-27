@@ -4,11 +4,20 @@ require 'csv'
 # require '../services/json_manager'
 class HomeController < ApplicationController
   def index
-    if params.has_key?(:series_id)
+    if params.has_key?(:year)
+      generated_id = "ENU" + params[:area_code]
+      generated_id = generated_id + params[:datatype]
+      generated_id = generated_id + params[:size]
+      generated_id = generated_id + params[:ownership]
+      generated_id = generated_id + params[:industry]
       @manager = JsonManager.new("https://api.bls.gov/publicAPI/v2/timeseries/data/")
-      parsed_json = JSON(@manager.apiCall(params[:series_id], 2010, 2020))
+      parsed_json = JSON(@manager.apiCall(generated_id, 2010, 2020))
       @reply = parsed_json
-      session[:series_id] = params[:series_id]
+      session[:area_code] = params[:area_code]
+      session[:datatype] = params[:datatype]
+      session[:size] = params[:size]
+      session[:ownership] = params[:ownership]
+      session[:industry] = params[:industry]
     end
 
     @area_codes = CSV.read('csv_files/area_titles.csv')[1..]
@@ -44,7 +53,9 @@ class HomeController < ApplicationController
   end
   def download_csv
     @manager = JsonManager.new("https://api.bls.gov/publicAPI/v2/timeseries/data/")
-    parsed_json = JSON(@manager.apiCall(session[:series_id], 2010, 2020))
+    generated_id = "ENU" + session[:area_code] + session[:datatype] + session[:size] + session[:ownership] + session[:industry]
+    puts generated_id
+    parsed_json = JSON(@manager.apiCall(:generated_id, 2010, 2020))
     @reply = parsed_json['Results']['series'][0]['data']
     file = CSV.generate do |csv|
       @reply.each do |hash|
