@@ -1,8 +1,8 @@
 require 'rest_client'
 require 'json'
 require 'csv'
-# require '../services/json_manager'
-class HomeController < ApplicationController
+
+class QcewController < ApplicationController
   def index
     if params.has_key?(:year)
       generated_id = "ENU" + params[:area_code]
