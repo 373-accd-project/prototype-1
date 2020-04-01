@@ -3,7 +3,15 @@ Rails.application.routes.draw do
 
   get 'home', to: 'home#index'
   post "home", to: "home#index"
+
+  #  QCEW Routes
   get 'qcew', to: "qcew#index"
+  post "qcew", to: "qcew#index"
+  post "download_qcew_csv", to: "qcew#download_csv"
+
+  #  OES Routes
   get 'oes', to: "oes#index"
-  post "download_csv", to: "home#download_csv"
+  post "oes", to: "oes#index"
+  post "download_oes_csv", to: "oes#download_csv"
+
 end
