@@ -4,6 +4,7 @@ require 'csv'
 
 class QcewController < ApplicationController
   def index
+
     if params.has_key?(:year)
       generated_id = "ENU" + params[:area_code]
       generated_id = generated_id + params[:datatype]

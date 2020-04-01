@@ -10,7 +10,7 @@
   <h5>Pick Establishment Size: &nbsp;<%= select_tag(:size, options_for_select(@sizes),:style => "font-size:12px;") %><br/></br></h5>
   <h5>Input Year (YYYY): &nbsp;<%= text_field_tag(:year) %> </h4><br/>
 
-  <%= submit_tag("submit", :style => "height:50px;width:100px;background-color:grey;color:white;", :class => "btn float-left" )%>
+  <%= submit_tag("Submit", :style => "height:50px;width:100px;background-color:grey;color:white;", :class => "btn float-left" )%>
   <% end %>
   <p class = "float-left">&nbsp;&nbsp;&nbsp;</p>
 <%= form_tag("/download_qcew_csv") do %>
