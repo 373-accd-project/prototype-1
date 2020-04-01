@@ -2,9 +2,9 @@ require 'rest_client'
 require 'json'
 require 'csv'
 
-class OESController < ApplicationController
+class OesController < ApplicationController
   def index
-    if params.has_key?(:year)
+
       generated_id = "ENU" + params[:seasonal_adjustment_code]
       generated_id = generated_id + params[:occupation_code]
       generated_id = generated_id + params[:industry_code]
@@ -20,7 +20,6 @@ class OESController < ApplicationController
       session[:area_code] = params[:area_code]
       session[:area_type_code] = params[:area_type_code]
       session[:data_type_code] = params[:data_type_code]
-    end
 
     @seasonal_adjustment_codes = CSV.read('csv_files/oes/seasonal_adjustment_titles.csv')[1..]
     @occupation_codes = CSV.read('csv_files/oes/occupation_titles.csv')[1..]

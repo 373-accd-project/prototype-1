@@ -5,9 +5,9 @@
     <%= select_tag(:area_code, options_for_select(@area_codes)) %><br/><br/>
     <%= select_tag(:area_type_code, options_for_select(@area_type_codes)) %><br/>
     <%= select_tag(:data_type_code, options_for_select(@data_type_codes)) %><br/>
-    # <%= text_field_tag(:year) %>
+    <%= text_field_tag(:year) %>
     <%= submit_tag("submit") %>
-  <% end %>
-  <%= form_tag("/download_csv") do %>
+<% end %>
+    <%= form_tag("/download_csv") do %>
     <%= submit_tag("Download") %>
-  <% end %>
+<% end %>

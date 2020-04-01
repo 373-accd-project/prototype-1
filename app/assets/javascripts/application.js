@@ -5,7 +5,7 @@
 $(function () {
   $('.alloptions').hide();
   $('#dataseries_select').change(function () {
-      $('.alloptions').hide();
+      // $('.alloptions').hide();
       $('#' +$(this).val()).show();
   });
 });
