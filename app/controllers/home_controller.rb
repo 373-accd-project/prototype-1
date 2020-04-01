@@ -18,7 +18,7 @@ class HomeController < ApplicationController
       @reply = parsed_json
       session[:area_code] = params[:area_code]
       session[:datatype] = params[:datatype]
-      session[:size] = params[:size]
+      session[:size] = params[:size]ç
       session[:ownership] = params[:ownership]
       session[:industry] = params[:industry]
     end
