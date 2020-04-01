@@ -5,7 +5,6 @@ require 'csv'
 class HomeController < ApplicationController
   def index
 
-    @category = 
 
     if params.has_key?(:year)
       generated_id = "ENU" + params[:area_code]
