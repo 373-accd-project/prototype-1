@@ -1,5 +1,5 @@
 <%= form_tag("/home") do %>
-  <%= select_tag(:area_code, options_for_select(@area_codes)) %><br/><br/>
+  <%= select_tag(:area_code, options_for_select(@area_codes), multiple: true) %><br/><br/>
   <%= select_tag(:datatype, options_for_select(@data_types)) %><br/><br/>
   <%= select_tag(:industry, options_for_select(@industries)) %><br/><br/>
   <%= select_tag(:ownership, options_for_select(@ownership)) %><br/><br/>

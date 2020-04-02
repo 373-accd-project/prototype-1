@@ -3,7 +3,7 @@
 //= require bootstrap-sprockets
 
 $(function () {
-  $('.alloptions').hide();
+  //$('.alloptions').hide();
   $('#dataseries_select').change(function () {
       $('.alloptions').hide();
       $('#' +$(this).val()).show();

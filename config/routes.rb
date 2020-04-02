@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   post "home", to: "home#index"
   get 'qcew', to: "qcew#index"
   post "download_csv", to: "home#download_csv"
+  get 'localehe', to: "localehe#index"
+  post 'localehe', to: "localehe#index"
 end
