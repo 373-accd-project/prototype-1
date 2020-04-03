@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   post "download_csv", to: "home#download_csv"
   get 'localehe', to: "localehe#index"
   post 'localehe', to: "localehe#index"
+  get 'nationalehe', to: "nationalehe#index"
+  post 'nationalehe', to: "nationalehe#index"
 end
