@@ -5,44 +5,8 @@
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" href="qcew">QCEW</a>
+    <a class="dropdown-item" href="oes">OES</a>
   </div>
 </div>
-<div id="option1" class="alloptions">
-<%= render 'dataseries_filters/qcew' %>
+  <div id="option1" class="alloptions"> 
 </div>
-<% if !@reply.nil? %>
-  <%= @reply['status'] %><br/>
-  <% if @reply['message'].present? %><br/>
-    <% for message in @reply['message'] %>
-      <%= message %><br />
-    <% end %>
-  <% end %>
-  <% if !@reply['Results']['series'][0]['data'].blank? %>
-  <table class="table">
-  <thead>
-  <% for col in @reply['Results']['series'][0]['data'][0] %>
-    <% if col[0] != "latest"%>
-    <th><%= col[0] %></th>
-    <% end %>
-  <% end %>
-  </thead>
-  <% for item in @reply['Results']['series'][0]['data'] %>
-    <tr>
-    <% for col in item %>
-      <% if col[0] == "latest" %>
-        <% next %>
-      <% end %>
-      
-      <td>
-        <% if col[0] == "footnotes" %>
-          <%= col[1][0]["text"] %>
-        <% else %>
-          <%= col[1] %>
-        <% end %>
-      </td>
-    <% end %>
-    </tr>
-  <% end %>
-  </table>
-  <% end %>
-<% end %>
