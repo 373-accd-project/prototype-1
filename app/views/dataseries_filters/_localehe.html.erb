@@ -1,14 +1,17 @@
+<br/>
 <%= form_tag("/localehe") do %>
-  <%= select_tag(:state_code, options_for_select(@state_codes)) %><br/><br/>
+  <h5>Pick state code: &nbsp;<%= select_tag(:state_code, options_for_select(@state_codes)) %><br/><br/></h5>
   <%#= state_initials = @state_initials[:state_code] %>
   <%#= filtered_areas = @area_codes.select{ |area| (area.include? state_initials) || area == "Statewide" } %>
-  <%= select_tag(:area_code, options_for_select(@area_codes)) %><br/><br/>
-  <%= select_tag(:supersector, options_for_select(@supersectors)) %><br/><br/>
-  <%= select_tag(:industry, options_for_select(@industries)) %><br/><br/>
-  <%= select_tag(:data_type, options_for_select(@data_types)) %><br/>
-  <%= text_field_tag(:year) %>
-  <%= submit_tag("submit") %>
+  <h5>Pick area code: &nbsp;<%= select_tag(:area_code, options_for_select(@area_codes), :style => "font-size:12px;") %><br/><br/></h5>
+  <h5>Pick supersectors: &nbsp;<%= select_tag(:supersector, options_for_select(@supersectors), :style => "font-size:12px;") %><br/><br/></h5>
+  <h5>Pick industries: &nbsp;<%= select_tag(:industry, options_for_select(@industries), :style => "font-size:12px;") %><br/><br/></h5>
+  <h5>Pick data types: &nbsp;<%= select_tag(:data_type, options_for_select(@data_types), :style => "font-size:12px;") %><br/><br/></h5>
+  <h5>Input year (YYYY): &nbsp;<%= text_field_tag(:year) %></h5>
+  <h5><%= submit_tag("Submit", :style => "height:50px;width:100px;background-color:grey;color:white;", :class => "btn float-left" ) %></h5>
 <% end %>
+<p class = "float-left">&nbsp;&nbsp;&nbsp;</p>
 <%= form_tag("/download_csv") do %>
-  <%= submit_tag("Download") %>
+  <%= submit_tag("Download", :style => "height:50px; width:200px;background-color:green;color:white;", :class => "btn float-left") %>
 <% end %>
+<br/>
