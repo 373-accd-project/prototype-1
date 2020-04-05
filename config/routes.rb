@@ -6,8 +6,12 @@ Rails.application.routes.draw do
 
   #  QCEW Routes
   get 'qcew', to: "qcew#index"
-  post "qcew", to: "qcew#index"
   post "download_qcew_csv", to: "qcew#download_csv"
+  
+  get 'localehe', to: "localehe#index"
+  post 'localehe', to: "localehe#index"
+  get 'nationalehe', to: "nationalehe#index"
+  post 'nationalehe', to: "nationalehe#index"
 
   #  OES Routes
   get 'oes', to: "oes#index"

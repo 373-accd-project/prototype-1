@@ -1,0 +1,14 @@
+<%= form_tag("/localehe") do %>
+  <%= select_tag(:state_code, options_for_select(@state_codes)) %><br/><br/>
+  <%#= state_initials = @state_initials[:state_code] %>
+  <%#= filtered_areas = @area_codes.select{ |area| (area.include? state_initials) || area == "Statewide" } %>
+  <%= select_tag(:area_code, options_for_select(@area_codes)) %><br/><br/>
+  <%= select_tag(:supersector, options_for_select(@supersectors)) %><br/><br/>
+  <%= select_tag(:industry, options_for_select(@industries)) %><br/><br/>
+  <%= select_tag(:data_type, options_for_select(@data_types)) %><br/>
+  <%= text_field_tag(:year) %>
+  <%= submit_tag("submit") %>
+<% end %>
+<%= form_tag("/download_csv") do %>
+  <%= submit_tag("Download") %>
+<% end %>

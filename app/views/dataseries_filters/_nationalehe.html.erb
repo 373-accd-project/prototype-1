@@ -1,0 +1,10 @@
+<%= form_tag("/nationalehe") do %>
+  <%= select_tag(:supersector, options_for_select(@supersectors)) %><br/><br/>
+  <%= select_tag(:industry, options_for_select(@industries)) %><br/><br/>
+  <%= select_tag(:data_type, options_for_select(@data_types)) %><br/>
+  <%= text_field_tag(:year) %>
+  <%= submit_tag("submit") %>
+<% end %>
+<%= form_tag("/download_csv") do %>
+  <%= submit_tag("Download") %>
+<% end %>
