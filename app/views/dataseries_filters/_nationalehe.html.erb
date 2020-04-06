@@ -1,10 +1,13 @@
+<br/>
 <%= form_tag("/nationalehe") do %>
-  <%= select_tag(:supersector, options_for_select(@supersectors)) %><br/><br/>
-  <%= select_tag(:industry, options_for_select(@industries)) %><br/><br/>
-  <%= select_tag(:data_type, options_for_select(@data_types)) %><br/>
-  <%= text_field_tag(:year) %>
-  <%= submit_tag("submit") %>
+  <h5>Pick Supersectors: &nbsp;<%= select_tag(:supersector, options_for_select(@supersectors), :style => "font-size:12px;") %><br/><br/></h5>
+  <h5>Pick industries: &nbsp;<%= select_tag(:industry, options_for_select(@industries), :style => "font-size:12px;") %><br/><br/></h5>
+  <h5>Pick data types: &nbsp;<%= select_tag(:data_type, options_for_select(@data_types), :style => "font-size:12px;") %><br/><br/></h5>
+  <h5>Input Year (YYYY): &nbsp;<%= text_field_tag(:year) %><br/><br/></h5>
+  <%= submit_tag("Submit", :style => "height:50px;width:100px;background-color:grey;color:white;", :class => "btn float-left" ) %>
 <% end %>
+<p class = "float-left">&nbsp;&nbsp;&nbsp;</p>
 <%= form_tag("/download_csv") do %>
-  <%= submit_tag("Download") %>
+  <%= submit_tag("Download", :style => "height:50px; width:200px;background-color:green;color:white;", :class => "btn float-left") %>
 <% end %>
+<br/>
