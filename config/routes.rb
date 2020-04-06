@@ -18,4 +18,9 @@ Rails.application.routes.draw do
   post "oes", to: "oes#index"
   post "download_oes_csv", to: "oes#download_csv"
 
+  # LA Unemployment Routes
+  get 'launemp', to: 'launemp#index'
+  post 'launemp', to: 'launemp#index'
+  post "download_launemp_csv", to: "launemp#download_csv"
+
 end

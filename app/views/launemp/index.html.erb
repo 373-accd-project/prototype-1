@@ -1,12 +1,11 @@
-<h1>Query OES</h1>
+<h1>Query Local Area Unemployment:</h1>
 
 <%= render 'partials/dropdown' %>
 
-<div id="option2" class="alloptions">
-<%= render 'dataseries_filters/oes' %>
+<div id="option1" class="alloptions">
+<%= render 'dataseries_filters/launemp' %>
 </div>
 <br/><br/>
-
 
 <% if !@reply.nil? %>
   <%= @reply['status'] %><br/>
@@ -30,7 +29,7 @@
       <% if col[0] == "latest" %>
         <% next %>
       <% end %>
-      
+
       <td>
         <% if col[0] == "footnotes" %>
           <%= col[1][0]["text"] %>
