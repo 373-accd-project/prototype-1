@@ -1,19 +1,19 @@
 <br/>
 <%= form_tag("/qcew") do %>
-  <h5>Pick Area: &nbsp; <%= select_tag(:area_code, options_for_select(@area_codes), :style => "font-size:12px;") %><br/><br/></h5>
-  <h5>Pick Data Type: &nbsp;<%= select_tag(:datatype, options_for_select(@data_types), :style => "font-size:12px;") %><br/><br/></h5>
+  <h5>Pick Area: &nbsp; <%= select_tag(:area_code, options_for_select(@area_codes), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
+  <h5>Pick Data Type: &nbsp;<%= select_tag(:datatype, options_for_select(@data_types), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
 
   <h5>Pick Industry: &nbsp;
-  <%= select_tag(:industry, options_for_select(@industries), :style => "font-size:12px;" ) %><br/><br/>
+  <%= select_tag(:industry, options_for_select(@industries), multiple: true, :style => "font-size:12px;" ) %><br/><br/>
   </h5>
-  <h5>Pick Ownership: &nbsp;<%= select_tag(:ownership, options_for_select(@ownership),:style => "font-size:12px;") %><br/><br/></h5>
-  <h5>Pick Establishment Size: &nbsp;<%= select_tag(:size, options_for_select(@sizes),:style => "font-size:12px;") %><br/></br></h5>
+  <h5>Pick Ownership: &nbsp;<%= select_tag(:ownership, options_for_select(@ownership), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
+  <h5>Pick Establishment Size: &nbsp;<%= select_tag(:size, options_for_select(@sizes), multiple: true, :style => "font-size:12px;") %><br/></br></h5>
   <h5>Input Year (YYYY): &nbsp;<%= text_field_tag(:year) %> </h4><br/>
 
   <%= submit_tag("Submit", :style => "height:50px;width:100px;background-color:grey;color:white;", :class => "btn float-left" )%>
   <% end %>
   <p class = "float-left">&nbsp;&nbsp;&nbsp;</p>
-<%= form_tag("/download_qcew_csv") do %>
+<%= form_tag("/download_csv") do %>
   <%= submit_tag("Download", :style => "height:50px; width:200px;background-color:green;color:white;", :class => "btn float-left") %>
 <% end %>
 <br/>

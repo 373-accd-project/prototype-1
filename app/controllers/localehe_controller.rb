@@ -9,18 +9,16 @@ class LocaleheController < ApplicationController
   def index
     if params.has_key?(:year)
       generated_id = "SMU" + params[:state_code]
-      puts generated_id, generated_id.length
       generated_id = generated_id + params[:area_code]
-      puts generated_id, generated_id.length
       #generated_id = generated_id + params[:supersector]
       #puts generated_id, generated_id.length
       generated_id = generated_id + params[:industry]
-      puts generated_id, generated_id.length
       generated_id = generated_id + params[:data_type]
-      puts generated_id, generated_id.length
       @manager = JsonManager.new("https://api.bls.gov/publicAPI/v2/timeseries/data/")
       parsed_json = JSON(@manager.apiCall(generated_id, 2010, 2020))
       @reply = parsed_json
+      IO.write("csv_files/temp.csv", parsed_json)
+
       session[:state_code] = params[:state_code]
       session[:area_code] = params[:area_code]
       session[:supersector] = params[:supersector]

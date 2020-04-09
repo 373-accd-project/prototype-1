@@ -15,6 +15,8 @@ class OesController < ApplicationController
       @manager = JsonManager.new("https://api.bls.gov/publicAPI/v2/timeseries/data/")
       parsed_json = JSON(@manager.apiCall(generated_id, 2010, 2020))
       @reply = parsed_json
+      IO.write("csv_files/temp.csv", parsed_json)
+
       session[:seasonal_adjustment_code] = params[:seasonal_adjustment_code]
       session[:occupation_code] = params[:occupation_code]
       session[:industry_code] = params[:industry_code]
@@ -29,7 +31,7 @@ class OesController < ApplicationController
     @area_codes = CSV.read('csv_files/oes/area_titles.csv')[1..]
     @area_type_codes = CSV.read('csv_files/oes/area_type_titles.csv')[1..]
     @data_type_codes = CSV.read('csv_files/oes/data_type_titles.csv')[1..]
-    
+
     for seasonal_adjustment_code in @seasonal_adjustment_codes do
       tmp = seasonal_adjustment_code[0]
       seasonal_adjustment_code[0] = seasonal_adjustment_code[1]
@@ -83,4 +85,3 @@ class OesController < ApplicationController
     send_data file, :type => 'text/csv; charset=iso-8859-1; header=present', :filename => "data.csv"
   end
 end
-

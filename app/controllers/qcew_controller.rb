@@ -5,15 +5,19 @@ require 'csv'
 class QcewController < ApplicationController
   def index
     if params.has_key?(:year)
-      generated_id = "ENU" + params[:area_code]
-      generated_id = generated_id + params[:datatype]
-      generated_id = generated_id + params[:size]
-      generated_id = generated_id + params[:ownership]
-      generated_id = generated_id + params[:industry]
-      @manager = JsonManager.new("https://api.bls.gov/publicAPI/v2/timeseries/data/")
-      parsed_json = JSON(@manager.apiCall(generated_id, 2010, 2020))
-      @reply = parsed_json
+      generated_ids = generate_ids("ENU", [params[:area_code], params[:datatype], params[:size], params[:ownership], params[:industry]])
+      puts generated_ids
+      IO.write("csv_files/temp.csv", "")
 
+      @reply = []
+      @manager = JsonManager.new("https://api.bls.gov/publicAPI/v2/timeseries/data/")
+      generated_ids.each do |gid|
+        result = JSON(@manager.apiCall(gid, 2010, 2020))
+        @reply.push(result)
+        IO.write("csv_files/temp.csv", result, mode: 'a')
+        IO.write("csv_files/temp.csv", "\n", mode: 'a')
+      end
+      @generated_ids = generated_ids
       # Store filters in session hash so that any subsequent downlaod requests
       # have access to them
       session[:area_code] = params[:area_code]
@@ -29,7 +33,7 @@ class QcewController < ApplicationController
     @industries = CSV.read('csv_files/qcew/industry_titles.csv')[1..]
     @ownership = CSV.read('csv_files/qcew/ownership_titles.csv')[1..]
     @sizes = CSV.read('csv_files/qcew/size_titles.csv')[1..]
-    
+
     # Switch the key-value pairs to make sure that the correct one appears
     # in the drop down for each filter
     for area_code in @area_codes do
@@ -58,19 +62,57 @@ class QcewController < ApplicationController
       size[1] = tmp
     end
   end
-  def download_csv
-    @manager = JsonManager.new("https://api.bls.gov/publicAPI/v2/timeseries/data/")
-    generated_id = "ENU" + session[:area_code] + session[:datatype] + session[:size] + session[:ownership] + session[:industry]
-    puts generated_id
-    parsed_json = JSON(@manager.apiCall(:generated_id, 2010, 2020))
-    @reply = parsed_json['Results']['series'][0]['data']
 
-    # Create a file that can be sent to the client browser as a download
-    file = CSV.generate do |csv|
-      @reply.each do |hash|
-        csv << hash.values
-      end
+  private
+  def generate_ids(prefix, arrays)
+    p arrays
+
+    # if there is an empty parameter, there are no permutations
+    if arrays.select { |e| e.length == 0 }.length > 0
+      return []
     end
-    send_data file, :type => 'text/csv; charset=iso-8859-1; header=present', :filename => "data.csv"
+
+    all_combos = []
+
+    # counters for each parameter
+    counts = arrays.map { |e| 0 }
+    combo = ""
+    # while there are combos left to try
+    while more_combos(counts, arrays)
+      # create the combo from the counters
+      combo = prefix + arrays.each_with_index.map {|a, i| a[counts[i]]}.join("")
+
+      # push to result set and increment
+      all_combos.push(combo)
+      combo = ""
+      counts = increment_counts(counts, arrays)
+    end
+    return all_combos
   end
+
+  def more_combos(counts, arrays)
+    return counts[0] < arrays[0].length
+  end
+
+  def increment_counts(counts, arrays)
+    # start at last count and move down
+    i = counts.length - 1
+    while (i >= 0)
+
+      # if a count can be incremented, increment and set the following to 0
+      if (counts[i] + 1) % arrays[i].length != 0
+        counts[i] += 1
+        j = i + 1
+        while j < counts.length
+          counts[j] = 0
+          j += 1
+        end
+        return counts
+      end
+      i -= 1
+    end
+    counts[0] += 1
+    return counts
+  end
+
 end

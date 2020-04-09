@@ -14,6 +14,8 @@ class NationaleheController < ApplicationController
       @manager = JsonManager.new("https://api.bls.gov/publicAPI/v2/timeseries/data/")
       parsed_json = JSON(@manager.apiCall(generated_id, 2010, 2020))
       @reply = parsed_json
+      IO.write("csv_files/temp.csv", parsed_json)
+
       session[:supersector] = params[:supersector]
       session[:industry] = params[:industry]
       session[:data_type] = params[:data_type]

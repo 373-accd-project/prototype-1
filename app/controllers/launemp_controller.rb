@@ -10,6 +10,7 @@ class LaunempController < ApplicationController
       @manager = JsonManager.new("https://api.bls.gov/publicAPI/v2/timeseries/data/")
       parsed_json = JSON(@manager.apiCall(generated_id, 2010, 2020))
       @reply = parsed_json
+      IO.write("csv_files/temp.csv", parsed_json)
 
       # Store filters in session hash so that any subsequent downlaod requests
       # have access to them
@@ -24,7 +25,7 @@ class LaunempController < ApplicationController
     @area_types = CSV.read('csv_files/la_unemployment/la.area_type.txt', {col_sep: "\t"})[1..]
     @areas = CSV.read('csv_files/la_unemployment/la.area.txt', {col_sep: "\t"})[1..]
     @measures = CSV.read('csv_files/la_unemployment/la.measure.txt', {col_sep: "\t"})[1..]
-    
+
     # Switch the key-value pairs to make sure that the correct one appears
     # in the drop down for each filter
     for area_type in @area_types do
