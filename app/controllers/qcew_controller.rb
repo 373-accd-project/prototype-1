@@ -5,8 +5,8 @@ require 'csv'
 class QcewController < ApplicationController
   def index
     if params.has_key?(:year)
+      p params
       generated_ids = generate_ids("ENU", [params[:area_code], params[:datatype], params[:size], params[:ownership], params[:industry]])
-      puts generated_ids
       IO.write("csv_files/temp.csv", "")
 
       @reply = []
@@ -65,7 +65,6 @@ class QcewController < ApplicationController
 
   private
   def generate_ids(prefix, arrays)
-    p arrays
 
     # if there is an empty parameter, there are no permutations
     if arrays.select { |e| e.length == 0 }.length > 0
