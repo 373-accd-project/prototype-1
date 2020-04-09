@@ -6,16 +6,24 @@ class QcewController < ApplicationController
   def index
     if params.has_key?(:year)
       p params
+
+      # generate all possible series ids
       generated_ids = generate_ids("ENU", [params[:area_code], params[:datatype], params[:size], params[:ownership], params[:industry]])
+
+      # make the download file blank
       IO.write("csv_files/temp.csv", "")
 
+      # populate the results of the api calls one by one
+      # write them to the download file simultaneously
       @reply = []
       @manager = JsonManager.new("https://api.bls.gov/publicAPI/v2/timeseries/data/")
       generated_ids.each do |gid|
         result = JSON(@manager.apiCall(gid, 2010, 2020))
         @reply.push(result)
-        IO.write("csv_files/temp.csv", result, mode: 'a')
-        IO.write("csv_files/temp.csv", "\n", mode: 'a')
+        formatted_result = csv_format(result)
+        IO.write("csv_files/temp.csv", gid + "\n", mode: 'a')
+        IO.write("csv_files/temp.csv", formatted_result, mode: 'a')
+        IO.write("csv_files/temp.csv", "\n\n", mode: 'a')
       end
       @generated_ids = generated_ids
       # Store filters in session hash so that any subsequent downlaod requests
@@ -112,6 +120,23 @@ class QcewController < ApplicationController
     end
     counts[0] += 1
     return counts
+  end
+
+  def csv_format(result)
+    p result["Results"]["series"][0]["data"].length
+    if result["Results"]["series"][0]["data"].length == 0
+      return ""
+    else
+      p result["Results"]["series"][0]["data"][0].values.join(",")
+    end
+    headers = result["Results"]["series"][0]["data"][0].keys.join(",") + "\n"
+    csv_string = ""
+    csv_string = CSV.generate do |csv|
+      result["Results"]["series"][0]["data"].each do |row|
+        csv << row.values
+      end
+    end
+    return (headers << csv_string)
   end
 
 end
