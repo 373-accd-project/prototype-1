@@ -5,15 +5,15 @@ require 'csv'
 class OesController < ApplicationController
   def index
     if params.has_key?(:year)
+      p params
 
       # generate all possible series ids
-      generate_ids = generate_ids(params[:seasonal_adjustment_code], params[:area_type_code], params[:area_code], params[:industry_code], params[:occupation_code], params[:data_type_code])
+      generated_ids = generate_ids("OES", [params[:seasonal_adjustment_code], params[:area_type_code], params[:area_code], params[:industry_code], params[:occupation_code], params[:data_type_code]])
       
       # make the download file blank
-      IO.write("csv_files/temp.csv", parsed_json)
+      IO.write("csv_files/temp.csv", "")
 
-
-            # populate the results of the api calls one by one
+      # populate the results of the api calls one by one
       # write them to the download file simultaneously
       @reply = []
       @manager = JsonManager.new("https://api.bls.gov/publicAPI/v2/timeseries/data/")
@@ -26,7 +26,6 @@ class OesController < ApplicationController
         IO.write("csv_files/temp.csv", "\n\n", mode: 'a')
       end
       @generated_ids = generated_ids
-
       # Store filters in session hash so that any subsequent downlaod requests
       # have access to them
       session[:seasonal_adjustment_code] = params[:seasonal_adjustment_code]
@@ -45,6 +44,8 @@ class OesController < ApplicationController
     @area_type_codes = CSV.read('csv_files/oes/area_type_titles.csv')[1..]
     @data_type_codes = CSV.read('csv_files/oes/data_type_titles.csv')[1..]
 
+    # Switch the key-value pairs to make sure that the correct one appears
+    # in the drop down for each filter
     for seasonal_adjustment_code in @seasonal_adjustment_codes do
       tmp = seasonal_adjustment_code[0]
       seasonal_adjustment_code[0] = seasonal_adjustment_code[1]
@@ -80,23 +81,6 @@ class OesController < ApplicationController
       data_type_code[0] = data_type_code[1]
       data_type_code[1] = tmp
     end
-  end
-
-  def download_csv
-    @manager = JsonManager.new("https://api.bls.gov/publicAPI/v2/timeseries/data/")
-    generated_id = "OE" + session[:seasonal_adjustment_code] + session[:area_type_code] + session[:area_code] + session[:industry_code] + session[:occupation_code] + session[:data_type_code]
-    puts generated_id
-    parsed_json = JSON(@manager.apiCall(:generated_id, 2010, 2020))
-    @reply = parsed_json['Results']['series'][0]['data']
-    file = CSV.generate do |csv|
-      @reply.each do |hash|
-        csv << hash.values
-      end
-    end
-    # p "Hello!"
-    # p file
-    # send_data('Hello, pretty world :(', :type => 'text/plain', :disposition => 'attachment', :filename => 'hello.txt')
-    send_data file, :type => 'text/csv; charset=iso-8859-1; header=present', :filename => "data.csv"
   end
 
   private
@@ -167,5 +151,4 @@ class OesController < ApplicationController
     return (headers << csv_string)
   end
 
-end
 end
