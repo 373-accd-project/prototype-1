@@ -123,19 +123,22 @@ class QcewController < ApplicationController
   end
 
   def csv_format(result)
-    p result["Results"]["series"][0]["data"].length
+    # weed out empty series
     if result["Results"]["series"][0]["data"].length == 0
       return ""
-    else
-      p result["Results"]["series"][0]["data"][0].values.join(",")
     end
+    # get the column headers
     headers = result["Results"]["series"][0]["data"][0].keys.join(",") + "\n"
     csv_string = ""
+
+    # generate csv by taking all the values
     csv_string = CSV.generate do |csv|
       result["Results"]["series"][0]["data"].each do |row|
         csv << row.values
       end
     end
+
+    # return headers concatenated with all values
     return (headers << csv_string)
   end
 
