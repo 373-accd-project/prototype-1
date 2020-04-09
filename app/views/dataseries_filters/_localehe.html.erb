@@ -10,7 +10,9 @@
   <h5>Input year (YYYY): &nbsp;<%= text_field_tag(:year) %></h5>
   <h5><%= submit_tag("Submit", :style => "height:50px;width:100px;background-color:grey;color:white;", :class => "btn float-left" ) %></h5>
 <% end %>
+
 <p class = "float-left">&nbsp;&nbsp;&nbsp;</p>
+
 <%= form_tag("/download_csv") do %>
   <%= submit_tag("Download", :style => "height:50px; width:200px;background-color:green;color:white;", :class => "btn float-left") %>
 <% end %>
