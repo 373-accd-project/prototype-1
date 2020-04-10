@@ -35,7 +35,6 @@ class OesController < ApplicationController
       session[:area_type_code] = params[:area_type_code]
       session[:data_type_code] = params[:data_type_code]
     end
-
     # Read the fitlers from the CSV file
     @seasonal_adjustment_codes = CSV.read('csv_files/oes/seasonal_adjustment_titles.csv')[1..]
     @occupation_codes = CSV.read('csv_files/oes/occupation_titles.csv')[1..]
