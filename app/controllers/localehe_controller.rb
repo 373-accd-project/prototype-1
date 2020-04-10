@@ -10,8 +10,9 @@ class LocaleheController < ApplicationController
     if params.has_key?(:year)
 
 
-      generated_ids = generate_ids("SMU", [params[:state_code], params[:area_code],params[:industry],params[:data_type]])
+      generated_ids = generate_ids("SM", [params[:seasonal_adjustment_code], params[:state_code], params[:area_code], params[:industry], params[:data_type]])
       #params[:supersector]
+      # params[:seasonal_adjustment_code],
 
       # make the download file blank
       IO.write("csv_files/temp.csv", "")
@@ -31,6 +32,7 @@ class LocaleheController < ApplicationController
       @generated_ids = generated_ids
       # Store filters in session hash so that any subsequent downlaod requests
       # have access to them
+      session[:seasonal_adjustment_code] = params[:seasonal_adjustment_code]
       session[:state_code] = params[:state_code]
       session[:area_code] = params[:area_code]
       session[:supersector] = params[:supersector]
@@ -38,6 +40,7 @@ class LocaleheController < ApplicationController
       session[:data_type] = params[:data_type]
     end
     # Read the fitlers from the CSV file
+    @seasonal_adjustment_codes = CSV.read('csv_files/localehe/seasonal_adjustment_codes.csv')[1..]
     @state_codes = CSV.read('csv_files/localehe/state_codes.csv')[1..]
     @area_codes = CSV.read('csv_files/localehe/area_codes.csv')[1..]
     @supersectors = CSV.read('csv_files/localehe/supersector_codes.csv')[1..]
@@ -46,6 +49,11 @@ class LocaleheController < ApplicationController
     @state_initials = CSV.read('csv_files/localehe/state_initials.csv')[1..]
     @state_initials.to_h
 
+    for seasonal_adjustment_code in @seasonal_adjustment_codes do
+      tmp = seasonal_adjustment_code[0]
+      seasonal_adjustment_code[0] = seasonal_adjustment_code[1]
+      seasonal_adjustment_code[1] = tmp
+    end
     for area_code in @area_codes do
       tmp = area_code[0]
       area_code[0] = area_code[1]

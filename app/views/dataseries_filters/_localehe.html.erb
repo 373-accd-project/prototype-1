@@ -1,6 +1,7 @@
 <br/>
 <%= form_tag("/localehe") do %>
-  <h5>Pick state code: &nbsp;<%= select_tag(:state_code, options_for_select(@state_codes)) %><br/><br/></h5>
+  <h5>Pick seasonal adjustment code: &nbsp;<%= select_tag(:seasonal_adjustment_code, options_for_select(@seasonal_adjustment_codes),  multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
+  <h5>Pick state code: &nbsp;<%= select_tag(:state_code, options_for_select(@state_codes), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
   <%#= state_initials = @state_initials[:state_code] %>
   <%#= filtered_areas = @area_codes.select{ |area| (area.include? state_initials) || area == "Statewide" } %>
   <h5>Pick area code: &nbsp;<%= select_tag(:area_code, options_for_select(@area_codes),  multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
