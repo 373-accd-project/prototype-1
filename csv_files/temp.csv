@@ -124,3 +124,129 @@ year,period,periodName,latest,value,footnotes
 2010,M01,January,12.3,[{}]
 
 
+LAUST020000000000003
+year,period,periodName,latest,value,footnotes
+2020,M02,February,true,5.9,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+2020,M01,January,6.6,[{}]
+2019,M12,December,6.1,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2019,M11,November,6.1,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2019,M10,October,5.7,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2019,M09,September,5.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2019,M08,August,5.3,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2019,M07,July,5.6,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2019,M06,June,6.3,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2019,M05,May,6.0,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2019,M04,April,6.3,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2019,M03,March,6.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2019,M02,February,7.0,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2019,M01,January,6.9,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2018,M12,December,6.3,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2018,M11,November,6.2,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2018,M10,October,5.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2018,M09,September,5.7,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2018,M08,August,5.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2018,M07,July,5.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2018,M06,June,6.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2018,M05,May,6.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2018,M04,April,6.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2018,M03,March,7.2,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2018,M02,February,7.6,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2018,M01,January,7.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2017,M12,December,7.0,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2017,M11,November,6.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2017,M10,October,6.4,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2017,M09,September,6.3,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2017,M08,August,6.1,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2017,M07,July,6.3,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2017,M06,June,6.9,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2017,M05,May,6.9,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2017,M04,April,7.2,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2017,M03,March,7.6,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2017,M02,February,7.9,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2017,M01,January,7.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2016,M12,December,7.1,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2016,M11,November,6.9,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2016,M10,October,6.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2016,M09,September,6.3,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2016,M08,August,6.0,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2016,M07,July,6.2,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2016,M06,June,6.9,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2016,M05,May,6.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2016,M04,April,7.0,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2016,M03,March,7.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2016,M02,February,7.7,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2016,M01,January,7.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2015,M12,December,6.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2015,M11,November,6.6,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2015,M10,October,6.2,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2015,M09,September,5.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2015,M08,August,5.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2015,M07,July,5.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2015,M06,June,6.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2015,M05,May,6.4,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2015,M04,April,6.7,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2015,M03,March,7.2,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2015,M02,February,7.4,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2015,M01,January,7.3,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+2014,M12,December,6.6,[{}]
+2014,M11,November,6.6,[{}]
+2014,M10,October,6.2,[{}]
+2014,M09,September,6.2,[{}]
+2014,M08,August,6.0,[{}]
+2014,M07,July,6.3,[{}]
+2014,M06,June,7.0,[{}]
+2014,M05,May,6.9,[{}]
+2014,M04,April,7.2,[{}]
+2014,M03,March,7.7,[{}]
+2014,M02,February,8.0,[{}]
+2014,M01,January,7.8,[{}]
+2013,M12,December,7.0,[{}]
+2013,M11,November,7.0,[{}]
+2013,M10,October,6.6,[{}]
+2013,M09,September,6.2,[{}]
+2013,M08,August,5.9,[{}]
+2013,M07,July,6.3,[{}]
+2013,M06,June,7.1,[{}]
+2013,M05,May,7.0,[{}]
+2013,M04,April,7.2,[{}]
+2013,M03,March,7.6,[{}]
+2013,M02,February,8.0,[{}]
+2013,M01,January,8.0,[{}]
+2012,M12,December,7.2,[{}]
+2012,M11,November,6.9,[{}]
+2012,M10,October,6.4,[{}]
+2012,M09,September,6.3,[{}]
+2012,M08,August,6.1,[{}]
+2012,M07,July,6.5,[{}]
+2012,M06,June,7.2,[{}]
+2012,M05,May,7.1,[{}]
+2012,M04,April,7.5,[{}]
+2012,M03,March,8.0,[{}]
+2012,M02,February,8.3,[{}]
+2012,M01,January,8.2,[{}]
+2011,M12,December,7.8,[{}]
+2011,M11,November,7.4,[{}]
+2011,M10,October,7.0,[{}]
+2011,M09,September,6.7,[{}]
+2011,M08,August,6.6,[{}]
+2011,M07,July,6.8,[{}]
+2011,M06,June,7.6,[{}]
+2011,M05,May,7.4,[{}]
+2011,M04,April,7.9,[{}]
+2011,M03,March,8.4,[{}]
+2011,M02,February,8.8,[{}]
+2011,M01,January,8.7,[{}]
+2010,M12,December,8.0,[{}]
+2010,M11,November,7.7,[{}]
+2010,M10,October,7.3,[{}]
+2010,M09,September,7.0,[{}]
+2010,M08,August,6.8,[{}]
+2010,M07,July,7.0,[{}]
+2010,M06,June,7.8,[{}]
+2010,M05,May,7.8,[{}]
+2010,M04,April,8.3,[{}]
+2010,M03,March,8.9,[{}]
+2010,M02,February,9.1,[{}]
+2010,M01,January,8.9,[{}]
+
+
