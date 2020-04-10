@@ -124,9 +124,6 @@ year,period,periodName,latest,value,footnotes
 2010,M01,January,1858.3,[{}]
 
 
-SMU01000000000000002
-
-
 SMU02000000000000001
 year,period,periodName,latest,value,footnotes
 2020,M02,February,true,317.3,"[{""code""=>""P"", ""text""=>""Preliminary""}]"
@@ -251,8 +248,5 @@ year,period,periodName,latest,value,footnotes
 2010,M03,March,309.4,[{}]
 2010,M02,February,307.0,[{}]
 2010,M01,January,303.0,[{}]
-
-
-SMU02000000000000002
 
 

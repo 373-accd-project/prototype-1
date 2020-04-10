@@ -12,7 +12,7 @@ class JsonManager
                           payload: {seriesid: seriesid,
                             startyear: '2010',
                             endyear: '2020',
-                            registrationKey: "8d6999649c42476c914b6d535d678ef5"}, 
+                            registrationKey: "37b0d1df14db4d78be9f853d2ad7db40"}, 
                           open_timeout: 240)
     # RestClient.post(@url, :open_timeout => 30,
     #                         {'seriesid' => seriesid,
