@@ -45,17 +45,14 @@ class QcewController < ApplicationController
      
      # Differentiating between 2+3 digit , 4 digit industries + NAICS
      @naics_industries = []
-     @four_industries = []
-     @twothree_industries = []
+     @super_industries = []
 
      for industry in @industries do
       type = industry[1].split(" ")[0]
       if type[0..4] == "NAICS" then
         @naics_industries.append(industry)
-      elsif type.length == 4 then
-        @four_industries.append(industry)
       else 
-        @twothree_industries.append(industry)
+        @super_industries.append(industry)
       end
     end
 

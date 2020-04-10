@@ -1,16 +1,46 @@
 <br/>
 <%= form_tag("/qcew") do %>
+
+
+  <!-- Button trigger modal -->
+  <h5>Pick Area: &nbsp; <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Open Options
+  </button></h5>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Pick Area</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+      PUT THE CHECKBOXES IN HERE
+        
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
   <h5>Pick Area: &nbsp; <%= select_tag(:area_code, options_for_select(@area_codes), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
   <h5>Pick Data Type: &nbsp;<%= select_tag(:datatype, options_for_select(@data_types), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
-  <h5>Only select <u><b> one </b></u> industry type to choose from: &nbsp;<br/></h5>
-  <h6>&nbsp;&nbsp;- Pick from Two to Three Digit Industries: &nbsp;<%= select_tag(:industry, options_for_select(@twothree_industries), multiple: true, :style => "font-size:10px;" ) %><br/></h6>
-  <h6>&nbsp;&nbsp;- Pick from Four Digit Industries: &nbsp;<%= select_tag(:industry, options_for_select(@four_industries), multiple: true, :style => "font-size:10px;" ) %><br/></h6>
-  <h6>&nbsp;&nbsp;- Pick from NAICS Industries: &nbsp;<%= select_tag(:industry, options_for_select(@naics_industries), multiple: true, :style => "font-size:10px;" ) %><br/><br/></h6>
+  <h5>Pick from Supersector Industries: &nbsp;<%= select_tag(:industry, options_for_select(@super_industries), multiple: true, :style => "font-size:10px;" ) %><br/></h6>
+  <h5>Pick from NAICS Industries: &nbsp;<%= select_tag(:industry, options_for_select(@naics_industries), multiple: true, :style => "font-size:10px;" ) %><br/><br/></h6>
   <h5>Pick Ownership: &nbsp;<%= select_tag(:ownership, options_for_select(@ownership), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
   <h5>Pick Establishment Size: &nbsp;<%= select_tag(:size, options_for_select(@sizes), multiple: true, :style => "font-size:12px;") %><br/></br></h5>
   <h5>Input Year (YYYY): &nbsp;<%= text_field_tag(:year) %> </h4><br/>
 
-
+  
   <%= submit_tag("Submit", :style => "height:50px;width:100px;background-color:grey;color:white;", :class => "btn float-left" )%>
   <% end %>
   <p class = "float-left">&nbsp;&nbsp;&nbsp;</p>
