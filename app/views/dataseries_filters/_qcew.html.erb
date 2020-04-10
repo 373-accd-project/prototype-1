@@ -2,7 +2,10 @@
 <%= form_tag("/qcew") do %>
   <h5>Pick Area: &nbsp; <%= select_tag(:area_code, options_for_select(@area_codes), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
   <h5>Pick Data Type: &nbsp;<%= select_tag(:datatype, options_for_select(@data_types), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
-  <h5>Pick Industry: &nbsp;<%= select_tag(:industry, options_for_select(@industries), multiple: true, :style => "font-size:12px;" ) %><br/><br/></h5>
+  <h5>Only select <u><b> one </b></u> industry type to choose from: &nbsp;<br/></h5>
+  <h6>&nbsp;&nbsp;- Pick from Two to Three Digit Industries: &nbsp;<%= select_tag(:industry, options_for_select(@twothree_industries), multiple: true, :style => "font-size:10px;" ) %><br/></h6>
+  <h6>&nbsp;&nbsp;- Pick from Four Digit Industries: &nbsp;<%= select_tag(:industry, options_for_select(@four_industries), multiple: true, :style => "font-size:10px;" ) %><br/></h6>
+  <h6>&nbsp;&nbsp;- Pick from NAICS Industries: &nbsp;<%= select_tag(:industry, options_for_select(@naics_industries), multiple: true, :style => "font-size:10px;" ) %><br/><br/></h6>
   <h5>Pick Ownership: &nbsp;<%= select_tag(:ownership, options_for_select(@ownership), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
   <h5>Pick Establishment Size: &nbsp;<%= select_tag(:size, options_for_select(@sizes), multiple: true, :style => "font-size:12px;") %><br/></br></h5>
   <h5>Input Year (YYYY): &nbsp;<%= text_field_tag(:year) %> </h4><br/>

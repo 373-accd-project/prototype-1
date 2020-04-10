@@ -42,6 +42,23 @@ class QcewController < ApplicationController
     @ownership = CSV.read('csv_files/qcew/ownership_titles.csv')[1..]
     @sizes = CSV.read('csv_files/qcew/size_titles.csv')[1..]
 
+     
+     # Differentiating between 2+3 digit , 4 digit industries + NAICS
+     @naics_industries = []
+     @four_industries = []
+     @twothree_industries = []
+
+     for industry in @industries do
+      type = industry[1].split(" ")[0]
+      if type[0..4] == "NAICS" then
+        @naics_industries.append(industry)
+      elsif type.length == 4 then
+        @four_industries.append(industry)
+      else 
+        @twothree_industries.append(industry)
+      end
+    end
+
     # Switch the key-value pairs to make sure that the correct one appears
     # in the drop down for each filter
     for area_code in @area_codes do
