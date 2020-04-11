@@ -38,6 +38,11 @@ class NationaleheController < ApplicationController
     @data_types = CSV.read('csv_files/nationalehe/data_type_codes.csv')[1..]
     @state_initials.to_h
 
+    # Hashmaps to create the accordian filters
+    @ss_hashmap = Hash[@supersectors.map {|key, value| [key, value]}]
+    @data_hashmap = Hash[@data_types.map {|key, value| [key, value]}] 
+    @industries_hashmap = Hash[@industries.map {|key, value| [key, value]}] 
+
     # Switch the key-value pairs to make sure that the correct one appears
     # in the drop down for each filter
     for data_type in @data_types do

@@ -43,6 +43,15 @@ class OesController < ApplicationController
     @area_type_codes = CSV.read('csv_files/oes/area_type_titles.csv')[1..]
     @data_type_codes = CSV.read('csv_files/oes/data_type_titles.csv')[1..]
 
+    # Hashmaps to create the accordian filters
+    @seasonal_adjustment_hashmap = Hash[@seasonal_adjustment_codes.map {|key, value| [key, value]}]
+    @occupation_hashmap = Hash[@occupation_codes.map {|key, value| [key, value]}] 
+    @industry_hashmap = Hash[@industry_codes.map {|key, value| [key, value]}] 
+    @area_hashmap = Hash[@area_codes.map {|key, value| [key, value]}]
+    @area_type_hashmap = Hash[@area_type_codes.map {|key, value| [key, value]}]
+    @data_type_hashmap = Hash[@data_type_codes.map {|key, value| [key, value]}]
+
+
     # Switch the key-value pairs to make sure that the correct one appears
     # in the drop down for each filter
     for seasonal_adjustment_code in @seasonal_adjustment_codes do

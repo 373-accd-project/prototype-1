@@ -26,7 +26,15 @@
     <div class="card-header collapsed" data-toggle="collapse" role="tab">
       <a data-toggle="collapse" data-parent="#accordionEx" href="#<%= name %>" aria-expanded="false" aria-controls="collapseOne1">
         <h5 class="mb-0">
-          <%= series['Results']['series'][0]['seriesID'] %>
+        
+          <%= series['Results']['series'][0]['seriesID']%> - <br/>
+          <%= @seasonal_adjustment_hashmap[params[:seasonal_adjustment_code][if (count-1) >= params[:seasonal_adjustment_code].length; 0 else (count-1) end]]%><br/>
+          <%= @occupation_hashmap[params[:occupation_code][if (count-1) >= params[:occupation_code].length; 0 else (count-1) end]]%><br/>
+          <%= @industry_hashmap[params[:industry_code][if (count-1) >= params[:industry_code].length; 0 else (count-1) end]]%><br/>
+          <%= @area_hashmap[params[:area_code][if (count-1) >= params[:area_code].length; 0 else (count-1) end]]%><br/>
+          <%= @area_type_hashmap[params[:area_type_code][if (count-1) >= params[:area_type_code].length; 0 else (count-1) end]]%><br/>
+          <%= @data_type_hashmap[params[:data_type_code][if (count-1) >= params[:data_type_code].length; 0 else (count-1) end]]%><br/>
+
         </h5>
       </a>
     </div>
