@@ -37,13 +37,20 @@ class QcewController < ApplicationController
 
     # Read the fitlers from the CSV file
     @area_codes = CSV.read('csv_files/qcew/area_titles.csv')[1..]
-    @data_types = CSV.read('csv_files/qcew/datatype_titles.csv')[1..]
-    @industries = CSV.read('csv_files/qcew/industry_titles.csv')[1..]
+    @data_types = CSV.read('csv_files/qcew/datatype_titles.csv')[1..]    
+    @industries = CSV.read('csv_files/qcew/industry_titles.csv')[1..]    
     @ownership = CSV.read('csv_files/qcew/ownership_titles.csv')[1..]
     @sizes = CSV.read('csv_files/qcew/size_titles.csv')[1..]
 
-     
-     # Differentiating between 2+3 digit , 4 digit industries + NAICS
+    # Hashmaps to create the accordian filters
+    @area_hashmap = Hash[@area_codes.map {|key, value| [key, value]}]
+    @data_hashmap = Hash[@data_types.map {|key, value| [key, value]}] 
+    @industries_hashmap = Hash[@industries.map {|key, value| [key, value]}] 
+    @ownership_hashmap = Hash[@ownership.map {|key, value| [key, value]}]
+    @sizes_hashmap = Hash[@sizes.map {|key, value| [key, value]}] 
+
+    # <%= @area_codes[] %>
+     # Differentiating between Supersectors + NAICS
      @naics_industries = []
      @super_industries = []
 

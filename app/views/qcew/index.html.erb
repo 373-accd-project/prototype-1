@@ -26,9 +26,14 @@
     <div class="card-header collapsed" data-toggle="collapse" role="tab">
       <a data-toggle="collapse" data-parent="#accordionEx" href="#<%= name %>" aria-expanded="false" aria-controls="collapseOne1">
         <h5 class="mb-0">
-          <%= series['Results']['series'][0]['seriesID'] %>
+          <%= series['Results']['series'][0]['seriesID']%> - <br/>
 
-          ADD THE FILTER NAMES HERE
+          <%= @area_hashmap[params[:area_code][if (count-1) >= params[:area_code].length; 0 else (count-1) end]]%><br/>
+          <%= @data_hashmap[params[:datatype][if (count-1) >= params[:datatype].length; 0 else (count-1) end]]%><br/>
+          <%= @industries_hashmap[params[:industry][if (count-1) >= params[:industry].length; 0 else (count-1) end]]%><br/>
+          <%= @ownership_hashmap[params[:ownership][if (count-1) >= params[:ownership].length; 0 else (count-1) end]]%><br/>
+          <%= @sizes_hashmap[params[:size][if (count-1) >= params[:size].length; 0 else (count-1) end]]%><br/>
+
         </h5>
       </a>
     </div>
