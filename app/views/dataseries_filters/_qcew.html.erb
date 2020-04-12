@@ -3,8 +3,8 @@
 
 
   <!-- Button trigger modal -->
-  <h5>Pick Area: &nbsp; <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Open Options
+  <h5>Pick Area: &nbsp; <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+    Click to Open for Options
   </button></h5>
 
   <!-- Modal -->
@@ -18,13 +18,15 @@
           </button>
         </div>
         <div class="modal-body">
-
-      THE CHECKBOXES
       <div class="container-fluid">
       <div class="row">
+
           <% @area_codes.each do |area| %>
+            <% if area[0] == "U.S. TOTAL" then %>
+              &nbsp;<br/><br/>
+            <%end%>
             <div class = "col-4">
-              <%= check_box_tag(:area_code, area[1] , false, {:multiple => true}) %>&nbsp;&nbsp;<%=area[0]%>
+              <input type="checkbox" name="area_code[]" value="<%= area[1] %>">&nbsp;&nbsp;&nbsp;<%= area[0]%> </input>
             </div> 
           <% end %>
       </div>
@@ -38,9 +40,6 @@
     </div>
   </div>
 
-
-
-  <h5>Pick Areas: &nbsp; <%= select_tag(:area_code, options_for_select(@area_codes), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
   <h5>Pick Data Types: &nbsp;<%= select_tag(:datatype, options_for_select(@data_types), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
   <h5>Pick from Supersector Industries: &nbsp;<%= select_tag(:industry, options_for_select(@super_industries), multiple: true, :style => "font-size:10px;" ) %><br/></h6>
   <h5>Pick from NAICS Industries: &nbsp;<%= select_tag(:industry, options_for_select(@naics_industries), multiple: true, :style => "font-size:10px;" ) %><br/><br/></h6>
