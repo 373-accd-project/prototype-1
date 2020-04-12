@@ -1,8 +1,8 @@
 <br/>
 <%= form_tag("/nationalehe") do %>
-  <h5>Pick Supersectors: &nbsp;<%= select_tag(:supersector, options_for_select(@supersectors), multiple: true,  :style => "font-size:12px;") %><br/><br/></h5>
-  <h5>Pick industries: &nbsp;<%= select_tag(:industry, options_for_select(@industries), multiple: true,  :style => "font-size:12px;") %><br/><br/></h5>
-  <h5>Pick data types: &nbsp;<%= select_tag(:data_type, options_for_select(@data_types), multiple: true,  :style => "font-size:12px;") %><br/><br/></h5>
+  <h5>Pick Seasonal Adjustment: &nbsp; <%= select_tag(:seasonal_adjustment_code, options_for_select(@seasonal_adjustment_codes), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
+  <h5>Pick Industries: &nbsp;<%= select_tag(:industry, options_for_select(@industries), multiple: true,  :style => "font-size:12px;") %><br/><br/></h5>
+  <h5>Pick Data Types: &nbsp;<%= select_tag(:data_type, options_for_select(@data_types), multiple: true,  :style => "font-size:12px;") %><br/><br/></h5>
   <h5>Input Year (YYYY): &nbsp;<%= text_field_tag(:year) %><br/><br/></h5>
   
 <%= submit_tag( "Submit", :style => "height:50px;width:100px;background-color:grey;color:white;", :class => "btn float-left" ) %>

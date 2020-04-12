@@ -26,7 +26,14 @@
     <div class="card-header collapsed" data-toggle="collapse" role="tab">
       <a data-toggle="collapse" data-parent="#accordionEx" href="#<%= name %>" aria-expanded="false" aria-controls="collapseOne1">
         <h5 class="mb-0">
-          <%= series['Results']['series'][0]['seriesID'] %>
+
+          <%= series['Results']['series'][0]['seriesID']%> - <br/>
+          <%= @sa_hashmap[series['Results']['series'][0]['seriesID'][2]]%><br/>
+          <%= @state_hashmap[series['Results']['series'][0]['seriesID'][3..4]]%><br/>
+          <%= @area_hashmap[series['Results']['series'][0]['seriesID'][5..9]]%><br/>
+          <%= @industries_hashmap[series['Results']['series'][0]['seriesID'][10..17]]%><br/>
+          <%= @data_hashmap[series['Results']['series'][0]['seriesID'][-2..-1]]%><br/>
+
         </h5>
       </a>
     </div>

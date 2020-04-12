@@ -32,13 +32,13 @@
 
 
 
-  <h5>Pick Area: &nbsp; <%= select_tag(:area_code, options_for_select(@area_codes), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
-  <h5>Pick Data Type: &nbsp;<%= select_tag(:datatype, options_for_select(@data_types), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
+  <h5>Pick Areas: &nbsp; <%= select_tag(:area_code, options_for_select(@area_codes), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
+  <h5>Pick Data Types: &nbsp;<%= select_tag(:datatype, options_for_select(@data_types), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
   <h5>Pick from Supersector Industries: &nbsp;<%= select_tag(:industry, options_for_select(@super_industries), multiple: true, :style => "font-size:10px;" ) %><br/></h6>
   <h5>Pick from NAICS Industries: &nbsp;<%= select_tag(:industry, options_for_select(@naics_industries), multiple: true, :style => "font-size:10px;" ) %><br/><br/></h6>
-  <h5>Pick Ownership: &nbsp;<%= select_tag(:ownership, options_for_select(@ownership), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
-  <h5>Pick Establishment Size: &nbsp;<%= select_tag(:size, options_for_select(@sizes), multiple: true, :style => "font-size:12px;") %><br/></br></h5>
-  <h5>Input Year (YYYY): &nbsp;<%= text_field_tag(:year) %> </h4><br/>
+  <h5>Pick Ownerships: &nbsp;<%= select_tag(:ownership, options_for_select(@ownership), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
+  <h5>Pick Establishment Sizes: &nbsp;<%= select_tag(:size, options_for_select(@sizes), multiple: true, :style => "font-size:12px;") %><br/></br></h5>
+  <h5>Input Years (YYYY): &nbsp;<%= text_field_tag(:year) %> </h4><br/>
 
   
   <%= submit_tag("Submit", :style => "height:50px;width:100px;background-color:grey;color:white;", :class => "btn float-left" )%>

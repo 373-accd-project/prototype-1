@@ -8,7 +8,7 @@ class LaunempController < ApplicationController
 
 
       # generate all possible series ids
-      generated_ids = generate_ids("LAU", [params[:area], params[:measure]])
+      generated_ids = generate_ids("LA", [params[:seasonal_adjustment], params[:area], params[:measure]])
       
       # make the download file blank
       IO.write("csv_files/temp.csv", "")
@@ -28,6 +28,7 @@ class LaunempController < ApplicationController
       @generated_ids = generated_ids
       # Store filters in session hash so that any subsequent downlaod requests
       # have access to them
+      session[:seasonal_adjustment] = params[:seasonal_adjustment]
       session[:area_type] = params[:area_type]
       session[:area] = params[:area]
       session[:measure] = params[:measure]
@@ -37,6 +38,7 @@ class LaunempController < ApplicationController
     @area_types = CSV.read('csv_files/la_unemployment/la.area_type.txt', {col_sep: "\t"})[1..]
     @areas = CSV.read('csv_files/la_unemployment/la.area.txt', {col_sep: "\t"})[1..]
     @measures = CSV.read('csv_files/la_unemployment/la.measure.txt', {col_sep: "\t"})[1..]
+    @seasonal_adjustment_codes = CSV.read('csv_files/la_unemployment/seasonal_adjustment_codes.csv')[1..]
 
     # Switch the key-value pairs to make sure that the correct one appears
     # in the drop down for each filter
@@ -59,11 +61,21 @@ class LaunempController < ApplicationController
       measure[0] = measure[1]
       measure[1] = tmp
     end
+    for seasonal_adjustment_code in @seasonal_adjustment_codes do
+      tmp = seasonal_adjustment_code[0]
+      seasonal_adjustment_code[0] = seasonal_adjustment_code[1]
+      seasonal_adjustment_code[1] = tmp
+    end
+
+    # Hashmaps to create the accordian filters
+    @sa_hashmap = Hash[@seasonal_adjustment_codes.map {|key, value| [value, key]}]
+    @area_hashmap = Hash[@areas.map {|key, value| [value, key]}]
+    @measures_hashmap = Hash[@measures.map {|key, value| [value, key]}] 
+
   end
 
   private
   def generate_ids(prefix, arrays)
-
     # if there is an empty parameter, there are no permutations
     if arrays.select { |e| e.length == 0 }.length > 0
       return []

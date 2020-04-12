@@ -1,11 +1,11 @@
 <br/>
 <%= form_tag("/oes") do %>
     <h5>Pick Seasonal Adjustment: &nbsp; <%= select_tag(:seasonal_adjustment_code, options_for_select(@seasonal_adjustment_codes), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
-    <h5>Pick Area Type: &nbsp;<%= select_tag(:area_type_code, options_for_select(@area_type_codes), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
-    <h5>Pick Area: &nbsp;<%= select_tag(:area_code, options_for_select(@area_codes), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
-    <h5>Pick Industry: &nbsp;<%= select_tag(:industry_code, options_for_select(@industry_codes), multiple: true, :style => "font-size:12px;" ) %><br/><br/></h5>
-    <h5>Pick Occupation: &nbsp;<%= select_tag(:occupation_code, options_for_select(@occupation_codes), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
-    <h5>Pick Data Type: &nbsp;<%= select_tag(:data_type_code, options_for_select(@data_type_codes), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
+    <h5>Pick Area Types: &nbsp;<%= select_tag(:area_type_code, options_for_select(@area_type_codes), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
+    <h5>Pick Areas: &nbsp;<%= select_tag(:area_code, options_for_select(@area_codes), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
+    <h5>Pick Industries: &nbsp;<%= select_tag(:industry_code, options_for_select(@industry_codes), multiple: true, :style => "font-size:12px;" ) %><br/><br/></h5>
+    <h5>Pick Occupations: &nbsp;<%= select_tag(:occupation_code, options_for_select(@occupation_codes), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
+    <h5>Pick Data Types: &nbsp;<%= select_tag(:data_type_code, options_for_select(@data_type_codes), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
     <h5>Input Year (YYYY): &nbsp;<%= text_field_tag(:year) %> </h4><br/>
 
     <%= submit_tag("Submit", :style => "height:50px;width:100px;background-color:grey;color:white;", :class => "btn float-left" )%>

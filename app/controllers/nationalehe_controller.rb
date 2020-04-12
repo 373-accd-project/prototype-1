@@ -8,7 +8,7 @@ class NationaleheController < ApplicationController
 
 
       # generate all possible series ids
-      generated_ids = generate_ids("CEU", [params[:industry], params[:data_type]])
+      generated_ids = generate_ids("CE", [params[:seasonal_adjustment_code], params[:industry], params[:data_type]])
       
       # make the download file blank
       IO.write("csv_files/temp.csv", "")
@@ -28,17 +28,20 @@ class NationaleheController < ApplicationController
       @generated_ids = generated_ids
       # Store filters in session hash so that any subsequent downlaod requests
       # have access to them
+      session[:seasonal_adjustment_code] = params[:seasonal_adjustment_code]
       session[:supersector] = params[:supersector]
       session[:industry] = params[:industry]
       session[:data_type] = params[:data_type]
     end
    # Read the fitlers from the CSV file
+    @seasonal_adjustment_codes = CSV.read('csv_files/nationalehe/seasonal_adjustment_codes.csv')[1..]
     @supersectors = CSV.read('csv_files/nationalehe/supersector_codes.csv')[1..]
     @industries = CSV.read('csv_files/nationalehe/industry_codes.csv')[1..]
     @data_types = CSV.read('csv_files/nationalehe/data_type_codes.csv')[1..]
     @state_initials.to_h
 
     # Hashmaps to create the accordian filters
+    @sa_hashmap = Hash[@seasonal_adjustment_codes.map {|key, value| [key, value]}]
     @ss_hashmap = Hash[@supersectors.map {|key, value| [key, value]}]
     @data_hashmap = Hash[@data_types.map {|key, value| [key, value]}] 
     @industries_hashmap = Hash[@industries.map {|key, value| [key, value]}] 
@@ -59,6 +62,11 @@ class NationaleheController < ApplicationController
       tmp = supersector[0]
       supersector[0] = supersector[1]
       supersector[1] = tmp
+    end
+    for sa in @seasonal_adjustment_codes do
+      tmp = sa[0]
+      sa[0] = sa[1]
+      sa[1] = tmp
     end
   end
   

@@ -49,6 +49,13 @@ class LocaleheController < ApplicationController
     @state_initials = CSV.read('csv_files/localehe/state_initials.csv')[1..]
     @state_initials.to_h
 
+    # Hashmaps to create the accordian filters
+    @sa_hashmap = Hash[@seasonal_adjustment_codes.map {|key, value| [key, value]}]
+    @state_hashmap = Hash[@state_codes.map {|key, value| [key, value]}] 
+    @area_hashmap = Hash[@area_codes.map {|key, value| [key, value]}] 
+    @data_hashmap = Hash[@data_types.map {|key, value| [key, value]}] 
+    @industries_hashmap = Hash[@industries.map {|key, value| [key, value]}]     
+
     for seasonal_adjustment_code in @seasonal_adjustment_codes do
       tmp = seasonal_adjustment_code[0]
       seasonal_adjustment_code[0] = seasonal_adjustment_code[1]

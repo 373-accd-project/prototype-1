@@ -27,9 +27,9 @@
       <a data-toggle="collapse" data-parent="#accordionEx" href="#<%= name %>" aria-expanded="false" aria-controls="collapseOne1">
         <h5 class="mb-0">
         <%= series['Results']['series'][0]['seriesID']%> - <br/>
-          <%= @ss_hashmap[params[:supersector][if (count-1) >= params[:supersector].length; 0 else (count-1) end]]%><br/>
-          <%= @data_hashmap[params[:data_type][if (count-1) >= params[:data_type].length; 0 else (count-1) end]]%><br/>
-          <%= @industries_hashmap[params[:industry][if (count-1) >= params[:industry].length; 0 else (count-1) end]]%><br/>
+          <%= @sa_hashmap[series['Results']['series'][0]['seriesID'][2]]%><br/>
+          <%= @industries_hashmap[series['Results']['series'][0]['seriesID'][3..10]]%><br/>
+          <%= @data_hashmap[series['Results']['series'][0]['seriesID'][-2..-1]]%><br/>
         </h5>
       </a>
     </div>

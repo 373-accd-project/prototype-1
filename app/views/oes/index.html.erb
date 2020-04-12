@@ -28,12 +28,12 @@
         <h5 class="mb-0">
         
           <%= series['Results']['series'][0]['seriesID']%> - <br/>
-          <%= @seasonal_adjustment_hashmap[params[:seasonal_adjustment_code][if (count-1) >= params[:seasonal_adjustment_code].length; 0 else (count-1) end]]%><br/>
-          <%= @occupation_hashmap[params[:occupation_code][if (count-1) >= params[:occupation_code].length; 0 else (count-1) end]]%><br/>
-          <%= @industry_hashmap[params[:industry_code][if (count-1) >= params[:industry_code].length; 0 else (count-1) end]]%><br/>
-          <%= @area_hashmap[params[:area_code][if (count-1) >= params[:area_code].length; 0 else (count-1) end]]%><br/>
-          <%= @area_type_hashmap[params[:area_type_code][if (count-1) >= params[:area_type_code].length; 0 else (count-1) end]]%><br/>
-          <%= @data_type_hashmap[params[:data_type_code][if (count-1) >= params[:data_type_code].length; 0 else (count-1) end]]%><br/>
+          <%= @seasonal_adjustment_hashmap[series['Results']['series'][0]['seriesID'][2]]%><br/>
+          <%= @occupation_hashmap[series['Results']['series'][0]['seriesID'][17..22]]%><br/>
+          <%= @industry_hashmap[series['Results']['series'][0]['seriesID'][3]]%><br/>
+          <%= @area_hashmap[series['Results']['series'][0]['seriesID'][4..10]]%><br/>
+          <%= @area_type_hashmap[series['Results']['series'][0]['seriesID'][11..16]]%><br/>
+          <%= @data_type_hashmap[series['Results']['series'][0]['seriesID'][-2..-1]]%><br/>
 
         </h5>
       </a>
