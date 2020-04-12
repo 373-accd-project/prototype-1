@@ -1,16 +1,6 @@
-<h1>Query QCEW</h1>
-<div class="dropdown" name="dataseries_select" id="dataseries_select">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Choose data series
-  </button>
+<h1>Quarterly Census of Employment Wages</h1>
 
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="qcew">QCEW</a>
-    <a class="dropdown-item" href="oes">OES</a>
-    <a class="dropdown-item" href="nationalehe">National EHE</a>
-    <a class="dropdown-item" href="localehe">State EHE</a>
-  </div>
-</div>
+<%= render 'partials/dropdown' %>
 
 <div id="option1" class="alloptions">
 <%= render 'dataseries_filters/qcew' %>
@@ -18,40 +8,83 @@
 <br/><br/>
 
 <% if !@reply.nil? %>
-  <% @reply.each do |series| %>
-    <%= series['status'] %><br/>
-    <% if series['message'].present? %><br/>
-      <% for message in series['message'] %>
-        NOTE: <%= message %><br />
-      <% end %>
-    <% end %>
-    <% if !series['Results']['series'][0]['data'].blank? %>
-    <table class="table">
-    <thead>
-    <% for col in series['Results']['series'][0]['data'][0] %>
-      <% if col[0] != "latest"%>
-      <th><%= col[0] %></th>
-      <% end %>
-    <% end %>
-    </thead>
-    <% for item in series['Results']['series'][0]['data'] %>
-      <tr>
-      <% for col in item %>
-        <% if col[0] == "latest" %>
-          <% next %>
-        <% end %>
+<div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true"> <!--Accordion wrapper-->
 
-        <td>
-          <% if col[0] == "footnotes" %>
-            <%= col[1][0]["text"] %>
-          <% else %>
-            <%= col[1] %>
-          <% end %>
-        </td>
+<% count = 0 %>
+<% name = "collapse" + count.to_s  %>
+  <% @reply.each do |series| %>
+
+    <% count = count + 1 %>
+    <% name = "collapse" + count.to_s  %>
+    <!-- If the series ID creates a table that has data --> 
+    <% if !series['Results']['series'][0]['data'].blank? %>
+
+    <!-- Accordion card -->
+    <div class="card">
+
+    <!-- Card header -->
+    <div class="card-header collapsed" data-toggle="collapse" role="tab">
+      <a data-toggle="collapse" data-parent="#accordionEx" href="#<%= name %>" aria-expanded="false" aria-controls="collapseOne1">
+        <h5 class="mb-0">
+          <%= series['Results']['series'][0]['seriesID']%> - <br/>
+          <%= @area_hashmap[series['Results']['series'][0]['seriesID'][3..7]]%><br/>
+          <%= @data_hashmap[series['Results']['series'][0]['seriesID'][8]]%><br/>
+          <%= @industries_hashmap[series['Results']['series'][0]['seriesID'][11..-1]]%><br/>
+          <%= @ownership_hashmap[series['Results']['series'][0]['seriesID'][10]]%><br/>
+          <%= @sizes_hashmap[series['Results']['series'][0]['seriesID'][9]]%><br/>
+        </h5>
+      </a>
+    </div>
+
+    <!-- Card body -->
+    <div id="<%= name %>" class="card-body collapse" role="tabpanel" aria-labelledby="headingOne1"
+      data-parent="#accordionEx">
+      <div class="card-body">
+
+      <%= series['status'] %><br/>
+      <% if series['message'].present? %><br/>
+        <% for message in series['message'] %>
+          NOTE: <%= message %><br /><br />
+        <% end %>
       <% end %>
-      </tr>
-    <% end %>
-    </table>
-    <% end %>
-  <% end %>
-<% end %>
+      <br/>
+      <!-- Create the table -->
+      <div class="table-wrapper-scroll-y my-custom-scrollbar">
+          <table class="table table-bordered table-striped mb-0">
+          <thead>
+          <% for col in series['Results']['series'][0]['data'][0] %>
+            <% if col[0] != "latest"%>
+            <th><%= col[0] %></th>
+            <% end %>
+          <% end %>
+          </thead>
+          <% for item in series['Results']['series'][0]['data'] %>
+            <tr>
+            <% for col in item %>
+              <% if col[0] == "latest" %>
+                <% next %>
+              <% end %>
+
+              <td>
+                <% if col[0] == "footnotes" %>
+                  <%= col[1][0]["text"] %>
+                <% else %>
+                  <%= col[1] %>
+                <% end %>
+              </td>
+            <% end %>
+            </tr>
+          <% end %>
+          </table>
+      </div> <!-- End of the table -->
+      
+      </div> <!-- End of card body -->
+      </div> <!-- End of card body bigger-->
+
+    </div> <!-- Accordion card -->
+  <% end %> <!-- end of the if series id has data -->
+  <% end %> <!-- end of each loop -->
+  </div><!-- Accordion wrapper -->
+<% end %> <!-- end of the if nil statement -->
+
+<br/><br/><br/><br/>

@@ -1,12 +1,14 @@
 <br/>
 <%= form_tag("/launemp") do %>
-  <h5>Pick area type: &nbsp; <%= select_tag(:area_type, options_for_select(@area_types), :style => "font-size:12px;") %><br/><br/></h5>
-  <h5>Pick area: &nbsp; <%= select_tag(:area, options_for_select(@areas), :style => "font-size:12px;") %><br/><br/></h5>
-  <h5>Pick measure: &nbsp; <%= select_tag(:measure, options_for_select(@measures), :style => "font-size:12px;") %><br/><br/></h5>
+  <h5>Pick Seasonal Adjustment: &nbsp; <%= select_tag(:seasonal_adjustment, options_for_select(@seasonal_adjustment_codes), multiple: true,  :style => "font-size:12px;") %><br/><br/></h5>
+  <h5>Pick Areas: &nbsp; <%= select_tag(:area, options_for_select(@areas), multiple: true,  :style => "font-size:12px;") %><br/><br/></h5>
+  <h5>Pick Measures: &nbsp; <%= select_tag(:measure, options_for_select(@measures), multiple: true,  :style => "font-size:12px;") %><br/><br/></h5>
   <h5>Input Year (YYYY): &nbsp;<%= text_field_tag(:year) %> </h4><br/>
-  <%= submit_tag("Submit", :style => "height:50px;width:100px;background-color:grey;color:white;", :class => "btn float-left" )%>
+  <%= submit_tag("Submit", multiple: true,  :style => "height:50px;width:100px;background-color:grey;color:white;", :class => "btn float-left" )%>
 <% end %>
+
 <p class = "float-left">&nbsp;&nbsp;&nbsp;</p>
+
 <%= form_tag("/download_launemp_csv") do %>
   <%= submit_tag("Download", :style => "height:50px; width:200px;background-color:green;color:white;", :class => "btn float-left") %>
 <% end %>
