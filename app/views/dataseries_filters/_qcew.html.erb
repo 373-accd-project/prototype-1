@@ -8,23 +8,31 @@
   </button></h5>
 
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+  <div class="modal fade bd-example-modal-xl" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Pick Area</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Pick Areas</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
 
-      PUT THE CHECKBOXES IN HERE
+      THE CHECKBOXES
+      <div class="container-fluid">
+      <div class="row">
+          <% @area_codes.each do |area| %>
+            <div class = "col-4">
+              <%= check_box_tag(:area_code, area[1] , false, {:multiple => true}) %>&nbsp;&nbsp;<%=area[0]%>
+            </div> 
+          <% end %>
+      </div>
+      </div>
+
         
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
