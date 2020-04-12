@@ -119,6 +119,9 @@ year,period,periodName,latest,value,footnotes
 2010,M01,January,5337376,[{}]
 
 
+ENU4200010011
+
+
 ENU4200310010
 year,period,periodName,latest,value,footnotes
 2019,M09,September,true,704828,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
@@ -238,5 +241,8 @@ year,period,periodName,latest,value,footnotes
 2010,M03,March,656558,[{}]
 2010,M02,February,648856,[{}]
 2010,M01,January,652379,[{}]
+
+
+ENU4200310011
 
 
