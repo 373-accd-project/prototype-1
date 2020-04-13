@@ -1,9 +1,16 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
-  get 'home', to: 'home#index'
-  post "home", to: "home#index"
-  post "download_csv", to: "home#download_csv"
+  get 'login', to: 'sessions#new', as: :login
+  post 'login', to: 'sessions#create'
+  get 'logout', to: "sessions#destroy", as: :logout
+  
+  resources :users
+  # resources :users, only: [:new, :create, :show, :update]
+
+  get 'settings', to: 'users#settings', as: :settings
+
+  get 'home', to: 'home#index', as: :home
 
   #  QCEW Routes
   get 'qcew', to: "qcew#index"

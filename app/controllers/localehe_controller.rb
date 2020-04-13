@@ -6,6 +6,8 @@ require 'csv'
 #SMU48101800000000001
 
 class LocaleheController < ApplicationController
+  before_action :check_login
+  
   def index
     if params.has_key?(:year)
 

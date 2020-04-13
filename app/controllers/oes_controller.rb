@@ -3,6 +3,8 @@ require 'json'
 require 'csv'
 
 class OesController < ApplicationController
+  before_action :check_login
+  
   def index
     if params.has_key?(:year)
       p params

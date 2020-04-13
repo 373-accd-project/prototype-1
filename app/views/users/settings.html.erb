@@ -1,0 +1,30 @@
+<h1>Settings</h1>
+<div class="container row">
+<div class="col-sm">
+  <%= render partial: "form", locals: {user: @user} %>
+</div>
+<div class="col-sm">
+<% if @user.admin %>
+<h3>All Users</h3>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Username</th>
+        <th scope="col">Admin?</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+  <% for user in @users do %>
+    <tr>
+      <td><%= user.username %></td>
+      <td><%= user.admin ? "Yes" : "No" %>
+      <td> <%= link_to "Edit", edit_user_path(user) %> </td>
+      <td> <%= link_to "Delete", user_path(user), method: :delete, data: { confirm: 'Are you sure?' } %> </td>
+    </tr>
+  <% end %>
+  </table>
+  <%= link_to "New User", new_user_path, class: "btn btn-primary" %>
+<% end %>
+</div>
+</div>

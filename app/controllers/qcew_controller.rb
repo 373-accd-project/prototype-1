@@ -3,6 +3,9 @@ require 'json'
 require 'csv'
 
 class QcewController < ApplicationController
+  before_action :check_login
+  before_action :set_user, only: [:index]
+
   def index
     if params.has_key?(:year)
       p params
@@ -16,7 +19,8 @@ class QcewController < ApplicationController
       # populate the results of the api calls one by one
       # write them to the download file simultaneously
       @reply = []
-      @manager = JsonManager.new("https://api.bls.gov/publicAPI/v2/timeseries/data/")
+      @manager = JsonManager.new("https://api.bls.gov/publicAPI/v2/timeseries/data/", @user.apikey)
+      p "API Key being used " + @user.api_key
       generated_ids.each do |gid|
         result = JSON(@manager.apiCall(gid, 2010, 2020))
         @reply.push(result)
@@ -158,6 +162,10 @@ class QcewController < ApplicationController
       end
     end
     return (headers << csv_string)
+  end
+
+  def set_user
+    @user = User.find(session[:user_id])
   end
 
 end

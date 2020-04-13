@@ -3,6 +3,8 @@ require 'json'
 require 'csv'
 
 class NationaleheController < ApplicationController
+  before_action :check_login
+  
   def index
     if params.has_key?(:year)
 
