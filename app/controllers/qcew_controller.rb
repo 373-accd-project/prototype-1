@@ -8,38 +8,20 @@ class QcewController < ApplicationController
 
   def index
     if params.has_key?(:start_year)
-      p params
-
       # generate all possible series ids
-      generated_ids = generate_ids("ENU", [params[:area_code], params[:datatype], params[:size], params[:ownership], params[:industry]])
-
-      # make the download file blank
-      IO.write("csv_files/temp.csv", "")
+      generated_ids = SeriesIdGenerator.new.generate_ids("ENU", [params[:area_code], params[:datatype], params[:size], params[:ownership], params[:industry]])
 
       # populate the results of the api calls one by one
       # write them to the download file simultaneously
-      @reply = []
-      @manager = JsonManager.new("https://api.bls.gov/publicAPI/v2/timeseries/data/", @user.api_key)
+      manager = JsonManager.new("https://api.bls.gov/publicAPI/v2/timeseries/data/", @user.api_key)
       p "API Key being used " + @user.api_key
-      generated_ids.each do |gid|
-        result = JSON(@manager.apiCall(gid, params[:start_year], params[:end_year]))
-        @reply.push(result)
-        formatted_result = csv_format(result)
-        IO.write("csv_files/temp.csv", gid + "\n", mode: 'a')
-        IO.write("csv_files/temp.csv", formatted_result, mode: 'a')
-        IO.write("csv_files/temp.csv", "\n\n", mode: 'a')
-      end
+
+      @reply = CsvGenerator.new.save(manager, generated_ids, params[:start_year], params[:end_year], "csv_files/temp.csv")
+      
       @generated_ids = generated_ids
-      # Store filters in session hash so that any subsequent downlaod requests
-      # have access to them
-      session[:area_code] = params[:area_code]
-      session[:datatype] = params[:datatype]
-      session[:size] = params[:size]
-      session[:ownership] = params[:ownership]
-      session[:industry] = params[:industry]
     end
 
-    # Read the fitlers from the CSV file
+    # Read the filters from the CSV file
     @area_codes = CSV.read('csv_files/qcew/area_titles.csv')[1..]
     @data_types = CSV.read('csv_files/qcew/datatype_titles.csv')[1..]    
     @industries = CSV.read('csv_files/qcew/industry_titles.csv')[1..]    
@@ -97,73 +79,6 @@ class QcewController < ApplicationController
   end
 
   private
-  def generate_ids(prefix, arrays)
-
-    # if there is an empty parameter, there are no permutations
-    if arrays.select { |e| e.length == 0 }.length > 0
-      return []
-    end
-
-    all_combos = []
-
-    # counters for each parameter
-    counts = arrays.map { |e| 0 }
-    combo = ""
-    # while there are combos left to try
-    while more_combos(counts, arrays)
-      # create the combo from the counters
-      combo = prefix + arrays.each_with_index.map {|a, i| a[counts[i]]}.join("")
-
-      # push to result set and increment
-      all_combos.push(combo)
-      combo = ""
-      counts = increment_counts(counts, arrays)
-    end
-    return all_combos
-  end
-
-  def more_combos(counts, arrays)
-    return counts[0] < arrays[0].length
-  end
-
-  def increment_counts(counts, arrays)
-    # start at last count and move down
-    i = counts.length - 1
-    while (i >= 0)
-
-      # if a count can be incremented, increment and set the following to 0
-      if (counts[i] + 1) % arrays[i].length != 0
-        counts[i] += 1
-        j = i + 1
-        while j < counts.length
-          counts[j] = 0
-          j += 1
-        end
-        return counts
-      end
-      i -= 1
-    end
-    counts[0] += 1
-    return counts
-  end
-
-  def csv_format(result)
-    p result["Results"]["series"][0]["data"].length
-    if result["Results"]["series"][0]["data"].length == 0
-      return ""
-    else
-      p result["Results"]["series"][0]["data"][0].values.join(",")
-    end
-    headers = result["Results"]["series"][0]["data"][0].keys.join(",") + "\n"
-    csv_string = ""
-    csv_string = CSV.generate do |csv|
-      result["Results"]["series"][0]["data"].each do |row|
-        csv << row.values
-      end
-    end
-    return (headers << csv_string)
-  end
-
   def set_user
     @user = User.find(session[:user_id])
   end
