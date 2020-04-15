@@ -4,12 +4,14 @@ require 'csv'
 
 class QcewController < ApplicationController
   def index
+    get_filters()
+
     if params.has_key?(:year)
       p params
 
       # generate all possible series ids
       generated_ids = generate_ids("ENU", [params[:area_code], params[:datatype], params[:size], params[:ownership], params[:industry]])
-
+      p generated_ids
       # make the download file blank
       IO.write("csv_files/temp.csv", "")
 
@@ -20,11 +22,12 @@ class QcewController < ApplicationController
       generated_ids.each do |gid|
         result = JSON(@manager.apiCall(gid, 2010, 2020))
         @reply.push(result)
-        formatted_result = csv_format(result)
+        formatted_result = csv_format(prefix_columns(result), result)
         IO.write("csv_files/temp.csv", gid + "\n", mode: 'a')
         IO.write("csv_files/temp.csv", formatted_result, mode: 'a')
         IO.write("csv_files/temp.csv", "\n\n", mode: 'a')
       end
+
       @generated_ids = generated_ids
       # Store filters in session hash so that any subsequent downlaod requests
       # have access to them
@@ -35,19 +38,22 @@ class QcewController < ApplicationController
       session[:industry] = params[:industry]
     end
 
+  end
+
+  def get_filters
     # Read the fitlers from the CSV file
     @area_codes = CSV.read('csv_files/qcew/area_titles.csv')[1..]
-    @data_types = CSV.read('csv_files/qcew/datatype_titles.csv')[1..]    
-    @industries = CSV.read('csv_files/qcew/industry_titles.csv')[1..]    
+    @data_types = CSV.read('csv_files/qcew/datatype_titles.csv')[1..]
+    @industries = CSV.read('csv_files/qcew/industry_titles.csv')[1..]
     @ownership = CSV.read('csv_files/qcew/ownership_titles.csv')[1..]
     @sizes = CSV.read('csv_files/qcew/size_titles.csv')[1..]
 
     # Hashmaps to create the accordian filters
     @area_hashmap = Hash[@area_codes.map {|key, value| [key, value]}]
-    @data_hashmap = Hash[@data_types.map {|key, value| [key, value]}] 
-    @industries_hashmap = Hash[@industries.map {|key, value| [key, value]}] 
+    @data_hashmap = Hash[@data_types.map {|key, value| [key, value]}]
+    @industries_hashmap = Hash[@industries.map {|key, value| [key, value]}]
     @ownership_hashmap = Hash[@ownership.map {|key, value| [key, value]}]
-    @sizes_hashmap = Hash[@sizes.map {|key, value| [key, value]}] 
+    @sizes_hashmap = Hash[@sizes.map {|key, value| [key, value]}]
 
     # <%= @area_codes[] %>
      # Differentiating between Supersectors + NAICS
@@ -58,7 +64,7 @@ class QcewController < ApplicationController
       type = industry[1].split(" ")[0]
       if type[0..4] == "NAICS" then
         @naics_industries.append(industry)
-      else 
+      else
         @super_industries.append(industry)
       end
     end
@@ -90,6 +96,7 @@ class QcewController < ApplicationController
       size[0] = size[1]
       size[1] = tmp
     end
+
   end
 
   private
@@ -143,24 +150,42 @@ class QcewController < ApplicationController
     return counts
   end
 
-  def csv_format(result)
+  def prefix_columns(series)
+    if series.nil?
+      return []
+    end
+
+    area = @area_hashmap[series['Results']['series'][0]['seriesID'][3..7]]
+    data = @data_hashmap[series['Results']['series'][0]['seriesID'][8]]
+    industry = @industries_hashmap[series['Results']['series'][0]['seriesID'][11..-1]]
+    owner = @ownership_hashmap[series['Results']['series'][0]['seriesID'][10]]
+    size = @sizes_hashmap[series['Results']['series'][0]['seriesID'][9]]
+    return [area, data, industry, owner, size]
+  end
+
+  def csv_format(prefix_columns, result)
     # weed out empty series
     if result["Results"]["series"][0]["data"].length == 0
       return ""
     end
+
     # get the column headers
-    headers = result["Results"]["series"][0]["data"][0].keys.join(",") + "\n"
-    csv_string = ""
+    prefix_names = "Area,Datatype,Industry,Ownership,Size,"
+
+    headers = result["Results"]["series"][0]["data"][0].keys
+    headers.delete("latest")
+    headers_string = headers.join(",") + "\n"
 
     # generate csv by taking all the values
     csv_string = CSV.generate do |csv|
       result["Results"]["series"][0]["data"].each do |row|
-        csv << row.values
+        row.delete("latest")
+        csv << (prefix_columns + row.values)
       end
     end
 
     # return headers concatenated with all values
-    return (headers << csv_string)
+    return (prefix_names << (headers_string << csv_string))
   end
 
 end

@@ -1,4 +1,18 @@
 area_type_code	area_code	area_text	display_level	selectable	sort_sequence
+A	ST4200000000000	Pennsylvania	0	T	6107
+B	MT4238300000000	Pittsburgh, PA Metropolitan Statistical Area	0	T	6120
+E	CA4243000000000	Pittsburgh-New Castle-Weirton, PA-OH-WV Combined Statistical Area	0	T	6150
+F	CN4200300000000	Allegheny County, PA	0	T	6154
+F	CN4200500000000	Armstrong County, PA	0	T	6155
+F	CN4200700000000	Beaver County, PA	0	T	6156
+F	CN4201900000000	Butler County, PA	0	T	6162
+F	CN4205100000000	Fayette County, PA	0	T	6178
+F	CN4205900000000	Greene County, PA	0	T	6182
+F	CN4206300000000	Indiana County, PA	0	T	6184
+F	CN4207300000000	Lawrence County, PA	0	T	6189
+F	CN4212500000000	Washington County, PA	0	T	6215
+F	CN4212900000000	Westmoreland County, PA	0	T	6217
+G	CT4261000000000	Pittsburgh city, PA	0	T	6263
 A	ST0100000000000	Alabama	0	T	1
 A	ST0200000000000	Alaska	0	T	146
 A	ST0400000000000	Arizona	0	T	188
@@ -37,7 +51,6 @@ A	ST3800000000000	North Dakota	0	T	5575
 A	ST3900000000000	Ohio	0	T	5647
 A	ST4000000000000	Oklahoma	0	T	5879
 A	ST4100000000000	Oregon	0	T	6013
-A	ST4200000000000	Pennsylvania	0	T	6107
 A	ST4400000000000	Rhode Island	0	T	6292
 A	ST4500000000000	South Carolina	0	T	6340
 A	ST4600000000000	South Dakota	0	T	6437
@@ -342,7 +355,6 @@ B	MT4227780000000	Johnstown, PA Metropolitan Statistical Area	0	T	6116
 B	MT4229540000000	Lancaster, PA Metropolitan Statistical Area	0	T	6117
 B	MT4230140000000	Lebanon, PA Metropolitan Statistical Area	0	T	6118
 B	MT4237980000000	Philadelphia-Camden-Wilmington, PA-NJ-DE-MD Metropolitan Statistical Area	0	T	6119
-B	MT4238300000000	Pittsburgh, PA Metropolitan Statistical Area	0	T	6120
 B	MT4239740000000	Reading, PA Metropolitan Statistical Area	0	T	6121
 B	MT4242540000000	Scranton--Wilkes-Barre--Hazleton, PA Metropolitan Statistical Area	0	T	6122
 B	MT4244300000000	State College, PA Metropolitan Statistical Area	0	T	6123
@@ -1179,7 +1191,6 @@ E	CA4224000000000	Erie-Meadville, PA Combined Statistical Area	0	T	6146
 E	CA4227600000000	Harrisburg-York-Lebanon, PA Combined Statistical Area	0	T	6147
 E	CA4230600000000	Johnstown-Somerset, PA Combined Statistical Area	0	T	6148
 E	CA4242800000000	Philadelphia-Reading-Camden, PA-NJ-DE-MD Combined Statistical Area	0	T	6149
-E	CA4243000000000	Pittsburgh-New Castle-Weirton, PA-OH-WV Combined Statistical Area	0	T	6150
 E	CA4252400000000	State College-DuBois, PA Combined Statistical Area	0	T	6151
 E	CA4255800000000	Williamsport-Lock Haven, PA Combined Statistical Area	0	T	6152
 E	CA4519200000000	Columbia-Orangeburg-Newberry, SC Combined Statistical Area	0	T	6356
@@ -3472,15 +3483,11 @@ F	CN4106700000000	Washington County, OR	0	T	6070
 F	CN4106900000000	Wheeler County, OR	0	T	6071
 F	CN4107100000000	Yamhill County, OR	0	T	6072
 F	CN4200100000000	Adams County, PA	0	T	6153
-F	CN4200300000000	Allegheny County, PA	0	T	6154
-F	CN4200500000000	Armstrong County, PA	0	T	6155
-F	CN4200700000000	Beaver County, PA	0	T	6156
 F	CN4200900000000	Bedford County, PA	0	T	6157
 F	CN4201100000000	Berks County, PA	0	T	6158
 F	CN4201300000000	Blair County, PA	0	T	6159
 F	CN4201500000000	Bradford County, PA	0	T	6160
 F	CN4201700000000	Bucks County, PA	0	T	6161
-F	CN4201900000000	Butler County, PA	0	T	6162
 F	CN4202100000000	Cambria County, PA	0	T	6163
 F	CN4202300000000	Cameron County, PA	0	T	6164
 F	CN4202500000000	Carbon County, PA	0	T	6165
@@ -3496,18 +3503,14 @@ F	CN4204300000000	Dauphin County, PA	0	T	6174
 F	CN4204500000000	Delaware County, PA	0	T	6175
 F	CN4204700000000	Elk County, PA	0	T	6176
 F	CN4204900000000	Erie County, PA	0	T	6177
-F	CN4205100000000	Fayette County, PA	0	T	6178
 F	CN4205300000000	Forest County, PA	0	T	6179
 F	CN4205500000000	Franklin County, PA	0	T	6180
 F	CN4205700000000	Fulton County, PA	0	T	6181
-F	CN4205900000000	Greene County, PA	0	T	6182
 F	CN4206100000000	Huntingdon County, PA	0	T	6183
-F	CN4206300000000	Indiana County, PA	0	T	6184
 F	CN4206500000000	Jefferson County, PA	0	T	6185
 F	CN4206700000000	Juniata County, PA	0	T	6186
 F	CN4206900000000	Lackawanna County, PA	0	T	6187
 F	CN4207100000000	Lancaster County, PA	0	T	6188
-F	CN4207300000000	Lawrence County, PA	0	T	6189
 F	CN4207500000000	Lebanon County, PA	0	T	6190
 F	CN4207700000000	Lehigh County, PA	0	T	6191
 F	CN4207900000000	Luzerne County, PA	0	T	6192
@@ -3533,9 +3536,7 @@ F	CN4211700000000	Tioga County, PA	0	T	6211
 F	CN4211900000000	Union County, PA	0	T	6212
 F	CN4212100000000	Venango County, PA	0	T	6213
 F	CN4212300000000	Warren County, PA	0	T	6214
-F	CN4212500000000	Washington County, PA	0	T	6215
 F	CN4212700000000	Wayne County, PA	0	T	6216
-F	CN4212900000000	Westmoreland County, PA	0	T	6217
 F	CN4213100000000	Wyoming County, PA	0	T	6218
 F	CN4213300000000	York County, PA	0	T	6219
 F	CN4400100000000	Bristol County, RI	0	T	6294
@@ -5964,7 +5965,6 @@ G	CT4250528000000	Monroeville municipality, PA	0	T	6253
 G	CT4253368000000	New Castle city, PA	0	T	6257
 G	CT4254656000000	Norristown borough, PA	0	T	6258
 G	CT4260000000000	Philadelphia County/city, PA	0	T	6262
-G	CT4261000000000	Pittsburgh city, PA	0	T	6263
 G	CT4261536000000	Plum borough, PA	0	T	6264
 G	CT4263624000000	Reading city, PA	0	T	6266
 G	CT4269000000000	Scranton city, PA	0	T	6269

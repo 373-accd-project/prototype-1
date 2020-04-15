@@ -1,7 +1,51 @@
 <br/>
 <%= form_tag("/launemp") do %>
   <h5>Pick Seasonal Adjustment: &nbsp; <%= select_tag(:seasonal_adjustment, options_for_select(@seasonal_adjustment_codes), multiple: true,  :style => "font-size:12px;") %><br/><br/></h5>
-  <h5>Pick Areas: &nbsp; <%= select_tag(:area, options_for_select(@areas), multiple: true,  :style => "font-size:12px;") %><br/><br/></h5>
+
+
+  <h5>Pick Area: &nbsp; <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+    Click to choose area(s)
+  </button></h5>
+
+  <!-- Modal -->
+  <div class="modal fade bd-example-modal-xl" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Pick Areas</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+      <div class="container-fluid">
+      <div class="row">
+
+          <% @areas.each do |a| %>
+            <% if a[0] == "Pittsburgh city, PA" then %>
+              <div class = "col-8">
+                <input type="checkbox" name="area[]" value="<%= a[1] %>">&nbsp;&nbsp;&nbsp;<%= a[0]%> </input>
+              </div>
+              <div class = "col-12">
+                <br>
+              </div>
+            <%else%>
+              <div class = "col-4">
+                <input type="checkbox" name="area[]" value="<%= a[1] %>">&nbsp;&nbsp;&nbsp;<%= a[0]%> </input>
+              </div>
+            <%end%>
+          <% end %>
+      </div>
+      </div>
+
+
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
   <h5>Pick Measures: &nbsp; <%= select_tag(:measure, options_for_select(@measures), multiple: true,  :style => "font-size:12px;") %><br/><br/></h5>
   <h5>Input Year (YYYY): &nbsp;<%= text_field_tag(:year) %> </h4><br/>
   <%= submit_tag("Submit", multiple: true,  :style => "height:50px;width:100px;background-color:grey;color:white;", :class => "btn float-left" )%>

@@ -4,12 +4,13 @@ require 'csv'
 
 class NationaleheController < ApplicationController
   def index
-    if params.has_key?(:year)
+    get_filters()
 
+    if params.has_key?(:year)
 
       # generate all possible series ids
       generated_ids = generate_ids("CE", [params[:seasonal_adjustment_code], params[:industry], params[:data_type]])
-      
+
       # make the download file blank
       IO.write("csv_files/temp.csv", "")
 
@@ -20,7 +21,7 @@ class NationaleheController < ApplicationController
       generated_ids.each do |gid|
         result = JSON(@manager.apiCall(gid, 2010, 2020))
         @reply.push(result)
-        formatted_result = csv_format(result)
+        formatted_result = csv_format(prefix_columns(gid, result.nil?), result)
         IO.write("csv_files/temp.csv", gid + "\n", mode: 'a')
         IO.write("csv_files/temp.csv", formatted_result, mode: 'a')
         IO.write("csv_files/temp.csv", "\n\n", mode: 'a')
@@ -33,7 +34,10 @@ class NationaleheController < ApplicationController
       session[:industry] = params[:industry]
       session[:data_type] = params[:data_type]
     end
-   # Read the fitlers from the CSV file
+  end
+
+  def get_filters
+    # Read the fitlers from the CSV file
     @seasonal_adjustment_codes = CSV.read('csv_files/nationalehe/seasonal_adjustment_codes.csv')[1..]
     @supersectors = CSV.read('csv_files/nationalehe/supersector_codes.csv')[1..]
     @industries = CSV.read('csv_files/nationalehe/industry_codes.csv')[1..]
@@ -43,8 +47,8 @@ class NationaleheController < ApplicationController
     # Hashmaps to create the accordian filters
     @sa_hashmap = Hash[@seasonal_adjustment_codes.map {|key, value| [key, value]}]
     @ss_hashmap = Hash[@supersectors.map {|key, value| [key, value]}]
-    @data_hashmap = Hash[@data_types.map {|key, value| [key, value]}] 
-    @industries_hashmap = Hash[@industries.map {|key, value| [key, value]}] 
+    @data_hashmap = Hash[@data_types.map {|key, value| [key, value]}]
+    @industries_hashmap = Hash[@industries.map {|key, value| [key, value]}]
 
     # Switch the key-value pairs to make sure that the correct one appears
     # in the drop down for each filter
@@ -69,7 +73,7 @@ class NationaleheController < ApplicationController
       sa[1] = tmp
     end
   end
-  
+
   private
   def generate_ids(prefix, arrays)
 
@@ -121,24 +125,43 @@ class NationaleheController < ApplicationController
     return counts
   end
 
-  def csv_format(result)
-    p result["Results"]["series"][0]["data"].length
-    if result["Results"]["series"][0]["data"].length == 0
-      return ""
-    else
-      p result["Results"]["series"][0]["data"][0].values.join(",")
+  def prefix_columns(gid, nilcheck)
+    if nilcheck
+      return []
     end
-    headers = result["Results"]["series"][0]["data"][0].keys.join(",") + "\n"
-    csv_string = ""
-    csv_string = CSV.generate do |csv|
-      result["Results"]["series"][0]["data"].each do |row|
-        csv << row.values
-      end
-    end
-    return (headers << csv_string)
+
+    seasonal = @sa_hashmap[gid[2]]
+    data = @data_hashmap[gid[11..-1]]
+    industry = @industries_hashmap[gid[3..10]]
+    return [seasonal, industry, data]
   end
 
-    # send_data file, :type => 'text/csv; charset=iso-8859-1; header=present', :filename => "data.csv"
+  def csv_format(prefix_columns, result)
+    # weed out empty series
+    if result["Results"]["series"][0]["data"].length == 0
+      return ""
+    end
+
+    # get the column headers
+    prefix_names = "Seasonal Adjustment,Industry,Data Type,"
+
+    headers = result["Results"]["series"][0]["data"][0].keys
+    headers.delete("latest")
+    headers_string = headers.join(",") + "\n"
+
+    csv_string = ""
+
+    # generate csv by taking all the values
+    csv_string = CSV.generate do |csv|
+      result["Results"]["series"][0]["data"].each do |row|
+        row.delete("latest")
+        csv << (prefix_columns + row.values)
+      end
+    end
+
+    # return headers concatenated with all values
+    return (prefix_names << (headers_string << csv_string))
+  end
 
 end
 

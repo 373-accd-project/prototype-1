@@ -2,17 +2,12 @@ require 'rest_client'
 require 'json'
 require 'csv'
 
-#SMU4810180000000000001
-#SMU48101800000000001
-
 class LocaleheController < ApplicationController
   def index
+    get_filters()
+
     if params.has_key?(:year)
-
-
       generated_ids = generate_ids("SM", [params[:seasonal_adjustment_code], params[:state_code], params[:area_code], params[:industry], params[:data_type]])
-      #params[:supersector]
-      # params[:seasonal_adjustment_code],
 
       # make the download file blank
       IO.write("csv_files/temp.csv", "")
@@ -24,11 +19,12 @@ class LocaleheController < ApplicationController
       generated_ids.each do |gid|
         result = JSON(@manager.apiCall(gid, 2010, 2020))
         @reply.push(result)
-        formatted_result = csv_format(result)
+        formatted_result = csv_format(prefix_columns(gid, result.nil?), result)
         IO.write("csv_files/temp.csv", gid + "\n", mode: 'a')
         IO.write("csv_files/temp.csv", formatted_result, mode: 'a')
         IO.write("csv_files/temp.csv", "\n\n", mode: 'a')
       end
+
       @generated_ids = generated_ids
       # Store filters in session hash so that any subsequent downlaod requests
       # have access to them
@@ -39,6 +35,8 @@ class LocaleheController < ApplicationController
       session[:industry] = params[:industry]
       session[:data_type] = params[:data_type]
     end
+  end
+  def get_filters
     # Read the fitlers from the CSV file
     @seasonal_adjustment_codes = CSV.read('csv_files/localehe/seasonal_adjustment_codes.csv')[1..]
     @state_codes = CSV.read('csv_files/localehe/state_codes.csv')[1..]
@@ -51,10 +49,10 @@ class LocaleheController < ApplicationController
 
     # Hashmaps to create the accordian filters
     @sa_hashmap = Hash[@seasonal_adjustment_codes.map {|key, value| [key, value]}]
-    @state_hashmap = Hash[@state_codes.map {|key, value| [key, value]}] 
-    @area_hashmap = Hash[@area_codes.map {|key, value| [key, value]}] 
-    @data_hashmap = Hash[@data_types.map {|key, value| [key, value]}] 
-    @industries_hashmap = Hash[@industries.map {|key, value| [key, value]}]     
+    @state_hashmap = Hash[@state_codes.map {|key, value| [key, value]}]
+    @area_hashmap = Hash[@area_codes.map {|key, value| [key, value]}]
+    @data_hashmap = Hash[@data_types.map {|key, value| [key, value]}]
+    @industries_hashmap = Hash[@industries.map {|key, value| [key, value]}]
 
     for seasonal_adjustment_code in @seasonal_adjustment_codes do
       tmp = seasonal_adjustment_code[0]
@@ -87,6 +85,8 @@ class LocaleheController < ApplicationController
       state_code[1] = tmp
     end
   end
+
+
   private
   def generate_ids(prefix, arrays)
 
@@ -138,21 +138,44 @@ class LocaleheController < ApplicationController
     return counts
   end
 
-  def csv_format(result)
-    p result["Results"]["series"][0]["data"].length
+  def prefix_columns(gid, nilcheck)
+    if nilcheck
+      return []
+    end
+    p gid
+    seasonal = @sa_hashmap[gid[2]]
+    state = @state_hashmap[gid[3..4]]
+    area = @area_hashmap[gid[5..9]]
+    data = @data_hashmap[gid[18..-1]]
+    industry = @industries_hashmap[gid[10..17]]
+    p [gid[2], gid[3..4], gid[5..9], gid[10..17], gid[18..-1]]
+    p [seasonal, state, area, industry, data]
+    return [seasonal, state, area, industry, data]
+  end
+
+  def csv_format(prefix_columns, result)
+    # weed out empty series
     if result["Results"]["series"][0]["data"].length == 0
       return ""
-    else
-      p result["Results"]["series"][0]["data"][0].values.join(",")
     end
-    headers = result["Results"]["series"][0]["data"][0].keys.join(",") + "\n"
-    csv_string = ""
+
+    # get the column headers
+    prefix_names = "Seasonal Adjustment,State,Area,Industry,Data Type,"
+
+    headers = result["Results"]["series"][0]["data"][0].keys
+    headers.delete("latest") # get rid of latest column in first row
+    headers_string = headers.join(",") + "\n"
+
+    # generate csv by taking all the values
     csv_string = CSV.generate do |csv|
       result["Results"]["series"][0]["data"].each do |row|
-        csv << row.values
+        row.delete("latest")
+        csv << (prefix_columns + row.values)
       end
     end
-    return (headers << csv_string)
+
+    # return headers concatenated with all values
+    return (prefix_names << (headers_string << csv_string))
   end
 
 end

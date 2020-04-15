@@ -1,248 +1,126 @@
-ENU4200010010
-year,period,periodName,latest,value,footnotes
-2019,M09,September,true,5947879,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-2019,M08,August,5931442,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-2019,M07,July,5917691,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-2019,M06,June,5973643,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-2019,M05,May,5959963,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-2019,M04,April,5912238,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-2019,M03,March,5850844,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-2019,M02,February,5817872,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-2019,M01,January,5819321,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-2018,M12,December,5935443,[{}]
-2018,M11,November,5943408,[{}]
-2018,M10,October,5930461,[{}]
-2018,M09,September,5899233,[{}]
-2018,M08,August,5869865,[{}]
-2018,M07,July,5864491,[{}]
-2018,M06,June,5926306,[{}]
-2018,M05,May,5903833,[{}]
-2018,M04,April,5850420,[{}]
-2018,M03,March,5788455,[{}]
-2018,M02,February,5757563,[{}]
-2018,M01,January,5743923,[{}]
-2017,M12,December,5872180,[{}]
-2017,M11,November,5876113,[{}]
-2017,M10,October,5857661,[{}]
-2017,M09,September,5839137,[{}]
-2017,M08,August,5800460,[{}]
-2017,M07,July,5796208,[{}]
-2017,M06,June,5858018,[{}]
-2017,M05,May,5834266,[{}]
-2017,M04,April,5779870,[{}]
-2017,M03,March,5710072,[{}]
-2017,M02,February,5685078,[{}]
-2017,M01,January,5680409,[{}]
-2016,M12,December,5800878,[{}]
-2016,M11,November,5807556,[{}]
-2016,M10,October,5795891,[{}]
-2016,M09,September,5779294,[{}]
-2016,M08,August,5731328,[{}]
-2016,M07,July,5740141,[{}]
-2016,M06,June,5786022,[{}]
-2016,M05,May,5774294,[{}]
-2016,M04,April,5731389,[{}]
-2016,M03,March,5665000,[{}]
-2016,M02,February,5620367,[{}]
-2016,M01,January,5620951,[{}]
-2015,M12,December,5761811,[{}]
-2015,M11,November,5763370,[{}]
-2015,M10,October,5751777,[{}]
-2015,M09,September,5721480,[{}]
-2015,M08,August,5686100,[{}]
-2015,M07,July,5687337,[{}]
-2015,M06,June,5763611,[{}]
-2015,M05,May,5742952,[{}]
-2015,M04,April,5672462,[{}]
-2015,M03,March,5600177,[{}]
-2015,M02,February,5572892,[{}]
-2015,M01,January,5575387,[{}]
-2014,M12,December,5721188,[{}]
-2014,M11,November,5722093,[{}]
-2014,M10,October,5709119,[{}]
-2014,M09,September,5677513,[{}]
-2014,M08,August,5644329,[{}]
-2014,M07,July,5635207,[{}]
-2014,M06,June,5717707,[{}]
-2014,M05,May,5694938,[{}]
-2014,M04,April,5627051,[{}]
-2014,M03,March,5559399,[{}]
-2014,M02,February,5508910,[{}]
-2014,M01,January,5515860,[{}]
-2013,M12,December,5647263,[{}]
-2013,M11,November,5657495,[{}]
-2013,M10,October,5641750,[{}]
-2013,M09,September,5622529,[{}]
-2013,M08,August,5586011,[{}]
-2013,M07,July,5579572,[{}]
-2013,M06,June,5662649,[{}]
-2013,M05,May,5644469,[{}]
-2013,M04,April,5587012,[{}]
-2013,M03,March,5542225,[{}]
-2013,M02,February,5501049,[{}]
-2013,M01,January,5490063,[{}]
-2012,M12,December,5627180,[{}]
-2012,M11,November,5633974,[{}]
-2012,M10,October,5620199,[{}]
-2012,M09,September,5602941,[{}]
-2012,M08,August,5560355,[{}]
-2012,M07,July,5555171,[{}]
-2012,M06,June,5648065,[{}]
-2012,M05,May,5631095,[{}]
-2012,M04,April,5577063,[{}]
-2012,M03,March,5537377,[{}]
-2012,M02,February,5480766,[{}]
-2012,M01,January,5466776,[{}]
-2011,M12,December,5599808,[{}]
-2011,M11,November,5607702,[{}]
-2011,M10,October,5587483,[{}]
-2011,M09,September,5564908,[{}]
-2011,M08,August,5506759,[{}]
-2011,M07,July,5518335,[{}]
-2011,M06,June,5608276,[{}]
-2011,M05,May,5586914,[{}]
-2011,M04,April,5539466,[{}]
-2011,M03,March,5467989,[{}]
-2011,M02,February,5420414,[{}]
-2011,M01,January,5415338,[{}]
-2010,M12,December,5555783,[{}]
-2010,M11,November,5559341,[{}]
-2010,M10,October,5542839,[{}]
-2010,M09,September,5504007,[{}]
-2010,M08,August,5456799,[{}]
-2010,M07,July,5462063,[{}]
-2010,M06,June,5551421,[{}]
-2010,M05,May,5536699,[{}]
-2010,M04,April,5461718,[{}]
-2010,M03,March,5379790,[{}]
-2010,M02,February,5318220,[{}]
-2010,M01,January,5337376,[{}]
-
-
-ENU4200010011
-
-
-ENU4200310010
-year,period,periodName,latest,value,footnotes
-2019,M09,September,true,704828,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-2019,M08,August,704156,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-2019,M07,July,705360,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-2019,M06,June,711185,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-2019,M05,May,705517,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-2019,M04,April,700154,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-2019,M03,March,694731,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-2019,M02,February,691633,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-2019,M01,January,691981,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-2018,M12,December,708994,[{}]
-2018,M11,November,709360,[{}]
-2018,M10,October,707317,[{}]
-2018,M09,September,704316,[{}]
-2018,M08,August,702964,[{}]
-2018,M07,July,705333,[{}]
-2018,M06,June,709126,[{}]
-2018,M05,May,704757,[{}]
-2018,M04,April,698105,[{}]
-2018,M03,March,692549,[{}]
-2018,M02,February,689340,[{}]
-2018,M01,January,688589,[{}]
-2017,M12,December,702657,[{}]
-2017,M11,November,702411,[{}]
-2017,M10,October,701083,[{}]
-2017,M09,September,698868,[{}]
-2017,M08,August,696048,[{}]
-2017,M07,July,697339,[{}]
-2017,M06,June,704339,[{}]
-2017,M05,May,697687,[{}]
-2017,M04,April,692113,[{}]
-2017,M03,March,684443,[{}]
-2017,M02,February,681158,[{}]
-2017,M01,January,680907,[{}]
-2016,M12,December,694196,[{}]
-2016,M11,November,695612,[{}]
-2016,M10,October,692129,[{}]
-2016,M09,September,690984,[{}]
-2016,M08,August,689469,[{}]
-2016,M07,July,693009,[{}]
-2016,M06,June,699180,[{}]
-2016,M05,May,693159,[{}]
-2016,M04,April,688121,[{}]
-2016,M03,March,679065,[{}]
-2016,M02,February,674323,[{}]
-2016,M01,January,673949,[{}]
-2015,M12,December,692115,[{}]
-2015,M11,November,692613,[{}]
-2015,M10,October,689379,[{}]
-2015,M09,September,687744,[{}]
-2015,M08,August,686549,[{}]
-2015,M07,July,688659,[{}]
-2015,M06,June,695959,[{}]
-2015,M05,May,691014,[{}]
-2015,M04,April,682743,[{}]
-2015,M03,March,675102,[{}]
-2015,M02,February,671500,[{}]
-2015,M01,January,672715,[{}]
-2014,M12,December,689089,[{}]
-2014,M11,November,688016,[{}]
-2014,M10,October,687785,[{}]
-2014,M09,September,685154,[{}]
-2014,M08,August,683079,[{}]
-2014,M07,July,684569,[{}]
-2014,M06,June,694631,[{}]
-2014,M05,May,689121,[{}]
-2014,M04,April,680865,[{}]
-2014,M03,March,674063,[{}]
-2014,M02,February,670021,[{}]
-2014,M01,January,671396,[{}]
-2013,M12,December,690108,[{}]
-2013,M11,November,689465,[{}]
-2013,M10,October,687944,[{}]
-2013,M09,September,685383,[{}]
-2013,M08,August,681792,[{}]
-2013,M07,July,685149,[{}]
-2013,M06,June,695153,[{}]
-2013,M05,May,688876,[{}]
-2013,M04,April,682583,[{}]
-2013,M03,March,677999,[{}]
-2013,M02,February,674118,[{}]
-2013,M01,January,672797,[{}]
-2012,M12,December,689858,[{}]
-2012,M11,November,690452,[{}]
-2012,M10,October,688534,[{}]
-2012,M09,September,685445,[{}]
-2012,M08,August,681171,[{}]
-2012,M07,July,682933,[{}]
-2012,M06,June,694650,[{}]
-2012,M05,May,686631,[{}]
-2012,M04,April,681420,[{}]
-2012,M03,March,676819,[{}]
-2012,M02,February,670445,[{}]
-2012,M01,January,669738,[{}]
-2011,M12,December,685664,[{}]
-2011,M11,November,685223,[{}]
-2011,M10,October,683353,[{}]
-2011,M09,September,679780,[{}]
-2011,M08,August,673209,[{}]
-2011,M07,July,675590,[{}]
-2011,M06,June,687358,[{}]
-2011,M05,May,681134,[{}]
-2011,M04,April,674348,[{}]
-2011,M03,March,667333,[{}]
-2011,M02,February,662104,[{}]
-2011,M01,January,662326,[{}]
-2010,M12,December,676308,[{}]
-2010,M11,November,676849,[{}]
-2010,M10,October,674617,[{}]
-2010,M09,September,671720,[{}]
-2010,M08,August,667978,[{}]
-2010,M07,July,668767,[{}]
-2010,M06,June,678676,[{}]
-2010,M05,May,672844,[{}]
-2010,M04,April,664563,[{}]
-2010,M03,March,656558,[{}]
-2010,M02,February,648856,[{}]
-2010,M01,January,652379,[{}]
-
-
-ENU4200310011
+LAUST420000000000003
+Seasonal,Area,Measure,year,period,periodName,value,footnotes
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2020,M02,February,5.1,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2020,M01,January,5.1,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2019,M12,December,4.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2019,M11,November,4.4,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2019,M10,October,4.4,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2019,M09,September,4.2,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2019,M08,August,4.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2019,M07,July,4.9,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2019,M06,June,4.4,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2019,M05,May,4.0,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2019,M04,April,3.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2019,M03,March,4.3,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2019,M02,February,4.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2019,M01,January,4.6,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2018,M12,December,3.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2018,M11,November,3.6,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2018,M10,October,3.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2018,M09,September,3.9,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2018,M08,August,4.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2018,M07,July,4.7,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2018,M06,June,4.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2018,M05,May,3.9,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2018,M04,April,3.9,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2018,M03,March,4.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2018,M02,February,4.9,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2018,M01,January,4.9,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2017,M12,December,4.3,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2017,M11,November,4.3,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2017,M10,October,4.3,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2017,M09,September,4.4,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2017,M08,August,5.2,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2017,M07,July,5.3,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2017,M06,June,5.0,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2017,M05,May,4.7,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2017,M04,April,4.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2017,M03,March,5.1,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2017,M02,February,5.6,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2017,M01,January,5.6,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2016,M12,December,4.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2016,M11,November,4.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2016,M10,October,5.2,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2016,M09,September,5.3,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2016,M08,August,5.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2016,M07,July,5.9,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2016,M06,June,5.7,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2016,M05,May,5.2,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2016,M04,April,5.1,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2016,M03,March,5.6,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2016,M02,February,5.7,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2016,M01,January,5.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2015,M12,December,4.7,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2015,M11,November,4.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2015,M10,October,4.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2015,M09,September,4.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2015,M08,August,5.4,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2015,M07,July,5.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2015,M06,June,5.6,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2015,M05,May,5.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2015,M04,April,4.9,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2015,M03,March,5.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2015,M02,February,5.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2015,M01,January,5.9,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2014,M12,December,4.9,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2014,M11,November,4.9,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2014,M10,October,5.0,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2014,M09,September,5.2,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2014,M08,August,6.1,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2014,M07,July,6.5,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2014,M06,June,6.0,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2014,M05,May,5.9,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2014,M04,April,5.5,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2014,M03,March,6.5,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2014,M02,February,6.9,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2014,M01,January,6.8,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2013,M12,December,6.1,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2013,M11,November,6.4,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2013,M10,October,6.8,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2013,M09,September,6.8,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2013,M08,August,7.5,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2013,M07,July,7.8,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2013,M06,June,7.8,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2013,M05,May,7.4,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2013,M04,April,7.0,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2013,M03,March,7.7,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2013,M02,February,8.3,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2013,M01,January,8.8,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2012,M12,December,7.6,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2012,M11,November,7.1,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2012,M10,October,7.5,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2012,M09,September,7.4,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2012,M08,August,8.3,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2012,M07,July,8.6,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2012,M06,June,8.2,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2012,M05,May,7.7,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2012,M04,April,7.1,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2012,M03,March,7.9,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2012,M02,February,8.2,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2012,M01,January,8.3,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2011,M12,December,7.4,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2011,M11,November,7.3,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2011,M10,October,7.5,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2011,M09,September,7.7,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2011,M08,August,8.3,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2011,M07,July,8.5,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2011,M06,June,8.4,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2011,M05,May,7.7,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2011,M04,April,7.3,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2011,M03,March,8.0,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2011,M02,February,8.3,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2011,M01,January,8.6,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2010,M12,December,7.7,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2010,M11,November,7.9,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2010,M10,October,7.6,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2010,M09,September,7.7,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2010,M08,August,8.5,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2010,M07,July,8.7,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2010,M06,June,8.6,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2010,M05,May,8.6,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2010,M04,April,8.3,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2010,M03,March,9.2,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2010,M02,February,9.5,[{}]
+Not Seasonally Adjusted,Pennsylvania,unemployment rate,2010,M01,January,9.5,[{}]
 
 

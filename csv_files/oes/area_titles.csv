@@ -1,4 +1,6 @@
 area_code,area_name
+0038300,"Pittsburgh, PA"
+4200000,Pennsylvania
 0000000,National
 0011500,"Anniston-Oxford-Jacksonville, AL"
 0012220,"Auburn-Opelika, AL"
@@ -425,13 +427,11 @@ area_code,area_name
 0029540,"Lancaster, PA"
 0030140,"Lebanon, PA"
 0037980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD"
-0038300,"Pittsburgh, PA"
 0039740,"Reading, PA"
 0042540,"Scranton--Wilkes-Barre--Hazleton, PA"
 0044300,"State College, PA"
 0048700,"Williamsport, PA"
 0049620,"York-Hanover, PA"
-4200000,Pennsylvania
 4200001,Western Pennsylvania nonmetropolitan area
 4200002,Northern Pennsylvania nonmetropolitan area
 4200003,Southern Pennsylvania nonmetropolitan area
