@@ -13,10 +13,11 @@
 <% count = 0 %>
 <% name = "collapse" + count.to_s  %>
   <% @reply.each do |series| %>
+    <p> Hello! </p>
 
     <% count = count + 1 %>
     <% name = "collapse" + count.to_s  %>
-    <!-- If the series ID creates a table that has data --> 
+    <!-- If the series ID creates a table that has data -->
     <% if !series['Results']['series'][0]['data'].blank? %>
 
     <!-- Accordion card -->

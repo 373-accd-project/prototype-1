@@ -7,7 +7,7 @@ class QcewController < ApplicationController
   before_action :set_user, only: [:index]
 
   def index
-    if params.has_key?(:year)
+    if params.has_key?(:start_year)
       p params
 
       # generate all possible series ids
@@ -19,10 +19,10 @@ class QcewController < ApplicationController
       # populate the results of the api calls one by one
       # write them to the download file simultaneously
       @reply = []
-      @manager = JsonManager.new("https://api.bls.gov/publicAPI/v2/timeseries/data/", @user.apikey)
+      @manager = JsonManager.new("https://api.bls.gov/publicAPI/v2/timeseries/data/", @user.api_key)
       p "API Key being used " + @user.api_key
       generated_ids.each do |gid|
-        result = JSON(@manager.apiCall(gid, 2010, 2020))
+        result = JSON(@manager.apiCall(gid, params[:start_year], params[:end_year]))
         @reply.push(result)
         formatted_result = csv_format(result)
         IO.write("csv_files/temp.csv", gid + "\n", mode: 'a')
