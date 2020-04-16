@@ -85,7 +85,9 @@
 <%# industry button end %>
 
   <h5>Pick Data Types: &nbsp;<%= select_tag(:data_type, options_for_select(@data_types),  multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
-  <h5>Input Years (YYYY): &nbsp;<%= text_field_tag(:year) %></h5>
+  <h5>Input Start Year (YYYY): &nbsp;<%= text_field_tag(:start_year, Date.current.year - 11) %> </h5><br/>
+  <h5>Input End Year (YYYY): &nbsp;<%= text_field_tag(:end_year, Date.current.year - 1) %> </h5><br/>
+  <h5>Enter Series ID (optional): &nbsp;<%= text_field_tag(:series_id) %> </h5><br/>
   <h5><%= submit_tag("Submit", :style => "height:50px;width:100px;background-color:grey;color:white;", :class => "btn float-left" ) %></h5>
 <% end %>
 

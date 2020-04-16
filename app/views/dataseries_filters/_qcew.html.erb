@@ -1,7 +1,5 @@
 <br/>
-<%= form_tag("/qcew") do %>
-
-
+<%= form_tag do %>
   <!-- Button trigger modal -->
   <h5>Pick Area: &nbsp; <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
     Click to Open for Options
@@ -45,9 +43,9 @@
   <h5>Pick from NAICS Industries: &nbsp;<%= select_tag(:industry, options_for_select(@naics_industries), multiple: true, :style => "font-size:10px;" ) %><br/><br/></h6>
   <h5>Pick Ownerships: &nbsp;<%= select_tag(:ownership, options_for_select(@ownership), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
   <h5>Pick Establishment Sizes: &nbsp;<%= select_tag(:size, options_for_select(@sizes), multiple: true, :style => "font-size:12px;") %><br/></br></h5>
-  <h5>Input Years (YYYY): &nbsp;<%= text_field_tag(:year) %> </h4><br/>
-
-  
+  <h5>Input Start Year (YYYY): &nbsp;<%= text_field_tag(:start_year, Date.current.year - 11) %> </h5><br/>
+  <h5>Input End Year (YYYY): &nbsp;<%= text_field_tag(:end_year, Date.current.year - 1) %> </h5><br/>
+  <h5>Enter Series ID (optional): &nbsp;<%= text_field_tag(:series_id) %> </h5><br/>
   <%= submit_tag("Submit", :style => "height:50px;width:100px;background-color:grey;color:white;", :class => "btn float-left" )%>
   <% end %>
   <p class = "float-left">&nbsp;&nbsp;&nbsp;</p>
