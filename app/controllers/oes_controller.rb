@@ -6,12 +6,14 @@ class OesController < ApplicationController
   before_action :check_login
   
   def index
+    get_filters()
+
     if params.has_key?(:year)
       p params
 
       # generate all possible series ids
-      generated_ids = generate_ids("OES", [params[:seasonal_adjustment_code], params[:area_type_code], params[:area_code], params[:industry_code], params[:occupation_code], params[:data_type_code]])
-      
+      generated_ids = generate_ids("OE", [params[:seasonal_adjustment_code], params[:area_type_code], params[:area_code], params[:industry_code], params[:occupation_code], params[:data_type_code]])
+      p generated_ids
       # make the download file blank
       IO.write("csv_files/temp.csv", "")
 
@@ -22,11 +24,12 @@ class OesController < ApplicationController
       generated_ids.each do |gid|
         result = JSON(@manager.apiCall(gid, 2010, 2020))
         @reply.push(result)
-        formatted_result = csv_format(result)
+        formatted_result = csv_format(prefix_columns(gid, result.nil?), result)
         IO.write("csv_files/temp.csv", gid + "\n", mode: 'a')
         IO.write("csv_files/temp.csv", formatted_result, mode: 'a')
         IO.write("csv_files/temp.csv", "\n\n", mode: 'a')
       end
+
       @generated_ids = generated_ids
       # Store filters in session hash so that any subsequent downlaod requests
       # have access to them
@@ -37,6 +40,9 @@ class OesController < ApplicationController
       session[:area_type_code] = params[:area_type_code]
       session[:data_type_code] = params[:data_type_code]
     end
+  end
+
+  def get_filters
     # Read the fitlers from the CSV file
     @seasonal_adjustment_codes = CSV.read('csv_files/oes/seasonal_adjustment_titles.csv')[1..]
     @occupation_codes = CSV.read('csv_files/oes/occupation_titles.csv')[1..]
@@ -47,8 +53,8 @@ class OesController < ApplicationController
 
     # Hashmaps to create the accordian filters
     @seasonal_adjustment_hashmap = Hash[@seasonal_adjustment_codes.map {|key, value| [key, value]}]
-    @occupation_hashmap = Hash[@occupation_codes.map {|key, value| [key, value]}] 
-    @industry_hashmap = Hash[@industry_codes.map {|key, value| [key, value]}] 
+    @occupation_hashmap = Hash[@occupation_codes.map {|key, value| [key, value]}]
+    @industry_hashmap = Hash[@industry_codes.map {|key, value| [key, value]}]
     @area_hashmap = Hash[@area_codes.map {|key, value| [key, value]}]
     @area_type_hashmap = Hash[@area_type_codes.map {|key, value| [key, value]}]
     @data_type_hashmap = Hash[@data_type_codes.map {|key, value| [key, value]}]
@@ -144,21 +150,38 @@ class OesController < ApplicationController
     return counts
   end
 
-  def csv_format(result)
-    p result["Results"]["series"][0]["data"].length
+  def prefix_columns(gid, nilcheck)
+    if nilcheck
+      return []
+    end
+
+    seasonal = @seasonal_adjustment_hashmap[gid[2]]
+    area_type = @area_type_hashmap[gid[3]]
+    area = @area_hashmap[gid[4..10]]
+    industry = @industry_hashmap[gid[11..16]]
+    occupation = @occupation_hashmap[gid[17..22]]
+    data = @data_type_hashmap[gid[23..-1]]
+    return [seasonal, area_type, area, industry, occupation, data]
+  end
+
+  def csv_format(prefix_columns, result)
     if result["Results"]["series"][0]["data"].length == 0
       return ""
-    else
-      p result["Results"]["series"][0]["data"][0].values.join(",")
     end
-    headers = result["Results"]["series"][0]["data"][0].keys.join(",") + "\n"
+
+    prefix_names = "Seasonal Adjustment,Area Type,Area,Industry,Occupation,Data,"
+
+    headers = result["Results"]["series"][0]["data"][0].keys
+    headers.delete("latest")
+    headers_string = headers.join(",") + "\n"
     csv_string = ""
     csv_string = CSV.generate do |csv|
       result["Results"]["series"][0]["data"].each do |row|
-        csv << row.values
+        row.delete("latest")
+        csv << (prefix_columns + row.values)
       end
     end
-    return (headers << csv_string)
+    return (prefix_names << (headers << csv_string))
   end
 
 end

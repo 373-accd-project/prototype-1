@@ -2,7 +2,46 @@
 <%= form_tag("/oes") do %>
     <h5>Pick Seasonal Adjustment: &nbsp; <%= select_tag(:seasonal_adjustment_code, options_for_select(@seasonal_adjustment_codes), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
     <h5>Pick Area Types: &nbsp;<%= select_tag(:area_type_code, options_for_select(@area_type_codes), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
-    <h5>Pick Areas: &nbsp;<%= select_tag(:area_code, options_for_select(@area_codes), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
+    <!-- Button trigger modal -->
+    <h5>Pick Area: &nbsp; <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+      Click to Open for Options
+    </button></h5>
+
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-xl" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Pick Areas</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+        <div class="container-fluid">
+        <div class="row">
+
+            <% @area_codes.each do |area| %>
+              <% if area[0] == "National" then %>
+                <hr>
+                <div class = "col-12">
+              <% else %>
+                <div class = "col-4">
+              <%end%>
+                <input type="checkbox" name="area_code[]" value="<%= area[1] %>">&nbsp;&nbsp;&nbsp;<%= area[0]%> </input>
+              </div>
+            <% end %>
+        </div>
+        </div>
+
+
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+
     <h5>Pick Industries: &nbsp;<%= select_tag(:industry_code, options_for_select(@industry_codes), multiple: true, :style => "font-size:12px;" ) %><br/><br/></h5>
     <h5>Pick Occupations: &nbsp;<%= select_tag(:occupation_code, options_for_select(@occupation_codes), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
     <h5>Pick Data Types: &nbsp;<%= select_tag(:data_type_code, options_for_select(@data_type_codes), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
@@ -11,11 +50,10 @@
     <h5>Enter Series ID (optional): &nbsp;<%= text_field_tag(:series_id) %> </h5><br/>
     <%= submit_tag("Submit", :style => "height:50px;width:100px;background-color:grey;color:white;", :class => "btn float-left" )%>
 <% end %>
-    
+
 <p class = "float-left">&nbsp;&nbsp;&nbsp;</p>
-    
+
 <%= form_tag("/download_oes_csv") do %>
     <%= submit_tag("Download", :style => "height:50px; width:200px;background-color:green;color:white;", :class => "btn float-left") %>
 <% end %>
 <br/>
-

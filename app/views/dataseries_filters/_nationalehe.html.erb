@@ -1,7 +1,44 @@
 <br/>
 <%= form_tag("/nationalehe") do %>
+
   <h5>Pick Seasonal Adjustment: &nbsp; <%= select_tag(:seasonal_adjustment_code, options_for_select(@seasonal_adjustment_codes), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
-  <h5>Pick Industries: &nbsp;<%= select_tag(:industry, options_for_select(@industries), multiple: true,  :style => "font-size:12px;") %><br/><br/></h5>
+  <!-- Button trigger modal -->
+  <h5>Pick Industry: &nbsp; <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+    Click to Open for Options
+  </button></h5>
+
+  <!-- Modal -->
+  <div class="modal fade bd-example-modal-xl" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Pick Industries</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+      <div class="container-fluid">
+      <div class="row">
+
+          <% @industries.each do |i| %>
+            <% if i[0] == "U.S. TOTAL" then %>
+              &nbsp;<br/><br/>
+            <%end%>
+            <div class = "col-4">
+              <input type="checkbox" name="industry[]" value="<%= i[1] %>">&nbsp;&nbsp;&nbsp;<%= i[0]%> </input>
+            </div>
+          <% end %>
+      </div>
+      </div>
+
+
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
   <h5>Pick Data Types: &nbsp;<%= select_tag(:data_type, options_for_select(@data_types), multiple: true,  :style => "font-size:12px;") %><br/><br/></h5>
   <h5>Input Start Year (YYYY): &nbsp;<%= text_field_tag(:start_year, Date.current.year - 11) %> </h5><br/>
   <h5>Input End Year (YYYY): &nbsp;<%= text_field_tag(:end_year, Date.current.year - 1) %> </h5><br/>

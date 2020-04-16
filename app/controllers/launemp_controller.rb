@@ -6,12 +6,13 @@ class LaunempController < ApplicationController
   before_action :check_login
 
   def index
-    if params.has_key?(:year)
+    get_filters()
 
+    if params.has_key?(:year)
 
       # generate all possible series ids
       generated_ids = generate_ids("LA", [params[:seasonal_adjustment], params[:area], params[:measure]])
-      
+
       # make the download file blank
       IO.write("csv_files/temp.csv", "")
 
@@ -22,7 +23,7 @@ class LaunempController < ApplicationController
       generated_ids.each do |gid|
         result = JSON(@manager.apiCall(gid, 2010, 2020))
         @reply.push(result)
-        formatted_result = csv_format(result)
+        formatted_result = csv_format(prefix_columns(gid, result.nil?), result)
         IO.write("csv_files/temp.csv", gid + "\n", mode: 'a')
         IO.write("csv_files/temp.csv", formatted_result, mode: 'a')
         IO.write("csv_files/temp.csv", "\n\n", mode: 'a')
@@ -36,6 +37,9 @@ class LaunempController < ApplicationController
       session[:measure] = params[:measure]
     end
 
+  end
+
+  def get_filters
     # Read the fitlers from the CSV file
     @area_types = CSV.read('csv_files/la_unemployment/la.area_type.txt', {col_sep: "\t"})[1..]
     @areas = CSV.read('csv_files/la_unemployment/la.area.txt', {col_sep: "\t"})[1..]
@@ -72,14 +76,14 @@ class LaunempController < ApplicationController
     # Hashmaps to create the accordian filters
     @sa_hashmap = Hash[@seasonal_adjustment_codes.map {|key, value| [value, key]}]
     @area_hashmap = Hash[@areas.map {|key, value| [value, key]}]
-    @measures_hashmap = Hash[@measures.map {|key, value| [value, key]}] 
+    @measures_hashmap = Hash[@measures.map {|key, value| [value, key]}]
 
   end
 
   private
   def generate_ids(prefix, arrays)
     # if there is an empty parameter, there are no permutations
-    if arrays.select { |e| e.length == 0 }.length > 0
+    if arrays.select { |e| e.nil? || (e.length == 0) }.length > 0
       return []
     end
 
@@ -126,21 +130,40 @@ class LaunempController < ApplicationController
     return counts
   end
 
-  def csv_format(result)
-    p result["Results"]["series"][0]["data"].length
+  def prefix_columns(gid, nilcheck)
+    if nilcheck
+      return []
+    end
+
+    seasonal = @sa_hashmap[gid[2]]
+    area = @area_hashmap[gid[3..17]]
+    measure = @measures_hashmap[gid[18..-1]]
+    return [seasonal, area, measure]
+  end
+
+  def csv_format(prefix_columns, result)
+    # weed out empty series
     if result["Results"]["series"][0]["data"].length == 0
       return ""
-    else
-      p result["Results"]["series"][0]["data"][0].values.join(",")
     end
-    headers = result["Results"]["series"][0]["data"][0].keys.join(",") + "\n"
-    csv_string = ""
+
+    # get the column headers
+    prefix_names = "Seasonal,Area,Measure,"
+
+    headers = result["Results"]["series"][0]["data"][0].keys
+    headers.delete("latest")
+    headers_string = headers.join(",") + "\n"
+
+    # generate csv by taking all the values
     csv_string = CSV.generate do |csv|
       result["Results"]["series"][0]["data"].each do |row|
-        csv << row.values
+        row.delete("latest")
+        csv << (prefix_columns + row.values)
       end
     end
-    return (headers << csv_string)
+
+    # return headers concatenated with all values
+    return (prefix_names << (headers_string << csv_string))
   end
 
 end

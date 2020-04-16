@@ -6,11 +6,13 @@ Rails.application.routes.draw do
   get 'logout', to: "sessions#destroy", as: :logout
   
   resources :users
-  # resources :users, only: [:new, :create, :show, :update]
 
   get 'settings', to: 'users#settings', as: :settings
 
   get 'home', to: 'home#index', as: :home
+
+  root 'home#index'
+  post "download_csv", to: "home#download_csv"
 
   #  QCEW Routes
   get 'qcew', to: "qcew#index"

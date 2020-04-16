@@ -17,8 +17,6 @@
 
     <% count = count + 1 %>
     <% name = "collapse" + count.to_s  %>
-    <!-- If the series ID creates a table that has data --> 
-    <% if !series['Results']['series'][0]['data'].blank? %>
 
     <!-- Accordion card -->
     <div class="card">
@@ -28,25 +26,27 @@
       <a data-toggle="collapse" data-parent="#accordionEx" href="#<%= name %>" aria-expanded="false" aria-controls="collapseOne1">
         <h5 class="mb-0">
           <%= series['Results']['series'][0]['seriesID']%> - <br/>
-          <%= @sa_hashmap[series['Results']['series'][0]['seriesID'][2]]%><br/>
-          <%= @area_hashmap[series['Results']['series'][0]['seriesID'][3..-3]]%><br/>
-          <%= @measures_hashmap[series['Results']['series'][0]['seriesID'][-2..-1]]%><br/>
+          <%= @sa_hashmap[series['Results']['series'][0]['seriesID'][2]]%> -
+          <%= @area_hashmap[series['Results']['series'][0]['seriesID'][3..-3]]%> -
+          <%= @measures_hashmap[series['Results']['series'][0]['seriesID'][-2..-1]]%>
         </h5>
       </a>
     </div>
 
     <!-- Card body -->
-    <div id="<%= name %>" class="card-body collapse" role="tabpanel" aria-labelledby="headingOne1"
-      data-parent="#accordionEx">
+    <div id="<%= name %>" class="card-body collapse" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordionEx">
       <div class="card-body">
 
-      <%= series['status'] %><br/>
       <% if series['message'].present? %><br/>
         <% for message in series['message'] %>
-          NOTE: <%= message %><br /><br />
+          Message: <%= message %><br /><br />
         <% end %>
       <% end %>
       <br/>
+
+      <!-- If the series ID creates a table that has data -->
+      <% if !series['Results']['series'][0]['data'].blank? then %>
+
       <!-- Create the table -->
       <div class="table-wrapper-scroll-y my-custom-scrollbar">
           <table class="table table-bordered table-striped mb-0">
@@ -76,12 +76,11 @@
           <% end %>
           </table>
       </div> <!-- End of the table -->
-      
+      <% end %> <!-- end if series has data -->
       </div> <!-- End of card body -->
       </div> <!-- End of card body bigger-->
 
     </div> <!-- Accordion card -->
-  <% end %> <!-- end of the if series id has data -->
   <% end %> <!-- end of each loop -->
   </div><!-- Accordion wrapper -->
 <% end %> <!-- end of the if nil statement -->
