@@ -3,6 +3,8 @@ require 'json'
 require 'csv'
 
 class OesController < ApplicationController
+  before_action :check_login
+  
   def index
     get_filters()
 
