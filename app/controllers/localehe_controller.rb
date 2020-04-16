@@ -91,7 +91,7 @@ class LocaleheController < ApplicationController
   def generate_ids(prefix, arrays)
 
     # if there is an empty parameter, there are no permutations
-    if arrays.select { |e| e.length == 0 }.length > 0
+    if arrays.select { |e| e.nil? || (e.length == 0) }.length > 0
       return []
     end
 
