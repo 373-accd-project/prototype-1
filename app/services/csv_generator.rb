@@ -11,7 +11,7 @@ class CsvGenerator
     generated_ids.each_with_index do |gid, i|
       result = JSON(manager.apiCall(gid, start_year, end_year))
 
-      if !headerAdded && result["Results"]["series"][0]["data"].length != 0 
+      if !headerAdded && result["Results"]["series"][0]["data"].length != 0
         # Add the headers
         headers = result["Results"]["series"][0]["data"][0].keys
         headers.delete("latest")
@@ -32,11 +32,11 @@ class CsvGenerator
 
   private
 
-  
+
 
   def csv_format(prefix_columns, result)
     # weed out empty series
-    if result["Results"]["series"][0]["data"].length == 0
+    if result.nil? || result["Results"]["series"][0]["data"].length == 0
       return ""
     end
 

@@ -4,7 +4,7 @@ require 'csv'
 
 class QcewController < ApplicationController
   before_action :check_login
-  
+
   def index
     get_filters()
 

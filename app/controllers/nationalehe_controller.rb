@@ -65,7 +65,7 @@ class NationaleheController < ApplicationController
       sa[1] = tmp
     end
   end
-  
+
   def prefix_columns(gid)
     seasonal = @sa_hashmap[gid[2]]
     data = @data_hashmap[gid[11..-1]]
