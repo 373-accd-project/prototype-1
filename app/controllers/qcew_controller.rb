@@ -10,7 +10,11 @@ class QcewController < ApplicationController
 
     if params.has_key?(:start_year)
       # generate all possible series ids
-      @generated_ids = SeriesIdGenerator.new.generate_ids("ENU", [params[:area_code], params[:datatype], params[:size], params[:ownership], params[:industry]])
+      if params[:series_id].present?
+        @generated_ids = params[:series_id].split(',')
+      else
+        @generated_ids = SeriesIdGenerator.new.generate_ids("ENU", [params[:area_code], params[:datatype], params[:size], params[:ownership], params[:industry]])
+      end
       p @generated_ids
 
       headers = @generated_ids.map{|e| [e] + prefix_columns(e)}

@@ -10,7 +10,11 @@ class OesController < ApplicationController
 
     if params.has_key?(:start_year)
       # generate all possible series ids
-      @generated_ids = SeriesIdGenerator.new.generate_ids("OE", [params[:seasonal_adjustment_code], params[:area_type_code], params[:area_code], params[:industry_code], params[:occupation_code], params[:data_type_code]])
+      if params[:series_id].present?
+        @generated_ids = params[:series_id].split(',')
+      else
+        @generated_ids = SeriesIdGenerator.new.generate_ids("OE", [params[:seasonal_adjustment_code], params[:area_type_code], params[:area_code], params[:industry_code], params[:occupation_code], params[:data_type_code]])
+      end
       p @generated_ids
 
       headers = @generated_ids.map{|e| [e] + prefix_columns(e)}
