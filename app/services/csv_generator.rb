@@ -13,7 +13,7 @@ class CsvGenerator
 
       if !headerAdded && result["Results"]["series"][0]["data"].length != 0
         # Add the headers
-        headers = [gid] + result["Results"]["series"][0]["data"][0].keys
+        headers = result["Results"]["series"][0]["data"][0].keys
         headers.delete("latest")
         headers_string = headers.join(",") + "\n"
         IO.write("csv_files/temp.csv", @prefix_names + headers_string)
