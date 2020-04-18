@@ -12,7 +12,9 @@
 
   <body>
     <%= render 'navbar/navbar' %>
+
     <div id = "container">
+    <%= render :partial => "partials/flash" %>
     <%= yield %>
     </div>
   </body>

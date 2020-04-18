@@ -1,0 +1,14 @@
+<%= simple_form_for @user do |f| %>
+  <%= f.error_notification %>
+  <%= f.error :base %>
+  <%= f.input :username %>
+  <% if current_user != @user && current_user.admin %>
+    <%= f.input :admin %>
+  <% elsif current_user == @user %>
+    <%= "Admin? #{@user.admin ? "Yes" : "No"}" %>
+  <% end %>
+  <%= f.input :api_key %>
+  <%= f.input :password %>
+  <%= f.input :password_confirmation %>
+  <%= f.submit %>
+<% end %>
