@@ -1,126 +1,381 @@
-LAUST420000000000003
-Seasonal,Area,Measure,year,period,periodName,value,footnotes
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2020,M02,February,5.1,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2020,M01,January,5.1,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2019,M12,December,4.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2019,M11,November,4.4,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2019,M10,October,4.4,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2019,M09,September,4.2,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2019,M08,August,4.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2019,M07,July,4.9,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2019,M06,June,4.4,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2019,M05,May,4.0,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2019,M04,April,3.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2019,M03,March,4.3,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2019,M02,February,4.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2019,M01,January,4.6,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2018,M12,December,3.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2018,M11,November,3.6,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2018,M10,October,3.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2018,M09,September,3.9,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2018,M08,August,4.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2018,M07,July,4.7,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2018,M06,June,4.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2018,M05,May,3.9,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2018,M04,April,3.9,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2018,M03,March,4.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2018,M02,February,4.9,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2018,M01,January,4.9,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2017,M12,December,4.3,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2017,M11,November,4.3,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2017,M10,October,4.3,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2017,M09,September,4.4,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2017,M08,August,5.2,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2017,M07,July,5.3,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2017,M06,June,5.0,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2017,M05,May,4.7,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2017,M04,April,4.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2017,M03,March,5.1,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2017,M02,February,5.6,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2017,M01,January,5.6,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2016,M12,December,4.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2016,M11,November,4.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2016,M10,October,5.2,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2016,M09,September,5.3,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2016,M08,August,5.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2016,M07,July,5.9,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2016,M06,June,5.7,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2016,M05,May,5.2,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2016,M04,April,5.1,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2016,M03,March,5.6,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2016,M02,February,5.7,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2016,M01,January,5.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2015,M12,December,4.7,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2015,M11,November,4.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2015,M10,October,4.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2015,M09,September,4.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2015,M08,August,5.4,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2015,M07,July,5.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2015,M06,June,5.6,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2015,M05,May,5.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2015,M04,April,4.9,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2015,M03,March,5.5,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2015,M02,February,5.8,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2015,M01,January,5.9,"[{""code""=>""R"", ""text""=>""Data were subject to revision on March 4, 2020.""}]"
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2014,M12,December,4.9,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2014,M11,November,4.9,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2014,M10,October,5.0,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2014,M09,September,5.2,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2014,M08,August,6.1,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2014,M07,July,6.5,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2014,M06,June,6.0,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2014,M05,May,5.9,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2014,M04,April,5.5,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2014,M03,March,6.5,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2014,M02,February,6.9,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2014,M01,January,6.8,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2013,M12,December,6.1,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2013,M11,November,6.4,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2013,M10,October,6.8,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2013,M09,September,6.8,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2013,M08,August,7.5,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2013,M07,July,7.8,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2013,M06,June,7.8,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2013,M05,May,7.4,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2013,M04,April,7.0,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2013,M03,March,7.7,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2013,M02,February,8.3,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2013,M01,January,8.8,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2012,M12,December,7.6,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2012,M11,November,7.1,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2012,M10,October,7.5,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2012,M09,September,7.4,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2012,M08,August,8.3,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2012,M07,July,8.6,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2012,M06,June,8.2,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2012,M05,May,7.7,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2012,M04,April,7.1,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2012,M03,March,7.9,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2012,M02,February,8.2,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2012,M01,January,8.3,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2011,M12,December,7.4,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2011,M11,November,7.3,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2011,M10,October,7.5,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2011,M09,September,7.7,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2011,M08,August,8.3,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2011,M07,July,8.5,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2011,M06,June,8.4,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2011,M05,May,7.7,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2011,M04,April,7.3,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2011,M03,March,8.0,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2011,M02,February,8.3,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2011,M01,January,8.6,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2010,M12,December,7.7,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2010,M11,November,7.9,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2010,M10,October,7.6,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2010,M09,September,7.7,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2010,M08,August,8.5,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2010,M07,July,8.7,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2010,M06,June,8.6,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2010,M05,May,8.6,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2010,M04,April,8.3,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2010,M03,March,9.2,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2010,M02,February,9.5,[{}]
-Not Seasonally Adjusted,Pennsylvania,unemployment rate,2010,M01,January,9.5,[{}]
+ENU4200010010
+Area,Datatype,Industry,Ownership,Size,year,period,periodName,value,footnotes
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M09,September,5947879,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M08,August,5931442,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M07,July,5917691,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M06,June,5973643,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M05,May,5959963,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M04,April,5912238,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M03,March,5850844,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M02,February,5817872,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M01,January,5819321,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M12,December,5935443,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M11,November,5943408,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M10,October,5930461,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M09,September,5899233,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M08,August,5869865,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M07,July,5864491,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M06,June,5926306,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M05,May,5903833,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M04,April,5850420,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M03,March,5788455,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M02,February,5757563,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M01,January,5743923,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M12,December,5872180,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M11,November,5876113,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M10,October,5857661,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M09,September,5839137,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M08,August,5800460,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M07,July,5796208,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M06,June,5858018,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M05,May,5834266,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M04,April,5779870,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M03,March,5710072,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M02,February,5685078,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M01,January,5680409,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M12,December,5800878,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M11,November,5807556,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M10,October,5795891,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M09,September,5779294,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M08,August,5731328,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M07,July,5740141,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M06,June,5786022,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M05,May,5774294,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M04,April,5731389,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M03,March,5665000,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M02,February,5620367,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M01,January,5620951,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M12,December,5761811,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M11,November,5763370,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M10,October,5751777,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M09,September,5721480,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M08,August,5686100,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M07,July,5687337,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M06,June,5763611,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M05,May,5742952,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M04,April,5672462,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M03,March,5600177,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M02,February,5572892,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M01,January,5575387,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M12,December,5721188,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M11,November,5722093,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M10,October,5709119,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M09,September,5677513,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M08,August,5644329,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M07,July,5635207,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M06,June,5717707,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M05,May,5694938,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M04,April,5627051,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M03,March,5559399,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M02,February,5508910,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M01,January,5515860,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M12,December,5647263,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M11,November,5657495,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M10,October,5641750,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M09,September,5622529,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M08,August,5586011,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M07,July,5579572,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M06,June,5662649,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M05,May,5644469,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M04,April,5587012,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M03,March,5542225,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M02,February,5501049,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M01,January,5490063,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M12,December,5627180,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M11,November,5633974,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M10,October,5620199,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M09,September,5602941,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M08,August,5560355,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M07,July,5555171,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M06,June,5648065,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M05,May,5631095,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M04,April,5577063,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M03,March,5537377,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M02,February,5480766,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M01,January,5466776,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M12,December,5599808,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M11,November,5607702,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M10,October,5587483,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M09,September,5564908,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M08,August,5506759,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M07,July,5518335,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M06,June,5608276,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M05,May,5586914,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M04,April,5539466,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M03,March,5467989,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M02,February,5420414,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M01,January,5415338,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M12,December,5555783,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M11,November,5559341,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M10,October,5542839,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M09,September,5504007,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M08,August,5456799,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M07,July,5462063,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M06,June,5551421,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M05,May,5536699,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M04,April,5461718,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M03,March,5379790,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M02,February,5318220,[{}]
+Pennsylvania -- Statewide,All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M01,January,5337376,[{}]
+
+
+ENU4200010011
+
+
+ENU42000100111
+
+
+ENU4200310010
+Area,Datatype,Industry,Ownership,Size,year,period,periodName,value,footnotes
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M09,September,704828,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M08,August,704156,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M07,July,705360,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M06,June,711185,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M05,May,705517,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M04,April,700154,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M03,March,694731,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M02,February,691633,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M01,January,691981,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M12,December,708994,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M11,November,709360,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M10,October,707317,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M09,September,704316,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M08,August,702964,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M07,July,705333,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M06,June,709126,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M05,May,704757,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M04,April,698105,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M03,March,692549,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M02,February,689340,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M01,January,688589,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M12,December,702657,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M11,November,702411,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M10,October,701083,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M09,September,698868,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M08,August,696048,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M07,July,697339,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M06,June,704339,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M05,May,697687,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M04,April,692113,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M03,March,684443,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M02,February,681158,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M01,January,680907,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M12,December,694196,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M11,November,695612,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M10,October,692129,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M09,September,690984,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M08,August,689469,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M07,July,693009,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M06,June,699180,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M05,May,693159,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M04,April,688121,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M03,March,679065,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M02,February,674323,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M01,January,673949,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M12,December,692115,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M11,November,692613,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M10,October,689379,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M09,September,687744,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M08,August,686549,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M07,July,688659,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M06,June,695959,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M05,May,691014,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M04,April,682743,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M03,March,675102,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M02,February,671500,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M01,January,672715,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M12,December,689089,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M11,November,688016,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M10,October,687785,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M09,September,685154,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M08,August,683079,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M07,July,684569,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M06,June,694631,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M05,May,689121,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M04,April,680865,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M03,March,674063,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M02,February,670021,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M01,January,671396,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M12,December,690108,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M11,November,689465,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M10,October,687944,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M09,September,685383,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M08,August,681792,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M07,July,685149,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M06,June,695153,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M05,May,688876,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M04,April,682583,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M03,March,677999,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M02,February,674118,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M01,January,672797,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M12,December,689858,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M11,November,690452,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M10,October,688534,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M09,September,685445,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M08,August,681171,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M07,July,682933,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M06,June,694650,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M05,May,686631,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M04,April,681420,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M03,March,676819,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M02,February,670445,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M01,January,669738,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M12,December,685664,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M11,November,685223,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M10,October,683353,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M09,September,679780,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M08,August,673209,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M07,July,675590,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M06,June,687358,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M05,May,681134,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M04,April,674348,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M03,March,667333,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M02,February,662104,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M01,January,662326,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M12,December,676308,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M11,November,676849,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M10,October,674617,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M09,September,671720,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M08,August,667978,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M07,July,668767,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M06,June,678676,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M05,May,672844,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M04,April,664563,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M03,March,656558,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M02,February,648856,[{}]
+"Allegheny County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M01,January,652379,[{}]
+
+
+ENU4200310011
+
+
+ENU42003100111
+
+
+ENU4200710010
+Area,Datatype,Industry,Ownership,Size,year,period,periodName,value,footnotes
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M09,September,57770,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M08,August,57091,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M07,July,56192,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M06,June,56713,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M05,May,56190,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M04,April,55581,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M03,March,54385,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M02,February,53702,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2019,M01,January,53721,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M12,December,54480,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M11,November,54311,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M10,October,53981,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M09,September,53773,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M08,August,53109,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M07,July,53019,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M06,June,53453,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M05,May,53426,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M04,April,52688,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M03,March,51673,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M02,February,50986,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2018,M01,January,50576,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M12,December,52010,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M11,November,52415,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M10,October,52310,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M09,September,52028,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M08,August,51533,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M07,July,51375,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M06,June,51921,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M05,May,51592,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M04,April,50970,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M03,March,50039,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M02,February,49667,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2017,M01,January,49363,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M12,December,50528,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M11,November,50966,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M10,October,51235,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M09,September,51080,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M08,August,51043,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M07,July,51292,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M06,June,51881,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M05,May,51935,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M04,April,51421,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M03,March,50877,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M02,February,50676,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2016,M01,January,50732,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M12,December,52218,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M11,November,52418,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M10,October,52406,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M09,September,52125,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M08,August,52125,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M07,July,52046,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M06,June,53215,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M05,May,52705,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M04,April,52198,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M03,March,51332,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M02,February,51120,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2015,M01,January,51327,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M12,December,52818,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M11,November,53136,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M10,October,53207,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M09,September,52720,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M08,August,52500,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M07,July,52193,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M06,June,53971,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M05,May,53744,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M04,April,53294,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M03,March,52278,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M02,February,51922,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2014,M01,January,52056,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M12,December,53555,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M11,November,53797,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M10,October,54121,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M09,September,54042,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M08,August,53523,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M07,July,53449,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M06,June,54733,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M05,May,54866,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M04,April,54202,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M03,March,53428,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M02,February,53097,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2013,M01,January,53087,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M12,December,54818,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M11,November,55346,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M10,October,55337,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M09,September,54899,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M08,August,54193,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M07,July,54041,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M06,June,55350,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M05,May,55616,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M04,April,54938,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M03,March,54178,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M02,February,53793,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2012,M01,January,53832,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M12,December,54914,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M11,November,55238,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M10,October,54966,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M09,September,54584,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M08,August,53568,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M07,July,53731,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M06,June,54905,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M05,May,55276,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M04,April,54712,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M03,March,53836,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M02,February,53453,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2011,M01,January,53336,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M12,December,55124,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M11,November,55274,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M10,October,54934,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M09,September,54244,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M08,August,53546,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M07,July,53863,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M06,June,55149,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M05,May,54946,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M04,April,53911,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M03,March,52911,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M02,February,52302,[{}]
+"Beaver County, Pennsylvania",All Employees,"10 Total, all industries",Total Covered,All establishment sizes,2010,M01,January,52491,[{}]
+
+
+ENU4200710011
+
+
+ENU42007100111
 
 
