@@ -46,7 +46,7 @@
 
       <!-- If the series ID creates a table that has data -->
       <% if !series['Results']['series'][0]['data'].blank? then %>
-
+      <%= series['Results']['series'][0]['seriesID']%><br/>
       <!-- Create the table -->
       <div class="table-wrapper-scroll-y my-custom-scrollbar">
           <table class="table table-bordered table-striped mb-0">
