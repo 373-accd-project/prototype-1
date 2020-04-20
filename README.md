@@ -15,7 +15,7 @@ Move the zip file inside and unzip the file, you may delete the zip file at this
 ## 2) Download Ruby, Rails and Ubuntu
 ### The next steps are to download Ruby and Rails so that the application can run.
 
-1) Windows Subsystem for Linux (WSL)
+#### 1) Windows Subsystem for Linux (WSL)
 
 Installation instructions are based on [these Windows docs](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
@@ -52,28 +52,28 @@ Installation instructions are based on [these Windows docs](https://docs.microso
 
 5) Nice work
 
-1) Entering `ls` will list everything in the working directory. Right
-now you will probably see nothing.
-2) `pwd` will print the working directory (where you are right now)
-3) Entering `cd [some path]` will change the current directory to the
-given path.
-4) *Important:* you can get to your windows files (and you will likely
-want to do this for the rest of this class)
+    1) Entering `ls` will list everything in the working directory. Right
+    now you will probably see nothing.
+    2) `pwd` will print the working directory (where you are right now)
+    3) Entering `cd [some path]` will change the current directory to the
+    given path.
+    4) *Important:* you can get to your windows files (and you will likely
+    want to do this for the rest of this class)
 
-    ```
-    cd /mnt/
-    ```
-    or, you can probably get all the way to the repository we downloaded before with
-    
-    ```
-    cd /mnt/c/Users/[your windows username]/Documents/bls-query-app
-    ```
+        ```
+        cd /mnt/
+        ```
+        or, you can probably get all the way to the repository we downloaded before with
+        
+        ```
+        cd /mnt/c/Users/[your windows username]/Documents/bls-query-app
+        ```
 
-5) *Important:* you can paste from you windows clip board into wsl by
-right-clicking. You will likely find this very useful.
+    5) *Important:* you can paste from you windows clip board into wsl by
+    right-clicking. You will likely find this very useful.
 
 
-2) Ruby 2.5.7
+#### 2) Ruby 2.5.7
 1) Install gpg2 (a prerequisite for rvm)
 
     ```
@@ -113,7 +113,7 @@ right-clicking. You will likely find this very useful.
     ```
     You should see `=* ruby-2.7.0` in the output.
 
-3) Rails 6.0.2
+#### 3) Rails 6.0.2
 1) Install nodejs (a prerequisite)
 
     ```
