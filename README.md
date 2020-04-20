@@ -5,185 +5,185 @@
 ## 1) Download the Complete Repository from GitHub
 ### Before downloading any software follow the next steps to download the application onto your laptop locally.
 
-    Here: https://github.com/373-accd-project/prototype-1
+Here: https://github.com/373-accd-project/prototype-1
 
-    On the right hand side there should be a green button that says 'Clone or download'. Click the button and choose 'Download ZIP'
+On the right hand side there should be a green button that says 'Clone or download'. Click the button and choose 'Download ZIP'
 
-    Once the zip file is downloaded, make a folder in your Documents called 'bls-query-app'
-    Move the zip file inside and unzip the file, you may delete the zip file at this time if you prefer.
+Once the zip file is downloaded, make a folder in your Documents called 'bls-query-app'
+Move the zip file inside and unzip the file, you may delete the zip file at this time if you prefer.
 
 ## 2) Download Ruby, Rails and Ubuntu
 ### The next steps are to download Ruby and Rails so that the application can run.
 
-    1) Windows Subsystem for Linux (WSL)
+1) Windows Subsystem for Linux (WSL)
 
-        Installation instructions are based on [these Windows docs](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+Installation instructions are based on [these Windows docs](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
-        1) Enable the feature
+1) Enable the feature
 
-            Open windows powershell as an administrator and enter:
-            ```
-            Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-            ```
+    Open windows powershell as an administrator and enter:
+    ```
+    Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+    ```
 
-        2) Restart your computer when prompted
+2) Restart your computer when prompted
 
-        3) Install Ubuntu 18.04 on WSL
+3) Install Ubuntu 18.04 on WSL
 
-            Find [Ubuntu 18.04 in the Windows store](https://www.microsoft.com/store/apps/9N9TNGVNDL3Q)
-            and select "Get" on the distro page. Then select "Install".
+    Find [Ubuntu 18.04 in the Windows store](https://www.microsoft.com/store/apps/9N9TNGVNDL3Q)
+    and select "Get" on the distro page. Then select "Install".
 
-        4) Initialize your Ubuntu installation
+4) Initialize your Ubuntu installation
 
-            1) Launch Ubuntu 18.04 (it will take a minute to open)
-            2) When prompted, enter a username of your choice
-            3) When prompted, enter a password of your choice
-            4) Record the credentials for the account you just created somewhere
-            that you will not lose them
-            5) Make sure you are running the most recent software (and will use
-            it in the future)
+    1) Launch Ubuntu 18.04 (it will take a minute to open)
+    2) When prompted, enter a username of your choice
+    3) When prompted, enter a password of your choice
+    4) Record the credentials for the account you just created somewhere
+    that you will not lose them
+    5) Make sure you are running the most recent software (and will use
+    it in the future)
 
-                Enter this in the bash shell:
-                ```
-                sudo apt update && sudo apt upgrade
-                ```
-                Running this will take a while. You may be prompted about restarting
-                services (such as ssh), this is fine.
+    Enter this in the bash shell:
+    ```
+    sudo apt update && sudo apt upgrade
+    ```
+    Running this will take a while. You may be prompted about restarting
+    services (such as ssh), this is fine.
 
-        5) Nice work
+5) Nice work
 
-            1) Entering `ls` will list everything in the working directory. Right
-            now you will probably see nothing.
-            2) `pwd` will print the working directory (where you are right now)
-            3) Entering `cd [some path]` will change the current directory to the
-            given path.
-            4) *Important:* you can get to your windows files (and you will likely
-            want to do this for the rest of this class)
+1) Entering `ls` will list everything in the working directory. Right
+now you will probably see nothing.
+2) `pwd` will print the working directory (where you are right now)
+3) Entering `cd [some path]` will change the current directory to the
+given path.
+4) *Important:* you can get to your windows files (and you will likely
+want to do this for the rest of this class)
 
-                ```
-                cd /mnt/
-                ```
-                or, you can probably get all the way to the repository we downloaded before with
-                
-                ```
-                cd /mnt/c/Users/[your windows username]/Documents/bls-query-app
-                ```
+    ```
+    cd /mnt/
+    ```
+    or, you can probably get all the way to the repository we downloaded before with
+    
+    ```
+    cd /mnt/c/Users/[your windows username]/Documents/bls-query-app
+    ```
 
-            5) *Important:* you can paste from you windows clip board into wsl by
-            right-clicking. You will likely find this very useful.
+5) *Important:* you can paste from you windows clip board into wsl by
+right-clicking. You will likely find this very useful.
 
 
-    2) Ruby 2.5.7
-        1) Install gpg2 (a prerequisite for rvm)
+2) Ruby 2.5.7
+1) Install gpg2 (a prerequisite for rvm)
 
-            ```
-            sudo apt-get install gnupg2
-            ```
-            Note: unless otherwise specified all of these instructions are meant
-            to be run in the Ubuntu installation you just set up.
+    ```
+    sudo apt-get install gnupg2
+    ```
+    Note: unless otherwise specified all of these instructions are meant
+    to be run in the Ubuntu installation you just set up.
 
-        2) Install rvm (based on [these instructions](https://rvm.io/))
+2) Install rvm (based on [these instructions](https://rvm.io/))
 
-            ```
-            gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-            \curl -sSL https://get.rvm.io | bash -s stable
-            ```
+    ```
+    gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+    \curl -sSL https://get.rvm.io | bash -s stable
+    ```
 
-        3) Close your bash shell and open a new one (or `source ~/.bashrc` should work)
+3) Close your bash shell and open a new one (or `source ~/.bashrc` should work)
 
-        4) Install Ruby 2.7.0 (this will take a while)
+4) Install Ruby 2.7.0 (this will take a while)
 
-            ```
-            rvm install 2.7.0
-            ```
+    ```
+    rvm install 2.7.0
+    ```
 
-        5) Set default Ruby version
+5) Set default Ruby version
 
-            ```
-            bash --login
-            rvm --default use 2.7.0
-            ```
+    ```
+    bash --login
+    rvm --default use 2.7.0
+    ```
 
-        6) Close and re-open WSL
+6) Close and re-open WSL
 
-        7) Check installation
+7) Check installation
 
-            ```
-            rvm list
-            ```
-            You should see `=* ruby-2.7.0` in the output.
+    ```
+    rvm list
+    ```
+    You should see `=* ruby-2.7.0` in the output.
 
-    3) Rails 6.0.2
-        1) Install nodejs (a prerequisite)
+3) Rails 6.0.2
+1) Install nodejs (a prerequisite)
 
-            ```
-            curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-            sudo apt-get install -y nodejs
-            ```
+    ```
+    curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+    sudo apt-get install -y nodejs
+    ```
 
-        2) Install Rails 6.0.2 (this will take a while)
+2) Install Rails 6.0.2 (this will take a while)
 
-            ```
-            gem install rails -v=6.0.2
-            ```
+    ```
+    gem install rails -v=6.0.2
+    ```
 
 
 ## 3) Run Application 
 ### Then run the application.
 
-        1) Go to the folder 'bls-query-app' in Documents from the Ubuntu shell
+1) Go to the folder 'bls-query-app' in Documents from the Ubuntu shell
 
-            ```
-            cd /mnt/c/Users/[your windows username]/Documents/bls-query-app
-            ```
+    ```
+    cd /mnt/c/Users/[your windows username]/Documents/bls-query-app
+    ```
 
-        2) Now go into the repository (folder) you downloaded from the GitHub page
+2) Now go into the repository (folder) you downloaded from the GitHub page
 
-            ```
-            cd prototype-1
-            ```
-            
-        3) Install the new app's dependencies
+    ```
+    cd prototype-1
+    ```
+    
+3) Install the new app's dependencies
 
-            ```
-            bundle install
-            ```
-            You may have to try this command multiple times. If it fails in a
-            consistent way then seek help. Some references to help with issues are:
-                
-                - Stack Overflow: https://stackoverflow.com/
-                - Ruby and Rails Documentation: https://rubyapi.org/
-                - Google: https://www.google.com/
+    ```
+    bundle install
+    ```
+    You may have to try this command multiple times. If it fails in a
+    consistent way then seek help. Some references to help with issues are:
+        
+        - Stack Overflow: https://stackoverflow.com/
+        - Ruby and Rails Documentation: https://rubyapi.org/
+        - Google: https://www.google.com/
 
-        4) Run the application
+4) Run the application
 
-            ```
-            rails server
-            ```
+    ```
+    rails server
+    ```
 
-            *** If there is an issue with the 'yarn' dependency then please run:
+    *** If there is an issue with the 'yarn' dependency then please run:
 
-            ```
-            yarn install --check-files
-            ```
+    ```
+    yarn install --check-files
+    ```
 
-            If there are even more issues please look to this page:
-            https://linuxize.com/post/how-to-install-yarn-on-ubuntu-18-04/
+    If there are even more issues please look to this page:
+    https://linuxize.com/post/how-to-install-yarn-on-ubuntu-18-04/
 
-            Note that there might need to be repeated attempts to work.
-            
-            If you have fixed the issue, re-run the application.
+    Note that there might need to be repeated attempts to work.
+    
+    If you have fixed the issue, re-run the application.
 
-            ***
-            
+    ***
+    
 
-        5) Open your browser and put [localhost:3000](localhost:3000) in the
-        address bar (or open the link)
+5) Open your browser and put [localhost:3000](localhost:3000) in the
+address bar (or open the link)
 
-            There you should see the BLS Homepage. 
+    There you should see the BLS Homepage. 
 
-            Congrats, you did it! (When you're done the key combination CTRL c
-            in the Ubuntu shell to stop the server)
+    Congrats, you did it! (When you're done the key combination CTRL c
+    in the Ubuntu shell to stop the server)
 
 
 ## 4) Logging into the Application
