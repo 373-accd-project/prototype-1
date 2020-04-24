@@ -38,6 +38,7 @@
     </div>
   </div>
 
+  <br/><h5>Seasonsal Adjustment: <%= radio_button_tag(:seasonally_adjusted, "yes") %> <%= label_tag(:seasonally_adjusted_yes, "Yes") %> <%= radio_button_tag(:seasonally_adjusted, "no", :checked)%> <%= label_tag(:seasonally_adjusted_no, "No") %><br/></h5>
   <h5>Pick Data Types: &nbsp;<%= select_tag(:datatype, options_for_select(@data_types), multiple: true, :style => "font-size:12px;") %><br/><br/></h5>
   <h5>Pick from Supersector Industries: &nbsp;<%= select_tag(:industry, options_for_select(@super_industries), multiple: true, :style => "font-size:10px;" ) %><br/></h6>
   
