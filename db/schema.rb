@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2020_04_13_161643) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "password_digest"

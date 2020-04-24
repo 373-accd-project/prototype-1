@@ -10,8 +10,8 @@ class CsvGenerator
     # write them to the download file simultaneously
     generated_ids.each_with_index do |gid, i|
       result = JSON(manager.apiCall(gid, start_year, end_year))
-
-      if !headerAdded && result["Results"]["series"][0]["data"].length != 0
+      p result
+      if !headerAdded && (!result["Results"]["series"][0]["data"].nil?) && result["Results"]["series"][0]["data"].length != 0
         # Add the headers
         headers = result["Results"]["series"][0]["data"][0].keys
         headers.delete("latest")
