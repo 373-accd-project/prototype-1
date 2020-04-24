@@ -10,23 +10,26 @@ class CsvGenerator
     # write them to the download file simultaneously
     generated_ids.each_with_index do |gid, i|
       result = JSON(manager.apiCall(gid, start_year, end_year))
+      if result["status"] == "REQUEST_SUCCEEDED"
+        if !headerAdded && (!result["Results"]["series"][0]["data"].nil?) && result["Results"]["series"][0]["data"].length != 0
+          # Add the headers
+          headers = result["Results"]["series"][0]["data"][0].keys
+          headers.delete("latest")
+          headers_string = headers.join(",") + "\n"
+          IO.write("csv_files/temp.csv", @prefix_names + headers_string)
+          headerAdded = true
+        end
 
-      if !headerAdded && (!result["Results"]["series"][0]["data"].nil?) && result["Results"]["series"][0]["data"].length != 0
-        # Add the headers
-        headers = result["Results"]["series"][0]["data"][0].keys
-        headers.delete("latest")
-        headers_string = headers.join(",") + "\n"
-        IO.write("csv_files/temp.csv", @prefix_names + headers_string)
-        headerAdded = true
+
+        formatted_result = csv_format(headerValues[i], result)
+        # IO.write("csv_files/temp.csv", gid + "\n", mode: 'a')
+        IO.write("csv_files/temp.csv", formatted_result, mode: 'a')
+        # IO.write("csv_files/temp.csv", "\n\n", mode: 'a')
       end
-
+      p result
       reply.push(result)
-      formatted_result = csv_format(headerValues[i], result)
-      # IO.write("csv_files/temp.csv", gid + "\n", mode: 'a')
-      IO.write("csv_files/temp.csv", formatted_result, mode: 'a')
-      # IO.write("csv_files/temp.csv", "\n\n", mode: 'a')
     end
-
+    p reply
     reply
   end
 
