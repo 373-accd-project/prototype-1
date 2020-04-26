@@ -13,7 +13,12 @@ class LaunempController < ApplicationController
       if params[:series_id].present?
         @generated_ids = params[:series_id].split(',')
       else
-        @generated_ids = SeriesIdGenerator.new.generate_ids("LA", [params[:seasonal_adjustment], params[:area], params[:measure]])
+        if params[:seasonally_adjusted] == "yes"
+          series_prefix = "LAS"
+        else
+          series_prefix = "LAU"
+        end
+        @generated_ids = SeriesIdGenerator.new.generate_ids(series_prefix, [params[:area], params[:measure]])
       end
       p @generated_ids
 
@@ -44,13 +49,11 @@ class LaunempController < ApplicationController
       area_type[1] = tmp
     end
     for area in @areas do
-      area.slice!(0)
-      area.slice!(2..)
+      area.slice!(3..)
 
-      tmp = area[0]
-      area[0] = area[1]
-      area[1] = tmp
-      p area
+      # tmp = area[0]
+      # area[0] = area[1]
+      # area[1] = tmp
     end
     for measure in @measures do
       tmp = measure[0]
@@ -64,8 +67,9 @@ class LaunempController < ApplicationController
     end
 
     # Hashmaps to create the accordian filters
+    @area_type_hashmap = Hash[@area_types].invert
     @sa_hashmap = Hash[@seasonal_adjustment_codes.map {|key, value| [value, key]}]
-    @area_hashmap = Hash[@areas.map {|key, value| [value, key]}]
+    @area_hashmap = Hash[@areas.map { |e| e[1..2] } ]
     @measures_hashmap = Hash[@measures.map {|key, value| [value, key]}]
   end
 

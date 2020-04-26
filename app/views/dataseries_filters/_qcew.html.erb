@@ -1,7 +1,7 @@
 <br/>
 <%= form_tag do %>
   <!-- Button trigger modal -->
-  <h5>Pick Area: &nbsp; <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#areaModal">
+  <h5>Pick Area: &nbsp; <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#areaModal" onclick = "checkboxNest()">
     Click to Choose Area(s)
   </button></h5>
 
@@ -17,17 +17,34 @@
         </div>
         <div class="modal-body">
       <div class="container-fluid">
-      <div class="row">
-
+        <ul class="mb-1 pl-3 pb-2">
+          <% prev_area_prefix = nil %>
           <% @area_codes.each do |area| %>
-            <% if area[0] == "U.S. TOTAL" then %>
-              &nbsp;<br/><br/>
-            <%end%>
-            <div class = "col-4">
-              <input type="checkbox" name="area_code[]" value="<%= area[1] %>">&nbsp;&nbsp;&nbsp;<%= area[0]%> </input>
-            </div> 
+            <% if prev_area_prefix == nil %>
+              <% prev_area_prefix = area[1][0..1] %>
+              <li>
+                <span class="caret"></span>
+                <input type="checkbox" name="area_code[]" value="<%= area[1] %>">&nbsp;&nbsp;&nbsp;<%= area[0]%> </input>
+                <ul class = "nested">
+            <% elsif area[1][0..1] == prev_area_prefix %>
+              <li>
+                <input type="checkbox" name="area_code[]" value="<%= area[1] %>">&nbsp;&nbsp;&nbsp;<%= area[0]%> </input>
+              </li>
+            <% else %>
+              <%# new major area/state %>
+              </ul>
+              </li>
+              <li>
+                <% if @area_codes.inject(0) { |total, s| if s[1][0..1] == area[1][0..1] then total + 1 else total end } > 1 %>
+                <span class="caret"></span>
+                <% end %>
+                <input type="checkbox" name="area_code[]" value="<%= area[1] %>">&nbsp;&nbsp;&nbsp;<%= area[0]%> </input>
+                <ul class = "nested">
+              <% prev_area_prefix = area[1][0..1] %>
+            <% end %>
+
           <% end %>
-      </div>
+        </ul>
       </div>
 
         

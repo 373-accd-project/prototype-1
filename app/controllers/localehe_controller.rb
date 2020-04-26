@@ -13,7 +13,12 @@ class LocaleheController < ApplicationController
       if params[:series_id].present?
         @generated_ids = params[:series_id].split(',')
       else
-        @generated_ids = SeriesIdGenerator.new.generate_ids("SM", [params[:seasonal_adjustment_code], params[:state_code], params[:area_code], params[:industry], params[:data_type]])
+        if params[:seasonally_adjusted] == "yes"
+          series_prefix = "SMS"
+        else
+          series_prefix = "SMU"
+        end
+        @generated_ids = SeriesIdGenerator.new.generate_ids(series_prefix, [params[:state_code], params[:area_code], params[:industry], params[:data_type]])
       end
       
       p @generated_ids
@@ -33,7 +38,7 @@ class LocaleheController < ApplicationController
     # Read the fitlers from the CSV file
     @seasonal_adjustment_codes = CSV.read('csv_files/localehe/seasonal_adjustment_codes.csv')[1..]
     @state_codes = CSV.read('csv_files/localehe/state_codes.csv')[1..]
-    @area_codes = CSV.read('csv_files/localehe/area_codes.csv')[1..]
+    @area_codes = CSV.read('csv_files/localehe/new_area_codes.csv')[1..]
     @supersectors = CSV.read('csv_files/localehe/supersector_codes.csv')[1..]
     @industries = CSV.read('csv_files/localehe/industry_codes.csv')[1..]
     @data_types = CSV.read('csv_files/localehe/data_type_codes.csv')[1..]

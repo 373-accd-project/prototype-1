@@ -1,7 +1,30 @@
 area_code,area_name
-0038300,"Pittsburgh, PA"
 4200000,Pennsylvania
+0038300,"Pittsburgh, PA"
+0010900,"Allentown-Bethlehem-Easton, PA-NJ"
+0011020,"Altoona, PA"
+0014100,"Bloomsburg-Berwick, PA"
+0016540,"Chambersburg-Waynesboro, PA"
+0020700,"East Stroudsburg, PA"
+0021500,"Erie, PA"
+0023900,"Gettysburg, PA"
+0025420,"Harrisburg-Carlisle, PA"
+0027780,"Johnstown, PA"
+0029540,"Lancaster, PA"
+0030140,"Lebanon, PA"
+0037980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD"
+0039740,"Reading, PA"
+0042540,"Scranton--Wilkes-Barre--Hazleton, PA"
+0044300,"State College, PA"
+0048700,"Williamsport, PA"
+0049620,"York-Hanover, PA"
+4200001,Western Pennsylvania nonmetropolitan area
+4200002,Northern Pennsylvania nonmetropolitan area
+4200003,Southern Pennsylvania nonmetropolitan area
+-1,NA
 0000000,National
+-1,NA
+0100000,Alabama
 0011500,"Anniston-Oxford-Jacksonville, AL"
 0012220,"Auburn-Opelika, AL"
 0013820,"Birmingham-Hoover, AL"
@@ -14,15 +37,17 @@ area_code,area_name
 0033660,"Mobile, AL"
 0033860,"Montgomery, AL"
 0046220,"Tuscaloosa, AL"
-0100000,Alabama
 0100001,Northwest Alabama nonmetropolitan area
 0100002,Northeast Alabama nonmetropolitan area
 0100003,Southwest Alabama nonmetropolitan area
 0100004,Southeast Alabama nonmetropolitan area
+-1,NA
+0200000,Alaska
 0011260,"Anchorage, AK"
 0021820,"Fairbanks, AK"
-0200000,Alaska
 0200006,Alaska nonmetropolitan area
+-1,NA
+0400000,Arizona
 0022380,"Flagstaff, AZ"
 0029420,"Lake Havasu City-Kingman, AZ"
 0038060,"Phoenix-Mesa-Scottsdale, AZ"
@@ -30,19 +55,21 @@ area_code,area_name
 0043420,"Sierra Vista-Douglas, AZ"
 0046060,"Tucson, AZ"
 0049740,"Yuma, AZ"
-0400000,Arizona
 0400001,Arizona nonmetropolitan area
+-1,NA
+0500000,Arkansas
 0022220,"Fayetteville-Springdale-Rogers, AR-MO"
 0022900,"Fort Smith, AR-OK"
 0026300,"Hot Springs, AR"
 0027860,"Jonesboro, AR"
 0030780,"Little Rock-North Little Rock-Conway, AR"
 0038220,"Pine Bluff, AR"
-0500000,Arkansas
 0500001,North Arkansas nonmetropolitan area
 0500002,East Arkansas nonmetropolitan area
 0500003,West Arkansas nonmetropolitan area
 0500004,South Arkansas nonmetropolitan area
+-1,NA
+0600000,California
 0012540,"Bakersfield, CA"
 0017020,"Chico, CA"
 0020940,"El Centro, CA"
@@ -69,10 +96,11 @@ area_code,area_name
 0046700,"Vallejo-Fairfield, CA"
 0047300,"Visalia-Porterville, CA"
 0049700,"Yuba City, CA"
-0600000,California
 0600003,North Coast Region of California nonmetropolitan area
 0600006,Eastern Sierra-Mother Lode Region of California nonmetropolitan area
 0600007,North Valley-Northern Mountains Region of California nonmetropolitan area
+-1,NA
+0800000,Colorado
 0014500,"Boulder, CO"
 0017820,"Colorado Springs, CO"
 0019740,"Denver-Aurora-Lakewood, CO"
@@ -80,22 +108,27 @@ area_code,area_name
 0024300,"Grand Junction, CO"
 0024540,"Greeley, CO"
 0039380,"Pueblo, CO"
-0800000,Colorado
 0800001,Eastern and Southern Colorado nonmetropolitan area
 0800002,Southwest Colorado nonmetropolitan area
 0800003,Northwest Colorado nonmetropolitan area
+-1,NA
+0900000,Connecticut
 0071950,"Bridgeport-Stamford-Norwalk, CT"
 0072850,"Danbury, CT"
 0073450,"Hartford-West Hartford-East Hartford, CT"
 0075700,"New Haven, CT"
 0076450,"Norwich-New London-Westerly, CT-RI"
 0078700,"Waterbury, CT"
-0900000,Connecticut
 0900001,Connecticut nonmetropolitan area
-0020100,"Dover, DE"
+-1,NA
 1000000,Delaware
+0020100,"Dover, DE"
+-1,NA
 0047900,"Washington-Arlington-Alexandria, DC-VA-MD-WV"
+-1,NA
 1100000,District of Columbia
+-1,NA
+1200000,Florida
 0015980,"Cape Coral-Fort Myers, FL"
 0018880,"Crestview-Fort Walton Beach-Destin, FL"
 0019660,"Deltona-Daytona Beach-Ormond Beach, FL"
@@ -118,9 +151,10 @@ area_code,area_name
 0045220,"Tallahassee, FL"
 0045300,"Tampa-St. Petersburg-Clearwater, FL"
 0045540,"The Villages, FL"
-1200000,Florida
 1200003,South Florida nonmetropolitan area
 1200006,North Florida nonmetropolitan area
+-1,NA
+1300000,Georgia
 0010500,"Albany, GA"
 0012020,"Athens-Clarke County, GA"
 0012060,"Atlanta-Sandy Springs-Roswell, GA"
@@ -135,24 +169,27 @@ area_code,area_name
 0042340,"Savannah, GA"
 0046660,"Valdosta, GA"
 0047580,"Warner Robins, GA"
-1300000,Georgia
 1300001,North Georgia nonmetropolitan area
 1300002,Middle Georgia nonmetropolitan area
 1300003,East Georgia nonmetropolitan area
 1300004,South Georgia nonmetropolitan area
+-1,NA
+1500000,Hawaii
 0027980,"Kahului-Wailuku-Lahaina, HI"
 0046520,"Urban Honolulu, HI"
-1500000,Hawaii
 1500001,Hawaii / Kauai nonmetropolitan area
+-1,NA
+1600000,Idaho
 0014260,"Boise City, ID"
 0017660,"Coeur d'Alene, ID"
 0026820,"Idaho Falls, ID"
 0030300,"Lewiston, ID-WA"
 0038540,"Pocatello, ID"
 0046300,"Twin Falls, ID"
-1600000,Idaho
 1600006,Northwestern Idaho nonmetropolitan area
 1600007,Southeast-Central Idaho nonmetropolitan area
+-1,NA
+1700000,Illinois
 0014010,"Bloomington, IL"
 0016060,"Carbondale-Marion, IL"
 0016580,"Champaign-Urbana, IL"
@@ -163,11 +200,12 @@ area_code,area_name
 0037900,"Peoria, IL"
 0040420,"Rockford, IL"
 0044100,"Springfield, IL"
-1700000,Illinois
 1700001,Northwest Illinois nonmetropolitan area
 1700002,West Central Illinois nonmetropolitan area
 1700003,East Central Illinois nonmetropolitan area
 1700004,South Illinois nonmetropolitan area
+-1,NA
+1800000,Indiana
 0014020,"Bloomington, IN"
 0018020,"Columbus, IN"
 0021140,"Elkhart-Goshen, IN"
@@ -180,10 +218,11 @@ area_code,area_name
 0034620,"Muncie, IN"
 0043780,"South Bend-Mishawaka, IN-MI"
 0045460,"Terre Haute, IN"
-1800000,Indiana
 1800001,Northern Indiana nonmetropolitan area
 1800002,Central Indiana nonmetropolitan area
 1800003,Southern Indiana nonmetropolitan area
+-1,NA
+1900000,Iowa
 0011180,"Ames, IA"
 0016300,"Cedar Rapids, IA"
 0019340,"Davenport-Moline-Rock Island, IA-IL"
@@ -192,27 +231,30 @@ area_code,area_name
 0026980,"Iowa City, IA"
 0043580,"Sioux City, IA-NE-SD"
 0047940,"Waterloo-Cedar Falls, IA"
-1900000,Iowa
 1900001,Northeast Iowa nonmetropolitan area
 1900002,Northwest Iowa nonmetropolitan area
 1900003,Southwest Iowa nonmetropolitan area
 1900004,Southeast Iowa nonmetropolitan area
+-1,NA
+2000000,Kansas
 0029940,"Lawrence, KS"
 0031740,"Manhattan, KS"
 0045820,"Topeka, KS"
 0048620,"Wichita, KS"
-2000000,Kansas
 2000006,Kansas nonmetropolitan area
+-1,NA
+2100000,Kentucky
 0014540,"Bowling Green, KY"
 0021060,"Elizabethtown-Fort Knox, KY"
 0030460,"Lexington-Fayette, KY"
 0031140,"Louisville/Jefferson County, KY-IN"
 0036980,"Owensboro, KY"
-2100000,Kentucky
 2100001,West Kentucky nonmetropolitan area
 2100002,South Central Kentucky nonmetropolitan area
 2100003,Central Kentucky nonmetropolitan area
 2100004,East Kentucky nonmetropolitan area
+-1,NA
+2200000,Louisiana
 0010780,"Alexandria, LA"
 0012940,"Baton Rouge, LA"
 0025220,"Hammond, LA"
@@ -222,23 +264,26 @@ area_code,area_name
 0033740,"Monroe, LA"
 0035380,"New Orleans-Metairie, LA"
 0043340,"Shreveport-Bossier City, LA"
-2200000,Louisiana
 2200002,Central Louisiana nonmetropolitan area
 2200003,Northeast Louisiana nonmetropolitan area
 2200006,Southwest Louisiana nonmetropolitan area
+-1,NA
+2300000,Maine
 0070750,"Bangor, ME"
 0074650,"Lewiston-Auburn, ME"
 0076750,"Portland-South Portland, ME"
-2300000,Maine
 2300001,Northeast Maine nonmetropolitan area
 2300002,Southwest Maine nonmetropolitan area
+-1,NA
+2400000,Maryland
 0012580,"Baltimore-Columbia-Towson, MD"
 0015680,"California-Lexington Park, MD"
 0019060,"Cumberland, MD-WV"
 0025180,"Hagerstown-Martinsburg, MD-WV"
 0041540,"Salisbury, MD-DE"
-2400000,Maryland
 2400006,Maryland nonmetropolitan area
+-1,NA
+2500000,Massachusetts
 0070900,"Barnstable Town, MA"
 0071650,"Boston-Cambridge-Nashua, MA-NH"
 0074500,"Leominster-Gardner, MA"
@@ -246,8 +291,9 @@ area_code,area_name
 0076600,"Pittsfield, MA"
 0078100,"Springfield, MA-CT"
 0079600,"Worcester, MA-CT"
-2500000,Massachusetts
 2500006,Massachusetts nonmetropolitan area
+-1,NA
+2600000,Michigan
 0011460,"Ann Arbor, MI"
 0012980,"Battle Creek, MI"
 0013020,"Bay City, MI"
@@ -262,29 +308,32 @@ area_code,area_name
 0034740,"Muskegon, MI"
 0035660,"Niles-Benton Harbor, MI"
 0040980,"Saginaw, MI"
-2600000,Michigan
 2600001,Upper Peninsula of Michigan nonmetropolitan area
 2600002,Northeast Lower Peninsula of Michigan nonmetropolitan area
 2600003,Northwest Lower Peninsula of Michigan nonmetropolitan area
 2600004,Balance of Lower Peninsula of Michigan nonmetropolitan area
+-1,NA
+2700000,Minnesota
 0020260,"Duluth, MN-WI"
 0031860,"Mankato-North Mankato, MN"
 0033460,"Minneapolis-St. Paul-Bloomington, MN-WI"
 0040340,"Rochester, MN"
 0041060,"St. Cloud, MN"
-2700000,Minnesota
 2700001,Northwest Minnesota nonmetropolitan area
 2700002,Northeast Minnesota nonmetropolitan area
 2700003,Southwest Minnesota nonmetropolitan area
 2700004,Southeast Minnesota nonmetropolitan area
+-1,NA
+2800000,Mississippi
 0025060,"Gulfport-Biloxi-Pascagoula, MS"
 0025620,"Hattiesburg, MS"
 0027140,"Jackson, MS"
-2800000,Mississippi
 2800001,Northeast Mississippi nonmetropolitan area
 2800002,Northwest Mississippi nonmetropolitan area
 2800003,Southeast Mississippi nonmetropolitan area
 2800004,Southwest Mississippi nonmetropolitan area
+-1,NA
+2900000,Missouri
 0016020,"Cape Girardeau, MO-IL"
 0017860,"Columbia, MO"
 0027620,"Jefferson City, MO"
@@ -293,49 +342,56 @@ area_code,area_name
 0041140,"St. Joseph, MO-KS"
 0041180,"St. Louis, MO-IL"
 0044180,"Springfield, MO"
-2900000,Missouri
 2900001,Central Missouri nonmetropolitan area
 2900002,North Missouri nonmetropolitan area
 2900003,Southeast Missouri nonmetropolitan area
 2900004,Southwest Missouri nonmetropolitan area
+-1,NA
+3000000,Montana
 0013740,"Billings, MT"
 0024500,"Great Falls, MT"
 0033540,"Missoula, MT"
-3000000,Montana
 3000003,Southwest Montana nonmetropolitan area
 3000004,West Montana nonmetropolitan area
 3000006,East-Central Montana nonmetropolitan area
+-1,NA
+3100000,Nebraska
 0024260,"Grand Island, NE"
 0030700,"Lincoln, NE"
 0036540,"Omaha-Council Bluffs, NE-IA"
-3100000,Nebraska
 3100001,Northwest Nebraska nonmetropolitan area
 3100003,Northeast Nebraska nonmetropolitan area
 3100006,South Nebraska nonmetropolitan area
+-1,NA
+3200000,Nevada
 0016180,"Carson City, NV"
 0029820,"Las Vegas-Henderson-Paradise, NV"
 0039900,"Reno, NV"
-3200000,Nevada
 3200006,Nevada nonmetropolitan area
+-1,NA
+3300000,New Hampshire
 0073050,"Dover-Durham, NH-ME"
 0074950,"Manchester, NH"
 0076900,"Portsmouth, NH-ME"
-3300000,New Hampshire
 3300001,Northern New Hampshire nonmetropolitan area
 3300002,Central New Hampshire nonmetropolitan area
 3300006,West Central-Southwest New Hampshire nonmetropolitan area
+-1,NA
+3400000,New Jersey
 0012100,"Atlantic City-Hammonton, NJ"
 0036140,"Ocean City, NJ"
 0045940,"Trenton, NJ"
 0047220,"Vineland-Bridgeton, NJ"
-3400000,New Jersey
+-1,NA
+3500000,New Mexico
 0010740,"Albuquerque, NM"
 0022140,"Farmington, NM"
 0029740,"Las Cruces, NM"
 0042140,"Santa Fe, NM"
-3500000,New Mexico
 3500006,Northern New Mexico nonmetropolitan area
 3500007,Eastern New Mexico nonmetropolitan area
+-1,NA
+3600000,New York
 0010580,"Albany-Schenectady-Troy, NY"
 0013780,"Binghamton, NY"
 0015380,"Buffalo-Cheektowaga-Niagara Falls, NY"
@@ -348,10 +404,11 @@ area_code,area_name
 0045060,"Syracuse, NY"
 0046540,"Utica-Rome, NY"
 0048060,"Watertown-Fort Drum, NY"
-3600000,New York
 3600001,Capital/Northern New York nonmetropolitan area
 3600004,Southwest New York nonmetropolitan area
 3600006,Central East New York nonmetropolitan area
+-1,NA
+3700000,North Carolina
 0011700,"Asheville, NC"
 0015500,"Burlington, NC"
 0016740,"Charlotte-Concord-Gastonia, NC-SC"
@@ -367,17 +424,19 @@ area_code,area_name
 0040580,"Rocky Mount, NC"
 0048900,"Wilmington, NC"
 0049180,"Winston-Salem, NC"
-3700000,North Carolina
 3700001,Southeast Coastal North Carolina nonmetropolitan area
 3700002,Northeast Coastal North Carolina nonmetropolitan area
 3700003,Piedmont North Carolina nonmetropolitan area
 3700004,Mountain North Carolina nonmetropolitan area
+-1,NA
+3800000,North Dakota
 0013900,"Bismarck, ND"
 0022020,"Fargo, ND-MN"
 0024220,"Grand Forks, ND-MN"
-3800000,North Dakota
 3800006,West North Dakota nonmetropolitan area
 3800007,East North Dakota nonmetropolitan area
+-1,NA
+3900000,Ohio
 0010420,"Akron, OH"
 0015940,"Canton-Massillon, OH"
 0017140,"Cincinnati, OH-KY-IN"
@@ -389,20 +448,22 @@ area_code,area_name
 0044220,"Springfield, OH"
 0045780,"Toledo, OH"
 0049660,"Youngstown-Warren-Boardman, OH-PA"
-3900000,Ohio
 3900001,West Northwestern Ohio nonmetropolitan area
 3900002,North Northeastern Ohio nonmetropolitan area
 3900003,Eastern Ohio nonmetropolitan area
 3900004,Southern Ohio nonmetropolitan area
+-1,NA
+4000000,Oklahoma
 0021420,"Enid, OK"
 0030020,"Lawton, OK"
 0036420,"Oklahoma City, OK"
 0046140,"Tulsa, OK"
-4000000,Oklahoma
 4000001,Northeast Oklahoma nonmetropolitan area
 4000002,Northwest Oklahoma nonmetropolitan area
 4000003,Southwest Oklahoma nonmetropolitan area
 4000004,Southeast Oklahoma nonmetropolitan area
+-1,NA
+4100000,Oregon
 0010540,"Albany, OR"
 0013460,"Bend-Redmond, OR"
 0018700,"Corvallis, OR"
@@ -411,32 +472,14 @@ area_code,area_name
 0032780,"Medford, OR"
 0038900,"Portland-Vancouver-Hillsboro, OR-WA"
 0041420,"Salem, OR"
-4100000,Oregon
 4100006,Coast Oregon nonmetropolitan area
 4100007,Central Oregon nonmetropolitan area
 4100008,Eastern Oregon nonmetropolitan area
-0010900,"Allentown-Bethlehem-Easton, PA-NJ"
-0011020,"Altoona, PA"
-0014100,"Bloomsburg-Berwick, PA"
-0016540,"Chambersburg-Waynesboro, PA"
-0020700,"East Stroudsburg, PA"
-0021500,"Erie, PA"
-0023900,"Gettysburg, PA"
-0025420,"Harrisburg-Carlisle, PA"
-0027780,"Johnstown, PA"
-0029540,"Lancaster, PA"
-0030140,"Lebanon, PA"
-0037980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD"
-0039740,"Reading, PA"
-0042540,"Scranton--Wilkes-Barre--Hazleton, PA"
-0044300,"State College, PA"
-0048700,"Williamsport, PA"
-0049620,"York-Hanover, PA"
-4200001,Western Pennsylvania nonmetropolitan area
-4200002,Northern Pennsylvania nonmetropolitan area
-4200003,Southern Pennsylvania nonmetropolitan area
-0077200,"Providence-Warwick, RI-MA"
+-1,NA
 4400000,Rhode Island
+0077200,"Providence-Warwick, RI-MA"
+-1,NA
+4500000,South Carolina
 0016700,"Charleston-North Charleston, SC"
 0017900,"Columbia, SC"
 0022500,"Florence, SC"
@@ -445,15 +488,17 @@ area_code,area_name
 0034820,"Myrtle Beach-Conway-North Myrtle Beach, SC-NC"
 0043900,"Spartanburg, SC"
 0044940,"Sumter, SC"
-4500000,South Carolina
 4500002,Upper Savannah South Carolina nonmetropolitan area
 4500004,Lower Savannah South Carolina nonmetropolitan area
 4500006,Northeast South Carolina nonmetropolitan area
+-1,NA
+4600000,South Dakota
 0039660,"Rapid City, SD"
 0043620,"Sioux Falls, SD"
-4600000,South Dakota
 4600002,East South Dakota nonmetropolitan area
 4600003,West South Dakota nonmetropolitan area
+-1,NA
+4700000,Tennessee
 0016860,"Chattanooga, TN-GA"
 0017300,"Clarksville, TN-KY"
 0017420,"Cleveland, TN"
@@ -464,11 +509,12 @@ area_code,area_name
 0032820,"Memphis, TN-MS-AR"
 0034100,"Morristown, TN"
 0034980,"Nashville-Davidson--Murfreesboro--Franklin, TN"
-4700000,Tennessee
 4700001,West Tennessee nonmetropolitan area
 4700002,South Central Tennessee nonmetropolitan area
 4700003,North Central Tennessee nonmetropolitan area
 4700004,East Tennessee nonmetropolitan area
+-1,NA
+4800000,Texas
 0010180,"Abilene, TX"
 0011100,"Amarillo, TX"
 0012420,"Austin-Round Rock, TX"
@@ -494,25 +540,28 @@ area_code,area_name
 0047020,"Victoria, TX"
 0047380,"Waco, TX"
 0048660,"Wichita Falls, TX"
-4800000,Texas
 4800001,West Texas Region of Texas nonmetropolitan area
 4800002,North Texas Region of Texas nonmetropolitan area
 4800003,Big Thicket Region of Texas nonmetropolitan area
 4800004,Hill Country Region of Texas nonmetropolitan area
 4800005,Border Region of Texas nonmetropolitan area
 4800006,Coastal Plains Region of Texas nonmetropolitan area
+-1,NA
+4900000,Utah
 0030860,"Logan, UT-ID"
 0036260,"Ogden-Clearfield, UT"
 0039340,"Provo-Orem, UT"
 0041100,"St. George, UT"
 0041620,"Salt Lake City, UT"
-4900000,Utah
 4900006,Eastern Utah nonmetropolitan area
 4900007,Central Utah nonmetropolitan area
-0072400,"Burlington-South Burlington, VT"
+-1,NA
 5000000,Vermont
+0072400,"Burlington-South Burlington, VT"
 5000001,Southern Vermont nonmetropolitan area
 5000002,Northern Vermont nonmetropolitan area
+-1,NA
+5100000,Virginia
 0013980,"Blacksburg-Christiansburg-Radford, VA"
 0016820,"Charlottesville, VA"
 0025500,"Harrisonburg, VA"
@@ -522,11 +571,12 @@ area_code,area_name
 0044420,"Staunton-Waynesboro, VA"
 0047260,"Virginia Beach-Norfolk-Newport News, VA-NC"
 0049020,"Winchester, VA-WV"
-5100000,Virginia
 5100001,Southwest Virginia nonmetropolitan area
 5100002,Southside Virginia nonmetropolitan area
 5100003,Northeast Virginia nonmetropolitan area
 5100004,Northwest Virginia nonmetropolitan area
+-1,NA
+5300000,Washington
 0013380,"Bellingham, WA"
 0014740,"Bremerton-Silverdale, WA"
 0028420,"Kennewick-Richland, WA"
@@ -538,9 +588,10 @@ area_code,area_name
 0047460,"Walla Walla, WA"
 0048300,"Wenatchee, WA"
 0049420,"Yakima, WA"
-5300000,Washington
 5300006,Western Washington nonmetropolitan area
 5300007,Eastern Washington nonmetropolitan area
+-1,NA
+5400000,West Virginia
 0013220,"Beckley, WV"
 0016620,"Charleston, WV"
 0026580,"Huntington-Ashland, WV-KY-OH"
@@ -548,9 +599,10 @@ area_code,area_name
 0037620,"Parkersburg-Vienna, WV"
 0048260,"Weirton-Steubenville, WV-OH"
 0048540,"Wheeling, WV-OH"
-5400000,West Virginia
 5400001,Southern West Virginia nonmetropolitan area
 5400002,Northern West Virginia nonmetropolitan area
+-1,NA
+5500000,Wisconsin
 0011540,"Appleton, WI"
 0020740,"Eau Claire, WI"
 0022540,"Fond du Lac, WI"
@@ -563,17 +615,20 @@ area_code,area_name
 0039540,"Racine, WI"
 0043100,"Sheboygan, WI"
 0048140,"Wausau, WI"
-5500000,Wisconsin
 5500001,Northwestern Wisconsin nonmetropolitan area
 5500002,Northeastern Wisconsin nonmetropolitan area
 5500003,South Central Wisconsin nonmetropolitan area
 5500004,Western Wisconsin nonmetropolitan area
+-1,NA
+5600000,Wyoming
 0016220,"Casper, WY"
 0016940,"Cheyenne, WY"
-5600000,Wyoming
 5600006,Western Wyoming nonmetropolitan area
 5600007,Eastern Wyoming nonmetropolitan area
+-1,NA
 6600000,Guam
+-1,NA
+7200000,Puerto Rico
 0010380,"Aguadilla-Isabela, PR"
 0011640,"Arecibo, PR"
 0025020,"Guayama, PR"
@@ -581,6 +636,6 @@ area_code,area_name
 0038660,"Ponce, PR"
 0041900,"San German, PR"
 0041980,"San Juan-Carolina-Caguas, PR"
-7200000,Puerto Rico
 7200006,Puerto Rico nonmetropolitan area
+-1,NA
 7800000,Virgin Islands
