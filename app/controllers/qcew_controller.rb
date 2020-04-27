@@ -13,7 +13,12 @@ class QcewController < ApplicationController
       if params[:series_id].present?
         @generated_ids = params[:series_id].split(',')
       else
-        @generated_ids = SeriesIdGenerator.new.generate_ids("ENU", [params[:area_code], params[:datatype], params[:size], params[:ownership], params[:industry]])
+        if params[:seasonally_adjusted] == "yes"
+          series_prefix = "ENS"
+        else
+          series_prefix = "ENU"
+        end
+        @generated_ids = SeriesIdGenerator.new.generate_ids(series_prefix, [params[:area_code], params[:datatype], params[:size], params[:ownership], params[:industry]])
       end
       p @generated_ids
 

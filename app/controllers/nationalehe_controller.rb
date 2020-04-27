@@ -13,7 +13,12 @@ class NationaleheController < ApplicationController
       if params[:series_id].present?
         @generated_ids = params[:series_id].split(',')
       else
-        @generated_ids = SeriesIdGenerator.new.generate_ids("CE", [params[:seasonal_adjustment_code], params[:industry], params[:data_type]])
+        if params[:seasonally_adjusted] == "yes"
+          series_prefix = "CES"
+        else
+          series_prefix = "CEU"
+        end
+        @generated_ids = SeriesIdGenerator.new.generate_ids(series_prefix, [params[:industry], params[:data_type]])
       end
       p @generated_ids
 

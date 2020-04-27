@@ -8,9 +8,7 @@ class JsonManager
     @apikey = apikey
   end
   def apiCall(seriesid, start_year, end_year)
-    p @url
-    # p start_year
-    # p end_year
+    p @url, start_year, end_year
     # 7c60490a53d74af280a1e90b529c36cd
     # "37b0d1df14db4d78be9f853d2ad7db40"
     @response = RestClient::Request.execute(
