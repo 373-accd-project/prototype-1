@@ -20,6 +20,7 @@ class JsonManager
         seriesid: seriesid,
         startyear: start_year,
         endyear: end_year,
+        annualaverage:true,
         registrationKey: @apikey
       },
       open_timeout: 240

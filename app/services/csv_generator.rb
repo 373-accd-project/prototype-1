@@ -26,7 +26,7 @@ class CsvGenerator
         IO.write("csv_files/temp.csv", formatted_result, mode: 'a')
         # IO.write("csv_files/temp.csv", "\n\n", mode: 'a')
       end
-      p result
+      
       reply.push(result)
     end
     p reply
