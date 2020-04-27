@@ -24,14 +24,14 @@
       <a data-toggle="collapse" data-parent="#accordionEx" href="#<%= name %>" aria-expanded="false" aria-controls="collapseOne1">
         <h5 class="mb-0">
           <% if series["status"] == "REQUEST_SUCCEEDED" %>
-          <%= series['Results']['series'][0]['seriesID']%> - <br/>
-          <%= @area_hashmap[series['Results']['series'][0]['seriesID'][3..7]]%> -
-          <%= @data_hashmap[series['Results']['series'][0]['seriesID'][8]]%> -
-          <%= @industries_hashmap[series['Results']['series'][0]['seriesID'][11..-1]]%><br/>
-          <%= @ownership_hashmap[series['Results']['series'][0]['seriesID'][10]]%> -
-          <%= @sizes_hashmap[series['Results']['series'][0]['seriesID'][9]]%><br/>
+            <%= series['Results']['series'][0]['seriesID']%> - <br/>
+            <%= @area_hashmap[series['Results']['series'][0]['seriesID'][3..7]]%> -
+            <%= @data_hashmap[series['Results']['series'][0]['seriesID'][8]]%> -
+            <%= @industries_hashmap[series['Results']['series'][0]['seriesID'][11..-1]]%><br/>
+            <%= @ownership_hashmap[series['Results']['series'][0]['seriesID'][10]]%> -
+            <%= @sizes_hashmap[series['Results']['series'][0]['seriesID'][9]]%><br/>
           <% else %>
-          <%= series["message"] %>
+            <%= series["message"] %>
           <% end %>
         </h5>
       </a>

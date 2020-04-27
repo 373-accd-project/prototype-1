@@ -20,9 +20,12 @@ class QcewController < ApplicationController
         end
         @generated_ids = SeriesIdGenerator.new.generate_ids(series_prefix, [params[:area_code], params[:datatype], params[:size], params[:ownership], params[:industry]])
       end
+      p "IDs"
       p @generated_ids
 
-      headers = @generated_ids.map{|e| [e] + prefix_columns(e)}
+      # generated ids is 2d list so need prefix column for each inner element
+      headers = @generated_ids.map { |id_set| id_set.map{|sid| [sid] + prefix_columns(sid)} }
+
 
       prefix_names = "Series ID,Area,Datatype,Industry,Ownership,Size,"
 
@@ -34,11 +37,13 @@ class QcewController < ApplicationController
   private
 
   def prefix_columns(series_id)
+
     area = @area_hashmap[series_id[3..7]]
     data = @data_hashmap[series_id[8]]
     industry = @industries_hashmap[series_id[11..-1]]
     owner = @ownership_hashmap[series_id[10]]
     size = @sizes_hashmap[series_id[9]]
+    p "SID: " + series_id + [area, data, industry, owner, size].join(" ")
     return [area, data, industry, owner, size]
   end
 

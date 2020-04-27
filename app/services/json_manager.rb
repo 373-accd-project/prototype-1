@@ -15,7 +15,7 @@ class JsonManager
       method: :post,
       url: @url,
       payload: {
-        seriesid: seriesid,
+        seriesid: seriesid.join(","),
         startyear: start_year,
         endyear: end_year,
         annualaverage:true,
