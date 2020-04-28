@@ -4,6 +4,7 @@
 
 ## 1) Download the Complete Repository from GitHub
 ### Before downloading any software follow the next steps to download the application onto your laptop locally.
+### If you have downloaded everything before and would like to re-download this repository, only this Part 1 is necessary.
 
 Here: https://github.com/373-accd-project/prototype-1
 
