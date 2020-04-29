@@ -14,6 +14,8 @@
 "1027","1027 Other services"
 "1028","1028 Public administration"
 "1029","1029 Unclassified"
+"-1","NAICS -1111 All 2 digit"
+"-2","NAICS -2222 All 3 digit"
 "11","NAICS 11 Agriculture, forestry, fishing and hunting"
 "111","NAICS 111 Crop production"
 "1111","NAICS 1111 Oilseed and grain farming"

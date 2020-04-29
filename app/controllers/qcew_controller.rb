@@ -18,7 +18,8 @@ class QcewController < ApplicationController
         else
           series_prefix = "ENU"
         end
-        @generated_ids = SeriesIdGenerator.new.generate_ids(series_prefix, [params[:area_code], params[:datatype], params[:size], params[:ownership], params[:industry]])
+        industry_params = calc_industry_params(params[:industry])
+        @generated_ids = SeriesIdGenerator.new.generate_ids(series_prefix, [params[:area_code], params[:datatype], params[:size], params[:ownership], industry_params])
       end
       p "IDs"
       p @generated_ids
@@ -35,6 +36,26 @@ class QcewController < ApplicationController
   end
 
   private
+
+  def calc_industry_params(old_params)
+    if old_params.include?("-1")
+      old_params.delete("-1")
+      @naics_industries.select {|e| e[0].split(" ")[1].length == 2}.each do |m|
+        if !old_params.include?(m[1])
+          old_params.push(m[1])
+        end
+      end
+    end
+    if old_params.include?("-2")
+      old_params.delete("-2")
+      @naics_industries.select {|e| e[0].split(" ")[1].length == 3}.each do |m|
+        if !old_params.include?(m[1])
+          old_params.push(m[1])
+        end
+      end
+    end
+    old_params
+  end
 
   def prefix_columns(series_id)
 
@@ -103,6 +124,5 @@ class QcewController < ApplicationController
       size[0] = size[1]
       size[1] = tmp
     end
-
   end
 end

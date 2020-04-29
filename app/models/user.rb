@@ -8,7 +8,7 @@ class User < ApplicationRecord
 
   # Conditional password validation on updates
   with_options if: Proc.new { |a| a.password.present? } do |admin|
-    admin.validates :password, length: { minimum: 4, message: "must be at least 4 characters long"}
+    admin.validates :password, length: { minimum: 4 }
     admin.validates :password_confirmation, presence: true
   end
 
