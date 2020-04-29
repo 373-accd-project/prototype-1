@@ -1,22 +1,7 @@
-Series ID,Area,Datatype,Industry,Ownership,Size,year,period,periodName,value,footnotes
-ENU4200010211,Pennsylvania -- Statewide,All Employees,"NAICS 11 Agriculture, forestry, fishing and hunting",State Government,All establishment sizes,2019,M09,September,164,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-ENU4200010211,Pennsylvania -- Statewide,All Employees,"NAICS 11 Agriculture, forestry, fishing and hunting",State Government,All establishment sizes,2019,M08,August,162,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-ENU4200010211,Pennsylvania -- Statewide,All Employees,"NAICS 11 Agriculture, forestry, fishing and hunting",State Government,All establishment sizes,2019,M07,July,156,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-ENU4200010211,Pennsylvania -- Statewide,All Employees,"NAICS 11 Agriculture, forestry, fishing and hunting",State Government,All establishment sizes,2019,M06,June,155,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-ENU4200010211,Pennsylvania -- Statewide,All Employees,"NAICS 11 Agriculture, forestry, fishing and hunting",State Government,All establishment sizes,2019,M05,May,156,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-ENU4200010211,Pennsylvania -- Statewide,All Employees,"NAICS 11 Agriculture, forestry, fishing and hunting",State Government,All establishment sizes,2019,M04,April,147,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-ENU4200010211,Pennsylvania -- Statewide,All Employees,"NAICS 11 Agriculture, forestry, fishing and hunting",State Government,All establishment sizes,2019,M03,March,146,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-ENU4200010211,Pennsylvania -- Statewide,All Employees,"NAICS 11 Agriculture, forestry, fishing and hunting",State Government,All establishment sizes,2019,M02,February,136,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-ENU4200010211,Pennsylvania -- Statewide,All Employees,"NAICS 11 Agriculture, forestry, fishing and hunting",State Government,All establishment sizes,2019,M01,January,135,"[{""code""=>""P"", ""text""=>""Preliminary.""}]"
-ENU4200010211,Pennsylvania -- Statewide,All Employees,"NAICS 11 Agriculture, forestry, fishing and hunting",State Government,All establishment sizes,2018,M12,December,134,[{}]
-ENU4200010211,Pennsylvania -- Statewide,All Employees,"NAICS 11 Agriculture, forestry, fishing and hunting",State Government,All establishment sizes,2018,M11,November,155,[{}]
-ENU4200010211,Pennsylvania -- Statewide,All Employees,"NAICS 11 Agriculture, forestry, fishing and hunting",State Government,All establishment sizes,2018,M10,October,159,[{}]
-ENU4200010211,Pennsylvania -- Statewide,All Employees,"NAICS 11 Agriculture, forestry, fishing and hunting",State Government,All establishment sizes,2018,M09,September,160,[{}]
-ENU4200010211,Pennsylvania -- Statewide,All Employees,"NAICS 11 Agriculture, forestry, fishing and hunting",State Government,All establishment sizes,2018,M08,August,157,[{}]
-ENU4200010211,Pennsylvania -- Statewide,All Employees,"NAICS 11 Agriculture, forestry, fishing and hunting",State Government,All establishment sizes,2018,M07,July,154,[{}]
-ENU4200010211,Pennsylvania -- Statewide,All Employees,"NAICS 11 Agriculture, forestry, fishing and hunting",State Government,All establishment sizes,2018,M06,June,163,[{}]
-ENU4200010211,Pennsylvania -- Statewide,All Employees,"NAICS 11 Agriculture, forestry, fishing and hunting",State Government,All establishment sizes,2018,M05,May,151,[{}]
-ENU4200010211,Pennsylvania -- Statewide,All Employees,"NAICS 11 Agriculture, forestry, fishing and hunting",State Government,All establishment sizes,2018,M04,April,154,[{}]
-ENU4200010211,Pennsylvania -- Statewide,All Employees,"NAICS 11 Agriculture, forestry, fishing and hunting",State Government,All establishment sizes,2018,M03,March,146,[{}]
-ENU4200010211,Pennsylvania -- Statewide,All Employees,"NAICS 11 Agriculture, forestry, fishing and hunting",State Government,All establishment sizes,2018,M02,February,139,[{}]
-ENU4200010211,Pennsylvania -- Statewide,All Employees,"NAICS 11 Agriculture, forestry, fishing and hunting",State Government,All establishment sizes,2018,M01,January,136,[{}]
+Series ID,Seasonal Adjustment,Area Type,Area,Industry,Occupation,Data,year,period,periodName,value,footnotes
+OEUN000000022100000000001,Not Seasonally Adjusted,National,National,Utilities,All Occupations,Employment,2019,A01,Annual,547100,[{}]
+OEUN000000022100000000004,Not Seasonally Adjusted,National,National,Utilities,All Occupations,Annual mean wage,2019,A01,Annual,81550,[{}]
+OEUN000000031300000000001,Not Seasonally Adjusted,National,National,Textile Mills,All Occupations,Employment,2019,A01,Annual,108800,[{}]
+OEUN000000031300000000004,Not Seasonally Adjusted,National,National,Textile Mills,All Occupations,Annual mean wage,2019,A01,Annual,41000,[{}]
+OEUN000000032540000000001,Not Seasonally Adjusted,National,National,Pharmaceutical and Medicine Manufacturing,All Occupations,Employment,2019,A01,Annual,297240,[{}]
+OEUN000000032540000000004,Not Seasonally Adjusted,National,National,Pharmaceutical and Medicine Manufacturing,All Occupations,Annual mean wage,2019,A01,Annual,76490,[{}]

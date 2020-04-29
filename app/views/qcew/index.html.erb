@@ -23,12 +23,16 @@
     <div class="card-header collapsed" data-toggle="collapse" role="tab">
       <a data-toggle="collapse" data-parent="#accordionEx" href="#<%= name %>" aria-expanded="false" aria-controls="collapseOne1">
         <h5 class="mb-0">
-          <%= series['Results']['series'][0]['seriesID']%> - <br/>
-          <%= @area_hashmap[series['Results']['series'][0]['seriesID'][3..7]]%> - 
-          <%= @data_hashmap[series['Results']['series'][0]['seriesID'][8]]%> -
-          <%= @industries_hashmap[series['Results']['series'][0]['seriesID'][11..-1]]%><br/>
-          <%= @ownership_hashmap[series['Results']['series'][0]['seriesID'][10]]%> -
-          <%= @sizes_hashmap[series['Results']['series'][0]['seriesID'][9]]%><br/>
+          <% if series["status"] == "REQUEST_SUCCEEDED" %>
+            <%= series['Results']['series'][0]['seriesID']%> - <br/>
+            <%= @area_hashmap[series['Results']['series'][0]['seriesID'][3..7]]%> -
+            <%= @data_hashmap[series['Results']['series'][0]['seriesID'][8]]%> -
+            <%= @industries_hashmap[series['Results']['series'][0]['seriesID'][11..-1]]%><br/>
+            <%= @ownership_hashmap[series['Results']['series'][0]['seriesID'][10]]%> -
+            <%= @sizes_hashmap[series['Results']['series'][0]['seriesID'][9]]%><br/>
+          <% else %>
+            <%= series["message"] %>
+          <% end %>
         </h5>
       </a>
     </div>
@@ -45,7 +49,7 @@
       <br/>
 
       <!-- If the series ID creates a table that has data -->
-      <% if !series['Results']['series'][0]['data'].blank? then %>
+      <% if !series['Results'].empty? && !series['Results']['series'][0]['data'].blank? then %>
       <%= series['Results']['series'][0]['seriesID']%><br/>
       <!-- Create the table -->
       <div class="table-wrapper-scroll-y my-custom-scrollbar">

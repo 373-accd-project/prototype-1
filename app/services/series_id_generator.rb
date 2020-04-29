@@ -5,7 +5,7 @@ class SeriesIdGenerator
       return []
     end
 
-    all_combos = []
+    all_combos = [[]]
 
     # counters for each parameter
     counts = arrays.map { |e| 0 }
@@ -14,9 +14,13 @@ class SeriesIdGenerator
     while more_combos(counts, arrays)
       # create the combo from the counters
       combo = prefix + arrays.each_with_index.map {|a, i| a[counts[i]]}.join("")
-
+      if all_combos[-1].length < 50
+        all_combos[-1].push(combo)
+      else
+        all_combos.push([combo])
+      end
       # push to result set and increment
-      all_combos.push(combo)
+
       combo = ""
       counts = increment_counts(counts, arrays)
     end

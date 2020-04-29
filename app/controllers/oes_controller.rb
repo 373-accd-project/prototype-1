@@ -4,7 +4,7 @@ require 'csv'
 
 class OesController < ApplicationController
   before_action :check_login
-  
+
   def index
     get_filters()
 
@@ -13,14 +13,20 @@ class OesController < ApplicationController
       if params[:series_id].present?
         @generated_ids = params[:series_id].split(',')
       else
-        @generated_ids = SeriesIdGenerator.new.generate_ids("OE", [params[:seasonal_adjustment_code], params[:area_type_code], params[:area_code], params[:industry_code], params[:occupation_code], params[:data_type_code]])
+        if params[:seasonally_adjusted] == "yes"
+          series_prefix = "OES"
+        else
+          series_prefix = "OEU"
+        end
+        @generated_ids = SeriesIdGenerator.new.generate_ids(series_prefix, [params[:area_type_code], params[:area_code], params[:industry_code], params[:occupation_code], params[:data_type_code]])
       end
       p @generated_ids
 
-      headers = @generated_ids.map{|e| [e] + prefix_columns(e)}
+      # generated ids is 2d list so need prefix column for each inner element
+      headers = @generated_ids.map { |id_set| id_set.map{|sid| [sid] + prefix_columns(sid)} }
 
       prefix_names = "Series ID,Seasonal Adjustment,Area Type,Area,Industry,Occupation,Data,"
-      
+
       # save_csv Defined in ApplicationController
       @reply = save_csv(@generated_ids, prefix_names, headers)
     end

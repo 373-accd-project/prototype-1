@@ -1,9 +1,10 @@
 <br/>
 <%= form_tag("/launemp") do %>
-  <h5>Pick Seasonal Adjustment: &nbsp; <%= select_tag(:seasonal_adjustment, options_for_select(@seasonal_adjustment_codes), multiple: true,  :style => "font-size:12px;") %><br/><br/></h5>
+  <h5>Seasonsal Adjustment: <%= radio_button_tag(:seasonally_adjusted, "yes") %> <%= label_tag(:seasonally_adjusted_yes, "Yes") %> <%= radio_button_tag(:seasonally_adjusted, "no", :checked)%> <%= label_tag(:seasonally_adjusted_no, "No") %><br/></h5>
+  <!--<h5>Pick Seasonal Adjustment: &nbsp; <%= select_tag(:seasonal_adjustment, options_for_select(@seasonal_adjustment_codes), multiple: true,  :style => "font-size:12px;") %><br/><br/></h5>-->
 
 
-  <h5>Pick Area: &nbsp; <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+  <h5>Pick Area: &nbsp; <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" onclick = "checkboxNest()">
     Click to Choose Area(s)
   </button></h5>
 
@@ -19,23 +20,42 @@
         </div>
         <div class="modal-body">
       <div class="container-fluid">
-      <div class="row">
-
+      <ul class="mb-1 pl-3 pb-2">
+          <% prev_code = nil %>
+          <% count = 0 %>
           <% @areas.each do |a| %>
-            <% if a[0] == "Pittsburgh city, PA" then %>
-              <div class = "col-8">
-                <input type="checkbox" name="area[]" value="<%= a[1] %>">&nbsp;&nbsp;&nbsp;<%= a[0]%> </input>
-              </div>
-              <div class = "col-12">
-                <br>
-              </div>
-            <%else%>
-              <div class = "col-4">
-                <input type="checkbox" name="area[]" value="<%= a[1] %>">&nbsp;&nbsp;&nbsp;<%= a[0]%> </input>
-              </div>
-            <%end%>
+            <% if count < 14 %>
+              <% count += 1 %>
+              <li>
+                <input type="checkbox" name="area[]" value="<%= a[1] %>">&nbsp;&nbsp;&nbsp;<%= a[2]%> </input>
+              </li>
+            <% elsif prev_code == nil %>
+              <% prev_code = a[0] %>
+              <li>
+                  <span class="caret"></span>
+                  <%= @area_type_hashmap[a[0]] %>
+                  <ul class = "nested">
+                  <li>
+                    <input type="checkbox" name="area[]" value="<%= a[1] %>">&nbsp;&nbsp;&nbsp;<%= a[2]%> </input>
+                  </li>
+            <% elsif a[0] == prev_code %>
+                <li>
+                  <input type="checkbox" name="area[]" value="<%= a[1] %>">&nbsp;&nbsp;&nbsp;<%= a[2]%> </input>
+                </li>
+            <% else %>
+              <% prev_code = a[0] %>
+              </ul>
+              </li>
+              <li>
+                  <span class="caret"></span>
+                  <%= @area_type_hashmap[a[0]] %>
+                  <ul class = "nested">
+                  <li>
+                    <input type="checkbox" name="area[]" value="<%= a[1] %>">&nbsp;&nbsp;&nbsp;<%= a[2]%> </input>
+                  </li>
+            <% end %>
           <% end %>
-      </div>
+      </ul>
       </div>
 
 
