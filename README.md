@@ -74,7 +74,7 @@ Installation instructions are based on [these Windows docs](https://docs.microso
     right-clicking. You will likely find this very useful.
 
 
-#### 2) Ruby 2.5.7
+#### 2) Ruby 2.6.6
 1) Install gpg2 (a prerequisite for rvm)
 
     ```
@@ -92,17 +92,17 @@ Installation instructions are based on [these Windows docs](https://docs.microso
 
 3) Close your bash shell and open a new one (or `source ~/.bashrc` should work)
 
-4) Install Ruby 2.7.0 (this will take a while)
+4) Install Ruby 2.6.6 (this will take a while)
 
     ```
-    rvm install 2.7.0
+    rvm install 2.6.6
     ```
 
 5) Set default Ruby version
 
     ```
     bash --login
-    rvm --default use 2.7.0
+    rvm --default use 2.6.6
     ```
 
 6) Close and re-open WSL
@@ -114,7 +114,7 @@ Installation instructions are based on [these Windows docs](https://docs.microso
     ```
     You should see `=* ruby-2.7.0` in the output.
 
-#### 3) Rails 6.0.2
+#### 3) Rails 5.2.2
 1) Install nodejs (a prerequisite)
 
     ```
@@ -122,10 +122,10 @@ Installation instructions are based on [these Windows docs](https://docs.microso
     sudo apt-get install -y nodejs
     ```
 
-2) Install Rails 6.0.2 (this will take a while)
+2) Install Rails 5.2.2 (this will take a while)
 
     ```
-    gem install rails -v=6.0.2
+    gem install rails -v=5.2.2
     ```
 
 
