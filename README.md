@@ -64,7 +64,7 @@ Installation instructions are based on [these Windows docs](https://docs.microso
         cd /mnt/
         ```
         or, you can probably get all the way to the repository we downloaded before with
-        
+
         ```
         cd /mnt/c/Users/[your windows username]/Documents/bls-query-app
         ```
@@ -128,7 +128,7 @@ Installation instructions are based on [these Windows docs](https://docs.microso
     ```
 
 
-## 3) Run Application 
+## 3) Run Application
 ### Then run the application.
 
 1) Go to the folder 'bls-query-app' in Documents from the Ubuntu shell
@@ -142,7 +142,7 @@ Installation instructions are based on [these Windows docs](https://docs.microso
     ```
     cd prototype-1
     ```
-    
+
 3) Install the new app's dependencies
 
     ```
@@ -150,7 +150,7 @@ Installation instructions are based on [these Windows docs](https://docs.microso
     ```
     You may have to try this command multiple times. If it fails in a
     consistent way then seek help. Some references to help with issues are:
-        
+
         - Stack Overflow: https://stackoverflow.com/
         - Ruby and Rails Documentation: https://rubyapi.org/
         - Google: https://www.google.com/
@@ -171,16 +171,16 @@ Installation instructions are based on [these Windows docs](https://docs.microso
     https://linuxize.com/post/how-to-install-yarn-on-ubuntu-18-04/
 
     Note that there might need to be repeated attempts to work.
-    
+
     If you have fixed the issue, re-run the application.
 
     ***
-    
+
 
 5) Open your browser and put [localhost:3000](localhost:3000) in the
 address bar (or open the link)
 
-    There you should see the BLS Homepage. 
+    There you should see the BLS Homepage.
 
     Congrats, you did it! (When you're done the key combination CTRL c
     in the Ubuntu shell to stop the server)
@@ -192,13 +192,13 @@ address bar (or open the link)
 1) Setup the default database
 
     Stop the rails server with the step above and in your Ubuntu shell run:
-    
+
     ```
     rails db:setup
     ```
-    
+
     This will allow for rudimentary user with:
-        
+
         username: admin
         password: secret
 
@@ -243,9 +243,10 @@ address bar (or open the link)
 This specific document was written by a member of the 373 ACCD Spring 2020 Group.
 Contact: jli6@andrew.cmu.edu
 
-Fellow 272 TA, Matt Kern, created most of the documentation for the IS class 272: Application Design and Development. The are steps to download Ruby on Rails onto a Windows Machine are mostly his work 
+Fellow 272 TA, Matt Kern, created most of the documentation for the IS class 272: Application Design and Development. The are steps to download Ruby on Rails onto a Windows Machine are mostly his work
 but some steps are adjusted to fit the ACCD's needs.
 Reference: https://github.com/mjkern/67272-Windows-Setup/blob/master/instructions.md
 Contact: mjkern@andrew.cmu.edu
 
-
+#### Citation
+Procfile is sourced from Heroku Guide to creating a project in Rails 5 gounf at this link: https://devcenter.heroku.com/articles/getting-started-with-rails5

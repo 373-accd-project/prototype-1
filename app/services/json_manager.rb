@@ -1,5 +1,6 @@
 require 'json'
 require 'rest_client'
+# JsonManager code adapted from BLS API guide for ruby found at https://www.bls.gov/developers/api_ruby.htm
 class JsonManager
   attr_accessor :response
   def initialize(url, apikey)
