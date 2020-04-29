@@ -81,8 +81,17 @@
       
           <% count = 0 %>
           <% @naics_industries.each do |industry| %>
-
-            <% if industry[0].split(" ")[1].length() == 2 or industry[0].split(" ")[1].length() == 3 then %>
+            <% if industry[0].split(" ")[1] == "-1111" %>
+              <li>
+                <input type="checkbox" name="industry[]" value="<%= industry[1] %>">&nbsp;&nbsp;&nbsp;All 2 digit</input>
+              </li>
+              <% next %>
+            <% elsif industry[0].split(" ")[1] == "-2222" %>
+              <li>
+                <input type="checkbox" name="industry[]" value="<%= industry[1] %>">&nbsp;&nbsp;&nbsp;All 3 digit </input>
+              </li>
+              <% next %>
+            <% elsif industry[0].split(" ")[1].length() == 2 or industry[0].split(" ")[1].length() == 3 then %>
               <%if count != 0 then %>
                 </ul>
                 </li>
